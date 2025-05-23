@@ -1,142 +1,191 @@
 /* #region VARIABLES GLOBALES */
 :root {
-    --font-body: 'Roboto', sans-serif;
-    --font-heading: 'DIN', sans-serif;
-    --color-bg: #fff;
-    --color-text: #111;
-    --color-meta: #666;
-    --color-accent: #000;
-    --max-width: 1200px;
-  }
-  /* #endregion */
-  
-  /* #region RESET / BASE */
-  body {
-    margin: 0;
-    font-family: var(--font-body);
-    background-color: var(--color-bg);
-    color: var(--color-text);
-    line-height: 1.6;
-  }
-  
-  main.portfolio {
-    padding: 2rem;
-    max-width: var(--max-width);
-    margin: 0 auto;
-  }
-  /* #endregion */
-  
-  /* #region STRUCTURE DES PROJETS */
-  section.project {
-    border-bottom: 1px solid #eee;
-    padding: 1.5rem 0;
-  }
-  
-  .project-header {
-    cursor: default;
-    transition: color 0.3s;
-  }
-  
-  .project-header h1 {
-    font-family: var(--font-heading);
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    margin: 0;
-  }
-  
-  .project-header .meta {
-    font-size: 0.9rem;
-    color: var(--color-meta);
-    margin-top: 0.25rem;
-  }
-  
-  .project-content {
-    display: block !important;
-    margin-top: 1rem;
-  }
-  /* #endregion */
-  
-  /* #region COLONNES ET GRILLES */
-  .three-columns,
+  --font-body: 'Roboto', sans-serif;
+  --font-heading: 'DIN', sans-serif;
+  --color-bg: #fff;
+  --color-text: #111;
+  --color-meta: #666;
+  --color-accent: #000;
+  --max-width: 1200px;
+}
+/* #endregion */
+
+/* #region RESET / BASE */
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+main.portfolio {
+  padding: 2rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+/* #endregion */
+
+/* #region STRUCTURE DES PROJETS */
+section.project {
+  border-bottom: 1px solid #eee;
+  padding: 1.5rem 0;
+}
+
+.project-header {
+  cursor: default;
+  transition: color 0.3s;
+}
+
+.project-header h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin: 0;
+}
+
+.project-header .meta {
+  font-size: 0.9rem;
+  color: var(--color-meta);
+  margin-top: 0.25rem;
+}
+
+.project-content {
+  display: block !important;
+  margin-top: 1rem;
+}
+/* #endregion */
+
+/* #region COLONNES ET GRILLES */
+.three-columns,
+.two-columns,
+.columns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.column,
+.column-text,
+.column-media,
+.column-protocol,
+.column-credit-image,
+.column-image-text,
+.column-extrait,
+.column-nested {
+  flex: 1;
+  min-width: 250px;
+}
+/* #endregion */
+
+/* #region MEDIA PLACEHOLDERS */
+.media-placeholder {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background-color: #000;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.media-credit,
+[data-caption]::after {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-meta);
+  margin-top: 0.25rem;
+}
+
+[data-caption]::after {
+  content: attr(data-caption);
+}
+/* #endregion */
+
+/* #region TEXTES ET TITRES */
+.text-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.text-title.italic {
+  font-style: italic;
+}
+/* #endregion */
+
+/* #region COMPOSANTS DIVERS */
+.separator-nyaze {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #aaa;
+}
+
+.video-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+  color: var(--color-accent);
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+/* #endregion */
+
+/* #region RESPONSIVE */
+@media (max-width: 768px) {
+  .columns,
   .two-columns,
-  .columns {
+  .three-columns {
+    flex-direction: column;
+  }
+}
+/* #endregion */
+
+
+
+
+/* #region LIAISON VÉGÉTALE P1 */
+.liaison-végétale-p1 {
     display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: clamp(1rem, 3vw, 4rem);
+    overflow-x: auto;
+    outline: 1px dashed red; /* debug, à retirer ensuite */
   }
   
-  .column,
-  .column-text,
-  .column-media,
-  .column-protocol,
-  .column-credit-image,
-  .column-image-text,
-  .column-extrait,
-  .column-nested {
-    flex: 1;
-    min-width: 250px;
-  }
-  /* #endregion */
-  
-  /* #region MEDIA PLACEHOLDERS */
-  .media-placeholder {
-    width: 100%;
-    aspect-ratio: 3/4;
-    background-color: #000;
-    margin-bottom: 0.5rem;
-    position: relative;
+  .column-liaison-végétale-p1--1,
+  .column-liaison-végétale-p1--2 {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2rem, 4vh, 6rem);
+    width: clamp(12.5rem, 22vw, 23.75rem);
+    min-width: 0;
   }
   
-  .media-credit,
-  [data-caption]::after {
+  .column-liaison-végétale-p1--3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: clamp(12.5rem, 22vw, 23.75rem);
+    min-width: 0;
+    background: rgba(0, 255, 0, 0.05); /* debug, à retirer ensuite */
+  }
+  
+  .media-placeholder + [data-caption]::after,
+  .media-placeholder + .media-credit {
     display: block;
     font-size: 0.75rem;
     color: var(--color-meta);
     margin-top: 0.25rem;
   }
   
-  [data-caption]::after {
-    content: attr(data-caption);
+  .text-block-protocol {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: auto;
+    align-self: flex-start;
   }
   /* #endregion */
   
-  /* #region TEXTES ET TITRES */
-  .text-title {
-    font-family: var(--font-heading);
-    font-size: 1.1rem;
-    margin: 1rem 0 0.5rem;
-  }
-  
-  .text-title.italic {
-    font-style: italic;
-  }
-  /* #endregion */
-  
-  /* #region COMPOSANTS DIVERS */
-  .separator-nyaze {
-    margin: 2rem 0;
-    border: none;
-    border-top: 1px solid #aaa;
-  }
-  
-  .video-link {
-    display: inline-block;
-    margin-top: 1rem;
-    font-weight: bold;
-    text-decoration: underline;
-    color: var(--color-accent);
-  }
-  
-  ul {
-    padding-left: 1.5rem;
-  }
-  /* #endregion */
-  
-  /* #region RESPONSIVE */
-  @media (max-width: 768px) {
-    .columns,
-    .two-columns,
-    .three-columns {
-      flex-direction: column;
-    }
-  }
-  /* #endregion */
+
+
