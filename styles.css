@@ -20,9 +20,42 @@ body {
 }
 
 main.portfolio {
-  padding: 2rem;
-  max-width: var(--max-width);
+  padding: 2rem 1rem;  /* Réduit le padding horizontal */
+  max-width: 100%;     /* Supprime la contrainte de largeur */
   margin: 0 auto;
+}
+
+/* Pour les grands écrans uniquement */
+@media (min-width: 1600px) {
+  main.portfolio {
+    max-width: 1600px;  /* Limite max pour très grands écrans */
+  }
+}
+
+/* Ajustement pour les sections de projet */
+section.project {
+  max-width: 100%;
+  overflow-x: hidden;  /* Prévient le scroll horizontal non désiré */
+}
+
+/* Ajustements spécifiques pour les grilles végétales */
+.liaison-végétale-p1,
+.liaison-végétale-p2 {
+  margin: 0 -1rem;  /* Compense le padding du portfolio */
+  padding: 0 1rem;
+  width: calc(100% + 2rem);
+  overflow-x: auto;
+}
+
+/* Optimisation pour les colonnes */
+.column-liaison-végétale-p1--1,
+.column-liaison-végétale-p1--2,
+.column-liaison-végétale-p1--3,
+.column-liaison-végétale-p2--1,
+.column-liaison-végétale-p2--2,
+.column-liaison-végétale-p2--3 {
+  width: clamp(14rem, 30vw, 32rem);  /* Valeurs légèrement augmentées */
+  flex-shrink: 0;  /* Empêche la compression */
 }
 /* #endregion */
 
@@ -146,46 +179,106 @@ ul {
 
 /* #region LIAISON VÉGÉTALE P1 */
 .liaison-végétale-p1 {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: clamp(1rem, 3vw, 4rem);
-    overflow-x: auto;
-    outline: 1px dashed red; /* debug, à retirer ensuite */
-  }
-  
-  .column-liaison-végétale-p1--1,
-  .column-liaison-végétale-p1--2 {
-    display: flex;
-    flex-direction: column;
-    gap: clamp(2rem, 4vh, 6rem);
-    width: clamp(12.5rem, 22vw, 23.75rem);
-    min-width: 0;
-  }
-  
-  .column-liaison-végétale-p1--3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: clamp(12.5rem, 22vw, 23.75rem);
-    min-width: 0;
-    background: rgba(0, 255, 0, 0.05); /* debug, à retirer ensuite */
-  }
-  
-  .media-placeholder + [data-caption]::after,
-  .media-placeholder + .media-credit {
-    display: block;
-    font-size: 0.75rem;
-    color: var(--color-meta);
-    margin-top: 0.25rem;
-  }
-  
-  .text-block-protocol {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-top: auto;
-    align-self: flex-start;
-  }
-  /* #endregion */
-  
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: clamp(2rem, 4vh, 6rem);
+  max-width: 90vw;
+  margin: 0 auto;
+  overflow-x: auto;
+  padding: 0 1rem;
+}
+
+.column-liaison-végétale-p1--1,
+.column-liaison-végétale-p1--2,
+.column-liaison-végétale-p1--3 {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 4vh, 6rem);
+  width: clamp(14rem, 26vw, 28rem);
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+/* #endregion */
 
 
+
+
+
+
+
+
+/* #region LIAISON VÉGÉTALE P2 */
+.liaison-végétale-p2 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: clamp(2rem, 4vh, 6rem);
+  max-width: 90vw;
+  margin: clamp(4rem, 10vh, 8rem) auto 0;
+  overflow-x: auto;
+  padding: 0 1rem;
+}
+
+.column-liaison-végétale-p2--1,
+.column-liaison-végétale-p2--2,
+.column-liaison-végétale-p2--3 {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 4vh, 6rem);
+  width: clamp(14rem, 26vw, 28rem);
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+/* Réinitialisation des marges internes */
+.text-title,
+.text-block-protocol {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ajustement aspect ratio uniforme pour les images */
+.media-placeholder--liaison-végétale-p1,
+.media-placeholder--liaison-végétale-p2 {
+  aspect-ratio: 1/1;
+  width: 100%;
+  background: black;
+  margin: 0;
+}
+
+/* Ajustements communs */
+.liaison-végétale-p1,
+.liaison-végétale-p2 {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.liaison-végétale-p1::-webkit-scrollbar,
+.liaison-végétale-p2::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Opera */
+}
+/* #endregion */
+
+.extended-caption {
+  font-size: 0.9rem;
+  color: var(--color-meta);
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+.resource-link {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+.text-link {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.media-placeholder--square {
+  aspect-ratio: 1 / 1;
+}
