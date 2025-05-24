@@ -318,7 +318,7 @@ ul {
   flex-direction: column;
   justify-content: flex-start;
   gap: 1.5rem;
-  width: clamp(28rem, 60vw, 64rem);
+  width: clamp(14rem, 30vw, 32rem);
   min-width: 0;
   flex-shrink: 0;
 }
