@@ -444,7 +444,7 @@ ul {
 /* #endregion */
 
 
-/* #region  Section GESTES POSSIBLES */
+/* Section GESTES POSSIBLES */
 .gestes-p1.two-columns {
   display: flex;
   gap: clamp(2rem, 4vw, 6rem); /* cohérence avec les autres sections */
@@ -495,4 +495,3 @@ ul {
   display: inline-block;
   margin-top: 1rem;
 }
-/* #endregion */
