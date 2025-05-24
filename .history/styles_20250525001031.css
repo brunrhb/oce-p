@@ -175,37 +175,48 @@ ul {
 /* #endregion */
 
 
-
-
 /* #region LIAISON VÉGÉTALE P1 */
 .liaison-végétale-p1 {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
-  gap: clamp(2rem, 4vh, 6rem);
-  max-width: 90vw;
-  margin: 0 auto;
+  margin-left: 2vw;
+  /*     clamp(1rem, 2.5vw, 3.5rem); */
   overflow-x: auto;
-  padding: 0 1rem;
+    gap: clamp(2rem, 4vh, 6rem);
+}
+
+.media-placeholder--liaison-végétale-p1 {
+  aspect-ratio: 1/ 1;
+  width: 100%;
+  background: black;
 }
 
 .column-liaison-végétale-p1--1,
-.column-liaison-végétale-p1--2,
-.column-liaison-végétale-p1--3 {
+.column-liaison-végétale-p1--2 {
   display: flex;
   flex-direction: column;
   gap: clamp(2rem, 4vh, 6rem);
-  width: clamp(14rem, 26vw, 28rem);
+  width: 20 vw;
+  /*     clamp(14rem, 26vw, 28rem); */
   min-width: 0;
-  flex-shrink: 0;
 }
 
+.column-liaison-végétale-p1--3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30vw;
+  /*     clamp(14rem, 26vw, 28rem); */
+  min-width: 0;
+}
+
+.text-block-protocol {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: auto;
+  align-self: flex-start;
+}
 /* #endregion */
-
-
-
-
-
 
 
 
@@ -213,115 +224,72 @@ ul {
 .liaison-végétale-p2 {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  margin-left : 2vw;
+  margin-top: 6vh;
   gap: clamp(2rem, 4vh, 6rem);
-  max-width: 90vw;
-  margin: clamp(4rem, 10vh, 8rem) auto 0;
+  /*    gap: clamp(2rem, 4vh, 6rem); */
   overflow-x: auto;
-  padding: 0 1rem;
+}
+
+.media-placeholder--liaison-végétale-p2 {
+  aspect-ratio: 1/ 1;
+  width: 100%;
+  background: black;
 }
 
 .column-liaison-végétale-p2--1,
 .column-liaison-végétale-p2--2,
 .column-liaison-végétale-p2--3 {
+  width: 20vw;
+   /*     clamp(14rem, 26vw, 28rem); */
+  min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: clamp(2rem, 4vh, 6rem);
-  width: clamp(14rem, 26vw, 28rem);
-  min-width: 0;
-  flex-shrink: 0;
+      gap: clamp(2rem, 4vh, 6rem);
+  
+     /*     gap: 2rem; */
 }
 
-/* Réinitialisation des marges internes */
-.text-title,
-.text-block-protocol {
-  margin: 0;
-  padding: 0;
+.column-liaison-végétale-p2--2,
+.column-liaison-végétale-p2--3 {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-/* Ajustement aspect ratio uniforme pour les images */
-.media-placeholder--liaison-végétale-p1,
-.media-placeholder--liaison-végétale-p2 {
-  aspect-ratio: 1/1;
-  width: 100%;
-  background: black;
-  margin: 0;
-}
-
-/* Ajustements communs */
-.liaison-végétale-p1,
-.liaison-végétale-p2 {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
-}
-
-.liaison-végétale-p1::-webkit-scrollbar,
-.liaison-végétale-p2::-webkit-scrollbar {
-  display: none; /* Chrome/Safari/Opera */
-}
-
-
-.extended-caption {
-  font-size: 0.9rem;
+.media-placeholder + [data-caption]::after,
+.media-placeholder + .media-credit {
+  display: block;
+  font-size: 0.75rem;
   color: var(--color-meta);
-  margin-top: 1rem;
-  line-height: 1.5;
-}
-
-.resource-link {
-  font-size: 0.9rem;
-  margin-top: 1rem;
-  line-height: 1.5;
-}
-
-.text-link {
-  color: var(--color-accent);
-  text-decoration: underline;
-}
-
-.media-placeholder--square {
-  aspect-ratio: 1 / 1;
+  margin-top: 0.25rem;
 }
 /* #endregion */
 
 
-
-
-
-
-
-/* #region PAENSER */
+/* #region PAENSER P1 */
 .paenser-p1 {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  gap: clamp(2rem, 4vw, 5rem);
-  max-width: 90vw;
-  margin: clamp(4rem, 8vh, 6rem) auto;
-  overflow-x: auto;
+  gap: clamp(2rem, 4vh, 6rem);
+  margin: 0 auto;
   padding: 0 1rem;
+  overflow-x: auto;
 }
 
-.column-paenser-p1--1,
-.column-paenser-p1--2 {
+.column-paenser-p1--1{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   gap: 1.5rem;
-  width: clamp(14rem, 30vw, 32rem);
+  width: clamp(14rem, 26vw, 28rem);
   min-width: 0;
-  flex-shrink: 0;
-}
+  }
 
-.media-placeholder--square {
-  aspect-ratio: 1 / 1;
-  width: 100%;
-  background: black;
-  margin: 0;
-}
-
-.column-paenser-p1--1 p,
-.column-paenser-p1--2 p {
-  margin: 0;
+  .column-paenser-p1--2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: clamp(14rem, 26vw, 28rem);
+  min-width: 0;
 }
 /* #endregion */
