@@ -483,13 +483,13 @@ ul {
 
 /* Placeholders */
 .media-placeholder--gestes-portrait {
- aspect-ratio: 0.65;
+  aspect-ratio: calc(calc(1.75/3) * 1.05); /* ajustement de +5% */
   width: 100%;
   background: black;
 }
 
 .media-placeholder--gestes-landscape {
- aspect-ratio: 0.90;
+  aspect-ratio: 4 / 3;
   width: 100%;
   background: black;
   position: relative;

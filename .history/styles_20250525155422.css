@@ -489,7 +489,7 @@ ul {
 }
 
 .media-placeholder--gestes-landscape {
- aspect-ratio: 0.90;
+ aspect-ratio: 0.80;
   width: 100%;
   background: black;
   position: relative;
