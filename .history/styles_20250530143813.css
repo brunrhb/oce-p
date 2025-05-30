@@ -485,7 +485,7 @@ ul {
 
 /* Placeholders */
 .media-placeholder--gestes-portrait {
- aspect-ratio: 0.52;
+ aspect-ratio: 0.5;
   width: 75%;
   background: black;
 }

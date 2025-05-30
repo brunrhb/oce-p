@@ -464,7 +464,7 @@ ul {
   flex-direction: column;
   gap: 1.5rem;
 
-  margin-top: 27.5vh;;
+  margin-top: 20vh;;
 }
 
 .column-gestes-p1--2 {
@@ -485,13 +485,13 @@ ul {
 
 /* Placeholders */
 .media-placeholder--gestes-portrait {
- aspect-ratio: 0.52;
-  width: 75%;
+ aspect-ratio: 0.65;
+  width: 55%;
   background: black;
 }
 
 .media-placeholder--gestes-landscape {
- aspect-ratio: 0.90;
+ aspect-ratio: 0.55;
   width: 100%;
   background: black;
   position: relative;
