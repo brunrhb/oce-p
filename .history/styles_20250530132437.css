@@ -449,7 +449,7 @@ ul {
 
 
 /* #region  Section GESTES POSSIBLES */
-.gestes-p1.three-columns {
+.gestes-p1.two-columns {
   display: flex;
   gap: clamp(2rem, 4vw, 6rem); /* cohérence avec les autres sections */
   padding: 0 2rem;
