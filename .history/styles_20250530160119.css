@@ -542,8 +542,9 @@ ul {
 
 /* #region  Section MARGE */ 
 
-.marges-p1{
-  margin: 0;
+.marges-p1.two-columns {
+
+  width: 90vw;
 
 }
 
@@ -551,30 +552,22 @@ ul {
   text-align: right;
 }
 
-
-.column-marges-p1--1 {
+.column-marges-p1--1,
+.column-marges-p1--2,
+.column-marges-p1--3 {
   display: flex;
   flex-direction: column;
   gap: clamp(2rem, 4vh, 6rem);
-  width: 30vw;
+  width: clamp(14rem, 26vw, 28rem);
+  min-width: 0;
+  flex-shrink: 0;
 }
-
-
-.column-marges-p1--2 {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(2rem, 4vh, 6rem);
-  width: 30vw;
-}
-
-
-
-
 
 .media-placeholder--marges {
   aspect-ratio: 1/1;
-  width: 0%;
+  width: 100%;
   background: black;
+  margin: 0;
 }
 
 .text-block-marges {
@@ -586,12 +579,31 @@ ul {
 
 }
 
-.text-link-right {
-  display: block;
-  text-align: right;
+/* Masquage scrollbar */
+.marges-p1 {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
- 
 
+.marges-p1::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .marges-p1 {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .column-marges-p1--1,
+  .column-marges-p1--2,
+  .column-marges-p1--3 {
+    width: 100%;
+
+  }
+}
 
 /* #endregion */
 

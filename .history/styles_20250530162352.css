@@ -544,7 +544,6 @@ ul {
 
 .marges-p1{
   margin: 0;
-
 }
 
 .ferreradroite {
@@ -564,7 +563,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: clamp(2rem, 4vh, 6rem);
-  width: 30vw;
+
 }
 
 

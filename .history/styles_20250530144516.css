@@ -448,15 +448,10 @@ ul {
 
 
 
-/* #region  Section GESTES POSSIBLES */ 
-
-
-
-
+/* #region  Section GESTES POSSIBLES */
 .gestes-p1.three-columns {
   display: flex;
-  
-  gap: 0; /* Supprime le gap global *//* cohérence avec les autres sections */
+  gap: clamp(2rem, 4vw, 6rem); /* cohérence avec les autres sections */
   padding: 0 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -468,10 +463,8 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-top: 27.5vh;
-  
-  align-items: flex-end; /* Ajoute cette ligne pour aligner les éléments à droite */
-  margin-right: -2vw;
+
+  margin-top: 27.5vh;;
 }
 
 .column-gestes-p1--2 {
@@ -480,12 +473,6 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  align-items: flex-end;
-    margin-right: 2vw;
-}
-
-.serreradroite {
- text-align: right;
 }
 
 .column-gestes-p1--3 {
@@ -498,19 +485,18 @@ ul {
 
 /* Placeholders */
 .media-placeholder--gestes-portrait {
- aspect-ratio: 0.55;
-  width: 90%;
+ aspect-ratio: 0.52;
+  width: 75%;
   background: black;
-
 }
 
 .media-placeholder--gestes-landscape {
  aspect-ratio: 0.90;
-  width: 103%;
+  width: 100%;
   background: black;
   position: relative;
   z-index: 2;
-
+  transform: translateY(-2rem); /* ajuster le chevauchement */
 }
 
 /* Caption et lien */
@@ -526,72 +512,8 @@ ul {
   line-height: 1.5;
 }
 
-.text-block-gestes-margeleft {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  margin-left: 4vw; /* Ajoute une marge à gauche du texte uniquement */
-    text-align: right;
-}
-
 .text-block-gestes a.text-link {
   display: inline-block;
   margin-top: 1rem;
 }
 /* #endregion */
-
-
-/* #region  Section MARGE */ 
-
-.marges-p1{
-  margin: 0;
-
-}
-
-.ferreradroite {
-  text-align: right;
-}
-
-
-.column-marges-p1--1 {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(2rem, 4vh, 6rem);
-  width: 30vw;
-}
-
-
-.column-marges-p1--2 {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(2rem, 4vh, 6rem);
-  width: 30vw;
-}
-
-
-
-
-
-.media-placeholder--marges {
-  aspect-ratio: 1/1;
-  width: 0%;
-  background: black;
-}
-
-.text-block-marges {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-    text-align: right;
-
-}
-
-.text-link-right {
-  display: block;
-  text-align: right;
-}
- 
-
-
-/* #endregion */
-
