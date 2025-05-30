@@ -543,7 +543,8 @@ ul {
 /* #region  Section MARGE */ 
 
 .marges-p1{
- 
+  margin: 0;
+  margin: clamp(4rem, 8vh, 6rem) auto;
 
 }
 
@@ -557,7 +558,6 @@ ul {
   flex-direction: column;
   gap: clamp(2rem, 4vh, 6rem);
   width: 30vw;
-   margin: clamp(4rem, 8vh, 6rem) auto;
 }
 
 
