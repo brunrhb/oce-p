@@ -1,0 +1,31 @@
+/* This file contains styles for media elements, such as images and videos. */
+
+/* Media Placeholders */
+.media-placeholder {
+  width: 100%;
+  aspect-ratio: 16/9; /* Default aspect ratio for media */
+  background-color: #000; /* Placeholder background color */
+  margin-bottom: 1rem; /* Space below media elements */
+}
+
+/* Responsive Media */
+.media-responsive {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media Credits */
+.media-credit {
+  display: block;
+  font-size: 0.75rem; /* Smaller font size for credits */
+  color: var(--color-meta); /* Use variable for color */
+  margin-top: 0.25rem; /* Space above credits */
+}
+
+/* Caption for Media */
+.media-caption {
+  font-size: 0.85rem; /* Caption font size */
+  font-style: italic; /* Italic style for captions */
+  margin-top: 0.25rem; /* Space above captions */
+  line-height: 1.3; /* Line height for better readability */
+}

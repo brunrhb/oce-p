@@ -1,0 +1,21 @@
+{
+  "name": "css-components",
+  "version": "1.0.0",
+  "description": "A collection of reusable CSS components and styles.",
+  "main": "src/main.css",
+  "scripts": {
+    "build": "echo 'Building CSS components...'",
+    "watch": "echo 'Watching for changes...'",
+    "test": "echo 'Running tests...'"
+  },
+  "keywords": [
+    "css",
+    "components",
+    "styles",
+    "responsive"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}

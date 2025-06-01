@@ -1,0 +1,9 @@
+:root {
+  --font-body: 'Roboto', sans-serif;
+  --font-heading: 'DIN', sans-serif;
+  --color-bg: #fff;
+  --color-text: #111;
+  --color-meta: #666;
+  --color-accent: #000;
+  --max-width: 1200px;
+}

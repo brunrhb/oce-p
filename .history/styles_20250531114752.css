@@ -545,7 +545,6 @@ ul {
 .marges-p1{
    display: flex;
   flex-wrap: nowrap;
-    align-items: flex-start;
   justify-content: center;
   gap: clamp(2rem, 4vh, 6rem);
   max-width: calc(2 * 30vw + 6rem); /* ou selon le layout global */
@@ -564,7 +563,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: clamp(2rem, 4vh, 6rem);
-  width: 40vw;
+  width: 30vw;
    margin: clamp(4rem, 8vh, 6rem) auto;
 }
 
@@ -573,7 +572,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: clamp(2rem, 4vh, 6rem);
-  width: 60vw;
+  width: 40vw;
 }
 
 
@@ -603,91 +602,4 @@ ul {
 
 
 /* #endregion */
-
-/* TEST GRID VERSION */
-.marges-p1--gridtest {
-  --fs-base: clamp(0.875rem, 0.8vw + 0.7rem, 1rem);
-  --fs-small: clamp(0.75rem, 0.7vw + 0.65rem, 0.875rem);
-  --fs-title: clamp(1.1rem, 1.2vw + 0.9rem, 1.25rem);
-  --gap-base: clamp(2rem, 4vh, 6rem);
-  --padding-base: clamp(1rem, 2vw, 2rem);
-  
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: var(--gap-base);
-  max-width: 90rem;
-  margin: clamp(4rem, 8vh, 6rem) auto;
-  padding: 0 var(--padding-base);
-}
-
-/* Colonne gauche: 5/12 colonnes */
-.marges-p1--gridtest .column-left {
-  grid-column: 1 / 6;
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap-base);
-}
-
-/* Colonne droite: 7/12 colonnes */
-.marges-p1--gridtest .column-right {
-  grid-column: 6 / -1;
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--gap-base) * 0.75);
-}
-
-/* Composants génériques */
-.marges-p1--gridtest .media-block {
-  width: 100%;
-  aspect-ratio: 1/1;
-  background: black;
-  margin-bottom: 0.5rem;
-}
-
-.marges-p1--gridtest .text-block {
-  font-size: var(--fs-base);
-  line-height: 1.5;
-}
-
-.marges-p1--gridtest .text-block--right {
-  text-align: right;
-}
-
-.marges-p1--gridtest .text-credit {
-  font-size: var(--fs-small);
-  color: var(--color-meta);
-  margin-top: 0.25rem;
-}
-
-.marges-p1--gridtest .text-title {
-  font-size: var(--fs-title);
-  font-style: italic;
-  margin: 0 0 1rem;
-}
-
-.marges-p1--gridtest .text-link {
-  display: block;
-  text-align: right;
-  color: inherit;
-  text-decoration: underline;
-  margin-top: 1rem;
-  font-size: var(--fs-base);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .marges-p1--gridtest {
-    grid-template-columns: 1fr;
-    gap: calc(var(--gap-base) * 0.5);
-  }
-
-  .marges-p1--gridtest .column-left,
-  .marges-p1--gridtest .column-right {
-    grid-column: 1 / -1;
-  }
-
-  .marges-p1--gridtest .text-block--right {
-    text-align: left;
-  }
-}
 
