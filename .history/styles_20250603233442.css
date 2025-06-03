@@ -51,7 +51,7 @@ body {
 
 .placeholder-p1s1 {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 1 / 1;
   background-color: black;
 }
 
@@ -59,15 +59,4 @@ body {
   width: 100%;
   aspect-ratio: 1 / 1;
   background-color: white;
-}
-
-.credit {
-  position: absolute;
-  top: calc(100% + 0.3rem); /* ⬅️ 0.3rem en dessous de l'image */
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 0.75rem;
-  line-height: 1.2;
-  margin: 0;
-  text-align: center;
 }

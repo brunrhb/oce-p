@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
+  padding: 2vw;
+  column-gap: 1vw;
+ 
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  height: 100%;
+}
+
+.col-1 {
+  background-color: crimson;
+}
+.col-2 {
+  background-color: royalblue;
+}
+.col-3 {
+  background-color: seagreen;
+}

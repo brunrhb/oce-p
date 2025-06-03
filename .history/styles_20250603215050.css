@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.grid-p1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: calc(100vh - 4vw);
+  padding: 2vw;
+  column-gap: 1vw;
+}
+
+.col-p1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  font-size: 1.5rem;
+  height: 100%;
+}
+
+.col-p1-1 { background-color: crimson; }
+.col-p1-2 { background-color: royalblue; }
+.col-p1-3 { background-color: seagreen; }
+.col-p1-4 { background-color: darkorange; }
+
+.placeholder-p1p1 {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: black;
+}
+
+
+.rich-text-bloc-p1p1{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: black;
+  }
