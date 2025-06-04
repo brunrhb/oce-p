@@ -20,7 +20,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1vw;
-
+  font-size: 1.5rem;
   height: 100%;
   background-color: crimson;
 }
@@ -31,7 +31,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1vw;
-
+  font-size: 1.5rem;
   height: 100%;
   background-color: royalblue; 
 }
@@ -42,7 +42,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1vw;
-
+  font-size: 1.5rem;
   height: 100%;
   background-color: seagreen; 
 }
@@ -57,7 +57,6 @@ body {
 
 .placeholder-p1s1 {
   aspect-ratio: 1 / 1;
-  width: 100%;
   background-color: black;
 }
 
@@ -69,16 +68,9 @@ body {
 
 }
 
-.text-block-p1s1 {
+.richtext-p1s1 {
   width: 100%;
   aspect-ratio: 1 / 1;
   background-color: white;
 }
 
-.protocole-titre {
-  font-size: 1.5rem;
-} 
-
-.protocole-corps {
-  font-size: 1rem;
-}

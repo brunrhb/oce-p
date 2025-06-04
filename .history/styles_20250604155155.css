@@ -11,16 +11,13 @@ body {
   column-gap: 1vw;
 }
 
-
-
-
 .col-p1s1-1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1vw;
-
+  font-size: 1.5rem;
   height: 100%;
   background-color: crimson;
 }
@@ -31,7 +28,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1vw;
-
+  font-size: 1.5rem;
   height: 100%;
   background-color: royalblue; 
 }
@@ -42,13 +39,10 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1vw;
-
+  font-size: 1.5rem;
   height: 100%;
   background-color: seagreen; 
 }
-
-
-
 
 .media-block {
   display: block;
@@ -56,29 +50,23 @@ body {
 }
 
 .placeholder-p1s1 {
-  aspect-ratio: 1 / 1;
   width: 100%;
+  height: 100%;
   background-color: black;
 }
 
-.credit {
-  position: absolute;
-  font-size: 0.75rem;
-  line-height: 1.2;
-  margin: 0;
-
-}
-
-.text-block-p1s1 {
+.richtext-p1s1 {
   width: 100%;
   aspect-ratio: 1 / 1;
   background-color: white;
 }
 
-.protocole-titre {
-  font-size: 1.5rem;
-} 
-
-.protocole-corps {
-  font-size: 1rem;
+.credit {
+  position: absolute;
+  top: calc(100% + 0.3rem); /* ⬅️ 0.3rem en dessous de l'image */
+  left: 50%;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  margin: 0;
+  text-align: center;
 }
