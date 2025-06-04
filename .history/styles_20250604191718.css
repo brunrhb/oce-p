@@ -117,9 +117,12 @@ credit v
 .media-block-p1s2 {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   gap: 2vw;
-  position: relative;
+
   width: 100%;
+
+  position: relative
 
 }
 

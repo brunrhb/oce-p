@@ -101,36 +101,6 @@ body {
 
 /* #region slide2*/
 
-/* 1 grille et colonnes 
-
-grid-p1s1 v
-col-p1s1-1 v
-col-p1s1-2 v
-col-p1s1-3 v
-
-2 blocks et elements
-
-placeholder-p1s1"v
-credit v
-*/
-
-.media-block-p1s2 {
-  display: flex;
-  flex-direction: column;
-  gap: 2vw;
-  position: relative;
-  width: 100%;
-
-}
-
-.text-block-p1s2 {
-  gap: 0;
-}
-
-.extrait {
-  font-size: 1.1rem;
-}
-
 
 
 /* #endregion */

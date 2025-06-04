@@ -115,12 +115,9 @@ credit v
 */
 
 .media-block-p1s2 {
-  display: flex;
-  flex-direction: column;
-  gap: 2vw;
-  position: relative;
+  display: block;
   width: 100%;
-
+  gap: 2rem;
 }
 
 .text-block-p1s2 {
