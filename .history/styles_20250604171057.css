@@ -3,28 +3,22 @@ body {
   font-family: sans-serif;
 }
 
-/* #region PROJET1 LIASONS VEGETALES*/
-
-/* #region slide1*/
-
-/* 1 grille et colonnes */
-
 .grid-p1s1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: calc(100vh - 20rem);
-  padding-top: 10rem;
-  padding-bottom: 5rem;
-  padding-left:10rem ;
-  padding-right:10rem ;
+  height: calc(100vh - 4vw);
+  padding: 2vw;
   column-gap: 2vw;
 }
+
+
+
 
 .col-p1s1-1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 2vw;
+  gap: 1vw;
 
 
   background-color: crimson;
@@ -49,7 +43,7 @@ body {
 }
 
 
-/* 2 blocks et elements */
+
 
 .media-block {
   display: block;
@@ -71,40 +65,19 @@ body {
 }
 
 .text-block-p1s1 {
-  display: flex; 
-  flex-direction: column;
-  justify-content: flex-end; 
- 
   width: 100%;
   aspect-ratio: 1 / 1;
   background-color: white;
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-end; 
 
-  padding: 0; 
-  margin: 0;
-  gap: 0;
 }
 
 .protocole-titre {
-  font-size: 1.5rem;
-  margin: 0;  
-  padding: 0;
+  font-size: 2rem;
 } 
 
 .protocole-corps {
-  font-size: 1.1rem;
-  margin: 0;  
-  padding: 0;
+  font-size: 1,5rem;
 }
-
-/* #endregion */
-
-
-/* #region slide1*/
-
-
-
-/* #endregion */
-
-
-/* #endregion */
-

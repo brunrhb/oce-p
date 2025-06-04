@@ -61,40 +61,7 @@ Chaque jour, les structures rigides de mon quotidien<br>
 me rappellent ce système absurde dans lequel je vis.
  `;
 content["p1s2-extrait2"] = `
-Tout comme, chaque jour,<br>
-mon existence et celle du vivant<br>
-rappellent à ce système<br>
-qu’il peut toujours en être autrement.<br>
-Chaque jour,<br>
-nous lui rappelons que peu importe la haine<br>
-et l’acharnement qu’il déploie,<br>
-il en va déjà autrement.<br><br>
-
-Chaque jour, parce que je suis là<br>
-et que tu es là, en vie,<br>
-nous lui rappelons qu’à l’intérieur du “nous”,<br>
-des multitudes de mondes possibles<br>
-sont déjà en train d’exister.<br><br>
-
-Chaque jour, mon existence<br>
-et celle du vivant rappellent à ce système<br>
-que son monde est un paradigme fictionnel.<br>
-Chaque jour, nous lui faisons sentir à notre tour<br>
-que le propre d’un paradigme c’est de changer :<br>
-d’être remplacé, déplacé ou ré-inventé.<br><br>
-
-Chaque jour, le “nous” que nous faisons apparaître,<br>
-conteste cet ordre du monde.<br><br>
-
-Te nommant sœur,<br>
-Je questionne mon statut d’aimante<br>
-En rêvant d’une sororité étendue<br><br>
-
-Pour devenir la moitié, ta compagne<br><br>
-
-Serrer & semer Ensemencer nos devenirs<br><br>
-
-Je sais qu’il faudra du temps, [...]";
+  cccc
  `;
 // #endregion
 
