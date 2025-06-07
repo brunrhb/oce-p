@@ -104,16 +104,10 @@ body {
 
 /* 1 grille et colonnes 
 
-grid-p1s1 
-
-col-p1s1-1 {
-  display: flex;}
-
-col-p1s1-2 {
-  display: flex;}
-
-col-p1s1-3 {
-  display: flex;}
+grid-p1s1 v
+col-p1s1-1 v
+col-p1s1-2 v
+col-p1s1-3 v
 
 2 blocks et elements
 
@@ -121,31 +115,10 @@ placeholder-p1s1"v
 credit v
 */
 
-.col-p1s2-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 20vw;
-}
-
-.col-p1s2-2 {
-  display: flex;
-}
-
-.col-p1s2-3 {
-  display: flex;}
-
-.media-block-p1s2-1 {
+.media-block-p1s2 {
   display: flex;
   flex-direction: column;
   gap: 2vw;
-  position: relative;
-  width: 100%;
-
-}
-
-.media-block-p1s2-2 {
-  display: block;
   position: relative;
   width: 100%;
 

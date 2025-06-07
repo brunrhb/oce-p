@@ -121,18 +121,17 @@ placeholder-p1s1"v
 credit v
 */
 
-.col-p1s2-1 {
+.col-p1s1-1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 20vw;
+  gap: 2vw;
 }
 
-.col-p1s2-2 {
-  display: flex;
-}
+.col-p1s1-2 {
+  display: flex;}
 
-.col-p1s2-3 {
+.col-p1s1-3 {
   display: flex;}
 
 .media-block-p1s2-1 {
