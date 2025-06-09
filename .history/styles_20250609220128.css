@@ -176,11 +176,11 @@ body {
   grid-template-columns: 0.7fr 1.3fr;
   padding-left: 5rem;
   padding-right: 5rem;
-  column-gap: 5vw;
+  column-gap: 2vw;
 }
 .col-p2-1 {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: flex-start;
   gap: 2vw;
 }
@@ -193,18 +193,10 @@ body {
 
 /* 2 blocks et elements */
 .media-block-p2 {
-  display: block;
-  width: 100%;
-  
 }
 .placeholder-p2 {
-  aspect-ratio: 1 / 1;
-  width: 100%;
-  background-color: black;
 }
 .credit {
-  text-align: right;
-  margin: top 0.5rem; ;
 }
 .text-block-p2 {
 }
@@ -220,15 +212,10 @@ body {
 /* #endregion */
 
 
-/* #region P3 DES NORMES AUX MORNES : MARRONNER EN SOI. */
+/* #region P3 */
 
 /* 1 grille et colonnes */
 .grid-p3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  column-gap: 2vw;
 }
 .col-p3-1 {
 }
@@ -254,18 +241,11 @@ body {
 /* #endregion */
 
 
-/* #region P4 ECOLE COMME CAISSE D RESONNANCE */
+/* #region P4 */
 
 /* 1 grille et colonnes */
 .grid-p4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-  padding-left: 5rem;
-  padding-right: 5rem;
-  column-gap: 2vw;
 }
-
 .col-p4-1 {
 }
 .col-p4-2 {
@@ -298,17 +278,11 @@ body {
 /* #endregion */
 
 
-/* #region P5 GESTES POSSIBLES */
+/* #region P5 */
 
 /* 1 grille et colonnes */
 .grid-p5 {
-  display: grid;
-  grid-template-columns: 0.3fr 0.7fr 1fr;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  column-gap: 2vw;
 }
-
 .col-p5-1 {
 }
 .col-p5-2 {
@@ -335,7 +309,7 @@ body {
 /* #endregion */
 
 
-/* #region P6 LES MARGES FORCÉES */
+/* #region P6 */
 
 /* 1 grille et colonnes */
 .grid-p6 {
@@ -363,7 +337,7 @@ body {
 
 /* #endregion */
 
-/* #region P7  */
+/* #region P7 */
 /* #region P7S1 */
 
 /* 1 grille et colonnes */

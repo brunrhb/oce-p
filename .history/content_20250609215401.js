@@ -105,16 +105,14 @@ Je sais qu’il faudra du temps, [...]";
 // #region PROJET2
 content["p2-credit"] = "25.04.2024 @La Balsamine";
 content["p2-protocole-titre"] = "Protocole :";
-content["p2-protocole-corps"] = `Le texte est peint sur du tulle. Il est structuré sur la répétition, revenant à chaque fois sur lui-même. À l’intérieur de cette spirale, se glisse par instant une ouverture, une respiration. Le texte tourne sur lui-même jusqu’à ce que je le déchire. J’utilise ensuite ces morceaux de tissus pour réaliser un pansement avec de l’argile que je viens appliquer sur ma poitrine.`;
+content["p2-protocole-corps"] = `Le texte est peint sur du tulle. Il est structuré<br>sur la répétition, revenant à chaque fois sur lui-même.<br>À l’intérieur de cette spirale, se glisse par instant une ouverture, une respiration.<br>Le texte tourne sur lui-même jusqu’à ce que je le déchire.<br>J’utilise ensuite ces morceaux de tissus pour réaliser un pansement avec de l’argile<br>que je viens appliquer sur ma poitrine.`;
 content["p2-lien"] = "https://vimeo.com/951968568?share=copy";
-content["p2-extrait"] = `Extrait du texte : <br> <br> Tu la sens cette palpitation dans tes profondeurs ? la peur. J’ai peur que mes mots se mettent à sonner creux à force d’être répétés. Qu’ils deviennent un lent refrain, lassant, et lancinant. Je sais bien qu’ils doivent l’être ; dits et redits, encore et encore.<br><br>J’ai peur de me mettre à sonner creux, de ne plus trouver de résonances, ni au dehors, ni dans mon corps à force de dire l’injustice et d’expliquer la colère.<br><br>Car à chaque fois, je sens le dedans de ma peau s’éroder. Je sens les marées qu’elles provoquent se fracasser contre mes propres falaises. Elles s’effritent à chaque fois un peu plus, et les abris avec elles.<br><br>À chaque fois que je dis : Ma colère est politique parce qu’elle est personnelle au pluriel. À chaque fois que je dis : Ma colère a le goût du fer et l’odeur du sang de celles et ceux à qui l’on continue de refuser l’accès à l’humanité. À chaque fois que je dis : Ma colère s’enracine dans les océans qui sont aussi des cimetières.<br><br>À chaque fois, je sens le dedans de ma peau s’éroder. Je sens les marées qu’elles provoquent se fracasser contre mes propres falaises. Elles s’effritent à chaque fois un peu plus, et les abris avec elles.<br><br>Aujourd’hui, je veux te dire que ma colère est une lame dont les deux extrémités sont aiguisées. L’utiliser me blesse aussi. L’utiliser réveille la peur. La peur de me mettre à sonner creux à force de dire l’injustice et d’expliquer la colère.<br><br>Car à chaque fois, c’est un temps pour respirer que je m’enlève. À chaque fois, c’est une énième suffocation, et rares sont les moments où j’arrive à respirer, où les conditions du dehors me laissent le faire.<br><br>Un monde plus respirable, c’est ce que je veux. Mais pour ça, il faut dire l’injustice et expliquer la colère. Mais, à chaque fois que je répète : [...]`;
-// #endregion
+content["p2-extrait"] = `Tu la sens cette palpitation dans tes profondeurs ? la peur. J’ai peur que mes mots se mettent à sonner creux à force d’être répétés. Qu’ils deviennent un lent refrain, lassant, et lancinant. Je sais bien qu’ils doivent l’être ; dits et redits, encore et encore.<br><br>J’ai peur de me mettre à sonner creux, de ne plus trouver de résonances, ni au dehors, ni dans mon corps à force de dire l’injustice et d’expliquer la colère.<br><br>Car à chaque fois, je sens le dedans de ma peau s’éroder. Je sens les marées qu’elles provoquent se fracasser contre mes propres falaises. Elles s’effritent à chaque fois un peu plus, et les abris avec elles.<br><br>À chaque fois que je dis : Ma colère est politique parce qu’elle est personnelle au pluriel. À chaque fois que je dis : Ma colère a le goût du fer et l’odeur du sang de celles et ceux à qui l’on continue de refuser l’accès à l’humanité. À chaque fois que je dis : Ma colère s’enracine dans les océans qui sont aussi des cimetières.<br><br>À chaque fois,<br><br>Je sens le dedans de ma peau s’éroder. Je sens les marées qu’elles provoquent se fracasser contre mes propres falaises. Elles s’effritent à chaque fois un peu plus, et les abris avec elles.<br><br>Aujourd’hui, je veux te dire que ma colère est une lame dont les deux extrémités sont aiguisées. L’utiliser me blesse aussi. L’utiliser réveille la peur. La peur de me mettre à sonner creux à force de dire l’injustice et d’expliquer la colère.<br><br>Car à chaque fois, c’est un temps pour respirer que je m’enlève. À chaque fois, c’est une énième suffocation, et rares sont les moments où j’arrive à respirer, où les conditions du dehors me laissent le faire.<br><br>Un monde plus respirable, c’est ce que je veux. Mais pour ça, il faut dire l’injustice et expliquer la colère. Mais, à chaque fois que je répète : [...]`;
 
 // #region PROJET3
 content["p3-intro"] = `Pendant mes deux années de master, j’ai réfléchi à ma place dans les institutions liées à l’art, plus particulièrement à l’endroit de leurs normes. Je me suis demandé quelle est la place du soutien à l’intérieur d’elles et quels subterfuges imaginer pour le pratiquer.`;
 content["p3-autre-corps-1"] = `C’est ce qui m’a amenée à m’intéresser au marronnage comme phénomène social et comme pratique d’empowerment. Historiquement, le marronnage apparaît à l’époque coloniale en devenant une manière de s’opposer et de résister au régime esclavagiste, par la fuite. À défaut de pouvoir fuir vers l’extérieur, c’est une fuite dans l’intérieur des terres, notamment dans les “mornes”. Mon intérêt pour le marronnage tient au fait qu’il fut un choix pour la vie dans un système mortifère. Ce déplacement dans le champ de la performance a pour but de revaloriser et de revitaliser nos capacités à résister, à prendre soin et à ressentir. J’ai choisi de travailler avec les institutions comme des collaboratrices. Cette approche m’a permis de dépasser les positions binaires de la critique institutionnelle, pour se demander comment apprendre d’un lieu pour pouvoir s’en défendre.`;
 content["p3-biblio"] = `MARBOEUF, O. (2022), *Suites décoloniales : S’enfuir de la plantation*, Éditions du commun, Rennes, pp. 128–129.`;
-// #endregion
 
 // #region PROJET4
 content["p4-credit"] = "01.02.2023 @WIELS, Bruxelles";
@@ -128,7 +126,6 @@ content["p4-protocole-titre"] = `Protocole co-écrit avec Stevie Ango :
 <li>L’arpentage du livre <i>L’art impossible</i> de Geoffroy de Lagasnerie, en lisant des extraits au groupe et aux personnes présentes.</li>
 </ol>
 Il vous sera demandé de toujours avoir dans votre champ de vision une personne du groupe.`;
-// #endregion
 
 // #region PROJET5
 content["p5-credit"] = "16.06.2023 @Recyclart";
@@ -136,14 +133,12 @@ content["p5-intro"] = `Ce travail ne s’adressant pas aux institutions mais aux
 content["p5-autre-corps-1"] = `Ce qui a donné lieu à la performance <i>Les marges forcées</i>, dans laquelle j’investigue les possibilités du cabaret.`;
 content["p5-lien"] = `https://youtube.com/shorts/2oIry71oKdk`;
 content["p5-extrait"] = `Outsider, non pas par choix mais par impossibilité. Les marges sont forcées. Certes, le monde s’y construit aussi. Pourtant, comment cet “en dehors” qui est pourtant “ici” serait plus praticable ? Il n’y a pas un “hors les murs” qui nous attendrait les bras ouverts, prêt à accueillir le changement. Nos corps semblent avoir été faits pour encaisser et ils continuent de prendre des coups. Mais jusqu’à quand ? Il est important de changer les conditions de vie qui sont les nôtres. Que faire de ce maintenant qui ressemble à un sol glissant ? En sachant qu’il n’y a pas de main pour être rattrapé car celles qui le voudraient sont en train de tâtonner à leur propre survie. Pourtant, je ne doute pas de notre capacité à déplacer des montagnes. En réalité, c’est ce que nous sommes déjà toustes en train de faire.`;
-// #endregion
 
 // #region PROJET6
 content["p6-credit-1"] = "@FRAC Réunion 2022";
 content["p6-autre-corps-1"] = `Hier c’est déjà demain a été réalisé au Pavillon Martin du FRAC Réunion avec Amandine Benintendi. Ce temps de création au FRAC a permis de questionner le “faire mémoire”.`;
 content["p6-autre-corps-2"] = `En utilisant l’archivage comme un médium, le projet le met en tension dans une approche transversale. Celle-ci se saisit des aspects performatifs du texte, du textile, et de leur interdiscursivité. Il en a résulté une installation de grands panneaux de tulles sur lesquels étaient peints des fragments de texte. Leurs dispositions dans l’espace structuraient le lieu et invitaient à la déambulation, comme au touché.`;
 content["p6-credit-2"] = `Vue de l’installation avec Amandine Benintendi @FRAC Réunion`;
-// #endregion
 
 // #region PROJET7
 content["p7s1-credit"] = `Extraits de captation - ESAR 2022`;
@@ -153,14 +148,20 @@ content["p7s2-extrait1"] = `À toutes les personnes qui ont été forcées au d�
 content["p7s2-extrait2"] = `À toustes celleux qui sont le mouvement. Qui ne s’enracinent nulle part. Qui font des impensés la vie même. Aucun de nos trajets ne reste silencieux. À celleux qui sont adapté·es aux fluctuations, aux migrations qui avancent avec les changements du monde. Il faudra continuer d’ensemencer, porter aux vents et par tous temps, repartir à chaque fois, jamais pour de bon, mais rester en effusion.`;
 content["p7s2-protocole-titre"] = `Protocole :`;
 content["p7s2-protocole-corps"] = `Sur le sol est déroulée une bande de papier blanc. Cette bande traverse la salle dans sa longueur. À l’extrémité droite se trouve un monticule de sable noir. Poignée après poignée, je transporte le sable dans le creux de mes mains. Lentement, l’îlot s’érige à l’opposé. Il s’agit alors de recommencer, encore et encore, jusqu’à ce que le sillon soit foulé de mes pieds nus.`;
-// #endregion
 
 // #region PROJET8
 content["p8-extrait"] = `Seulement, ma romance sous l’Équateur a lieu au Gol. On aura beau chercher, ça a l’air de tout sauf d’une carte postale, tout y est vrai. Les chiens errants traînent la patte sous la chaleur. En fond, les cris d’enfants. Il y a des gens qui vivent et qui attendent, des chaises en plastique et des objets abandonnés. Le temps s’étire et tire en longueur. La vie s’allonge, les gestes sont lents. Et toujours la même rengaine : le jour puis la nuit, la nuit puis le jour. Pourtant on est toujours surpris. Coincé entre terre et mer, entre aujourd’hui et demain. Un jour quelque chose a changé. Je ne cherchais plus le soleil, j’attendais les nuages.`;
 content["p8-protocole-titre"] = `Procédure :`;
 content["p8-protocole-corps"] = `Déclamer le texte en triant du riz, face aux spectateur·ices. Réappropriation d’un geste vu de nombreuses fois chez les femmes de ma famille.`;
 content["p8-credit"] = `Nyaze & Agency © David Garcia`;
-// #endregion
+
+// #region injection
+window.addEventListener("DOMContentLoaded", () => {
+  Object.entries(content).forEach(([key, value]) => {
+    const el = document.querySelector(`[data-content="${key}"]`);
+    if (el) el.innerHTML = value;
+  });
+});
 
 
 

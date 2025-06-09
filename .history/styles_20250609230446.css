@@ -204,7 +204,6 @@ body {
 }
 .credit {
   text-align: right;
-  margin: top 0.5rem; ;
 }
 .text-block-p2 {
 }
@@ -298,7 +297,7 @@ body {
 /* #endregion */
 
 
-/* #region P5 GESTES POSSIBLES */
+/* #region P5 */
 
 /* 1 grille et colonnes */
 .grid-p5 {
@@ -335,7 +334,7 @@ body {
 /* #endregion */
 
 
-/* #region P6 LES MARGES FORCÉES */
+/* #region P6 */
 
 /* 1 grille et colonnes */
 .grid-p6 {
@@ -363,7 +362,7 @@ body {
 
 /* #endregion */
 
-/* #region P7  */
+/* #region P7 */
 /* #region P7S1 */
 
 /* 1 grille et colonnes */
