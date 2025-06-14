@@ -218,10 +218,7 @@ body {
   }
 
 .protocole-corps-p2 {
-  text-align: justify;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
+  text-align: right;  /* Aligne tout le texte à droite */
   font-size: 1.1rem;
   }
 
@@ -229,8 +226,6 @@ body {
   text-align: right;
   font-size: 1.1rem;
   text-decoration: underline;
-  color: inherit; /* garde la couleur du texte parent */
-  cursor: pointer;
 }
 .extrait {
 }

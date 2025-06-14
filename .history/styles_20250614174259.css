@@ -212,25 +212,10 @@ body {
 }
 
 /* Si besoin de contrôle plus fin sur certains éléments */
-.protocole-titre-p2 {
-  text-align: right;  /* Aligne tout le texte à droite */
-  font-size: 1.5rem;
-  }
-
-.protocole-corps-p2 {
-  text-align: justify;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  font-size: 1.1rem;
-  }
-
+.protocole-titre-p2, 
+.protocole-corps-p2,
 .lien-p2 {
   text-align: right;
-  font-size: 1.1rem;
-  text-decoration: underline;
-  color: inherit; /* garde la couleur du texte parent */
-  cursor: pointer;
 }
 .extrait {
 }

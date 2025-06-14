@@ -204,33 +204,16 @@ body {
 }
 .credit-p2 {
   text-align: right;
-  margin: top 0.5rem; 
+  margin: top 0.5rem; ;
    margin-left: auto;
 }
 .text-block-p2 {
-  text-align: right;  /* Aligne tout le texte à droite */
 }
-
-/* Si besoin de contrôle plus fin sur certains éléments */
-.protocole-titre-p2 {
-  text-align: right;  /* Aligne tout le texte à droite */
-  font-size: 1.5rem;
-  }
-
-.protocole-corps-p2 {
-  text-align: justify;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  font-size: 1.1rem;
-  }
-
-.lien-p2 {
-  text-align: right;
-  font-size: 1.1rem;
-  text-decoration: underline;
-  color: inherit; /* garde la couleur du texte parent */
-  cursor: pointer;
+.protocole-titre {
+}
+.protocole-corps {
+}
+.lien {
 }
 .extrait {
 }

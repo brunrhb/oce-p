@@ -208,29 +208,15 @@ body {
    margin-left: auto;
 }
 .text-block-p2 {
-  text-align: right;  /* Aligne tout le texte à droite */
 }
-
-/* Si besoin de contrôle plus fin sur certains éléments */
 .protocole-titre-p2 {
-  text-align: right;  /* Aligne tout le texte à droite */
-  font-size: 1.5rem;
-  }
-
+   margin-left: auto;
+}
 .protocole-corps-p2 {
-  text-align: justify;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  font-size: 1.1rem;
-  }
-
+   margin-left: auto;
+}
 .lien-p2 {
-  text-align: right;
-  font-size: 1.1rem;
-  text-decoration: underline;
-  color: inherit; /* garde la couleur du texte parent */
-  cursor: pointer;
+   margin-left: auto;
 }
 .extrait {
 }
