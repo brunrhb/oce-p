@@ -119,7 +119,7 @@ Pendant mes deux années de master, j’ai réfléchi à ma place dans les insti
 `;
 
 content["p3-biblio"] =`
-1 MARBOEUF, O. (2022), Suites décoloniales : S’enfuir de la plantation, Éditions du commun, Rennes, pp. 128-129
+Comment les pratiques performatives peuvent-elles devenir des pratiques marronnes en se saisissant des interstices au sein des institutions ?
 `;
 
 // #endregion

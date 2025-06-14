@@ -115,11 +115,11 @@ content["p3-intro"] = `
 Comment les pratiques performatives peuvent-elles devenir des pratiques marronnes en se saisissant des interstices au sein des institutions ?
 `;
 content["p3-autre-corps-1"] =`
-Pendant mes deux années de master, j’ai réfléchi à ma place dans les institutions liées à l’art, plus particulièrement à l’endroit de leurs normes. Je me suis demandé quelle est la place du soutien à l’intérieur d’elle et quels subterfuges imaginer pour le pratiquer. C’est ce qui m’a amené à m’intéresser au marronnage comme phénomène social et comme pratique d’empowerment. Historiquement, le marronnage apparaît à l’époque coloniale en devenant une manière de s’opposer et de résister au régime esclavagiste, par la fuite. À défaut de pouvoir fuir vers l’extérieur, c’est une fuite dans l’intérieur des terres, notamment dans les “mornes”. Mon intérêt pour le marronnage tient au fait qu’il fut un choix pour la vie dans un système mortifère. Ce déplacement dans le champ de la performance a pour but de revaloriser et de revitaliser nos capacités à résister, à prendre soin et à ressentir. J’ai choisi de travailler avec les institutions comme des collaboratrices. Cette approche m’a permise de dépasser les positions binaires de la critique institutionnelle, pour se demander comment apprendre d’un lieu pour pouvoir s’en défendre1
+Comment les pratiques performatives peuvent-elles devenir des pratiques marronnes en se saisissant des interstices au sein des institutions ?
 `;
 
 content["p3-biblio"] =`
-1 MARBOEUF, O. (2022), Suites décoloniales : S’enfuir de la plantation, Éditions du commun, Rennes, pp. 128-129
+Comment les pratiques performatives peuvent-elles devenir des pratiques marronnes en se saisissant des interstices au sein des institutions ?
 `;
 
 // #endregion
