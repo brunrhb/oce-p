@@ -131,7 +131,7 @@ content["p3-credit"] =`
 `;
 
 content["p3-lien"] =`
-https://www.youtube.com/watch?v=uyy3KmXAapw
+© Aurélie Baijot
 `;
 
 // #endregion

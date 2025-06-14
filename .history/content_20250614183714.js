@@ -118,20 +118,12 @@ content["p3-autre-corps-1"] =`
 Pendant mes deux années de master, j’ai réfléchi à ma place dans les institutions liées à l’art, plus particulièrement à l’endroit de leurs normes. Je me suis demandé quelle est la place du soutien à l’intérieur d’elle et quels subterfuges imaginer pour le pratiquer. C’est ce qui m’a amené à m’intéresser au marronnage comme phénomène social et comme pratique d’empowerment. Historiquement, le marronnage apparaît à l’époque coloniale en devenant une manière de s’opposer et de résister au régime esclavagiste, par la fuite. À défaut de pouvoir fuir vers l’extérieur, c’est une fuite dans l’intérieur des terres, notamment dans les “mornes”. Mon intérêt pour le marronnage tient au fait qu’il fut un choix pour la vie dans un système mortifère. Ce déplacement dans le champ de la performance a pour but de revaloriser et de revitaliser nos capacités à résister, à prendre soin et à ressentir. J’ai choisi de travailler avec les institutions comme des collaboratrices. Cette approche m’a permise de dépasser les positions binaires de la critique institutionnelle, pour se demander comment apprendre d’un lieu pour pouvoir s’en défendre1
 `;
 
-content["p3-biblio"] =`
-1 MARBOEUF, O. (2022), Suites décoloniales : S’enfuir de la plantation, Éditions du commun, Rennes, pp. 128-129
-`;
-
 content["p3-autre-corps-2"] =`
 Ce travail est également une réflexion autour de l’articulation entre théorie et pratique. Je l’ai envisagé au prisme de l’agentivité, en me demandant comment la théorie affecte le corps qui l’a produit ou qui est traversé par elle. De plus, j’ai voulu réfléchir à la théorie en terme de projet, c’est-à-dire en me demandant : Qu’est- ce que je peux en faire ? Comment je peux la mettre en pratique? Rapidement, ces questions m’ont amené à vouloir envisager de quelle(s) façon(s) les adresses ainsi que les lieux dans lesquels mes performances prennent part, influencent et transforment ma façon de faire et de dire. Il a s’agit de trouver un principe de traduction, entendu comme la nécessité d’un déplacement, d’une traversée, afin de construire des ponts, des traits-d’union. Cette traduction s’inspire des pratiques artistiques dites “site-specific” (spécifique au lieu).
 `;
 
-content["p3-credit"] =`
-© Aurélie Baijot
-`;
-
-content["p3-lien"] =`
-https://www.youtube.com/watch?v=uyy3KmXAapw
+content["p3-biblio"] =`
+1 MARBOEUF, O. (2022), Suites décoloniales : S’enfuir de la plantation, Éditions du commun, Rennes, pp. 128-129
 `;
 
 // #endregion

@@ -130,10 +130,6 @@ content["p3-credit"] =`
 © Aurélie Baijot
 `;
 
-content["p3-lien"] =`
-https://www.youtube.com/watch?v=uyy3KmXAapw
-`;
-
 // #endregion
 
 // #region PROJET4

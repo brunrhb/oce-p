@@ -266,16 +266,7 @@ body {
 }
 .text-block-p3-2 {
 }
-
-
-.text-block-p3-3 {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  gap: 2vw;
-}
-
-.intro-p3 {
+.intro {
 }
 .autre-corps {
 }
@@ -288,15 +279,9 @@ body {
   width: 100%;
 }
 
-.placeholder-p3-1 {
+.placeholder-p3 {
   aspect-ratio: 1 / 1;
   width: 50%;  /* Chaque placeholder prend la moitié de l'espace */
-  background-color: black;
-}
-
-.placeholder-p3-2 {
-  aspect-ratio: 1 / 1;
-  width: 100%;  /* Chaque placeholder prend la moitié de l'espace */
   background-color: black;
 }
 
