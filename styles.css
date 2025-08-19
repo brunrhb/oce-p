@@ -1,3 +1,5 @@
+/* #region ALLL */
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -11,6 +13,13 @@ body {
   gap: 4vw;
 }
 
+.intro {
+  font-weight: bold;   /* rend le texte gras */
+  text-align: right;   /* aligne le texte à droite */
+}
+
+
+/* #endregion */
 
 /* #region PROJET1 LIASONS VEGETALES */
 .p1 {
