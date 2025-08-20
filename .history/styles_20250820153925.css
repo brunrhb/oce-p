@@ -3,19 +3,19 @@
    ========================================= */
 
 :root{
-  --page-width: 1080px;
-  --margin-x: 100px;
-  --section-gap: 140px;
-  --gutter: 28px;
+  --page-width: 1200px;
+  --margin-x: 80px;
+  --section-gap: 120px;
+  --gutter: 24px;
   --flow-gap: 20px;
-  --title: 40px;
-  --subtitle: 17px;
+  --title: 36px;
+  --subtitle: 18px;
   --body: 16px;
-  --small: 11px;
+  --small: 12px;
   --leading-body: 1.6;
-  --leading-poem: 2.0;
+  --leading-poem: 1.9;
   --ink: #111;
-  --muted: #7a7a7a;
+  --muted: #666;
   --grid-line: #e6e6e6;
   --placeholder-bg: #f1f1f1;
   --placeholder-line: #dedede;
@@ -49,7 +49,6 @@ body{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: var(--gutter);
-  row-gap: 36px;
   padding-left: var(--margin-x);
   padding-right: var(--margin-x);
 }
@@ -70,7 +69,7 @@ body{
 
 /* Texte courant / blocs */
 .text-block, [class^="text-block-"], [class*=" text-block-"]{
-  max-width: 38ch;
+  max-width: 42ch;
 }
 
 /* Titraille */
@@ -78,14 +77,14 @@ body{
   font-weight: 700;
   font-size: var(--title);
   text-transform: uppercase;
-  letter-spacing: 1.4px;
-  margin: 0 0 12px 0;
+  letter-spacing: 1px;
+  margin: 0 0 8px 0;
 }
 .sous-titre{
-  font-weight: 400;
+  font-weight: 500;
   font-size: var(--subtitle);
   color: var(--muted);
-  margin: 0 0 32px 0;
+  margin: 0 0 24px 0;
 }
 
 /* Protocole */
@@ -95,12 +94,7 @@ body{
   letter-spacing: 0.5px;
   margin: 0 0 6px 0;
 }
-.protocole-corps{
-  margin: 0;
-  hyphens: auto;
-  text-align: left;
-  word-break: normal;
-}
+.protocole-corps{ margin: 0; hyphens: auto; }
 
 /* Extraits poétiques */
 .extrait{
@@ -109,55 +103,28 @@ body{
   white-space: pre-wrap;
   letter-spacing: 0.2px;
 }
-.extrait + .extrait{ margin-top: 0.8em; }
-.extrait br + br{ line-height: 2.8; content: ""; }
 
 /* Crédit / légendes */
 .credit{
   margin: 0;
   font-size: var(--small);
   color: var(--muted);
-  letter-spacing: 0.2px;
 }
-.media-block-p1s1 .credit,
-.media-block-p8s2 .credit{ padding-left: 2px; }
 
 /* Traits */
-.trait{
-  height: 1px;
-  background: var(--grid-line);
-  margin: 24px 0;
-  border: 0;
-}
+.trait{ height: 1px; background: var(--grid-line); margin: 24px 0; border: 0; }
 
 /* Bibliographie / notes */
-.biblio{
-  font-size: var(--small);
-  color: var(--muted);
-  max-width: 60ch;
-}
+.biblio{ font-size: var(--small); color: var(--muted); max-width: 60ch; }
 
 /* Liens neutres */
-a{
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-thickness: 0.06em;
-  text-underline-offset: 3px;
-}
+a{ color: inherit; text-decoration: underline; text-underline-offset: 2px; }
 
 /* Small caps “visuelles” */
-.smallcaps{
-  text-transform: uppercase;
-  font-size: 0.9em;
-  letter-spacing: 0.08em;
-}
+.smallcaps{ text-transform: uppercase; font-size: 0.9em; letter-spacing: 0.06em; }
 
 /* Médias */
-img, svg, video, canvas{
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+img, svg, video, canvas{ max-width: 100%; height: auto; display: block; }
 
 /* Rangées locales si présentes */
 [class^="row-"], [class*=" row-"]{
@@ -174,22 +141,15 @@ img, svg, video, canvas{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: var(--gutter);
-  padding-top: 12px;
-  padding-bottom: 8px;
 }
 
 /* Espacements fins */
 p + p { margin-top: 0.6em; }
 p + .extrait { margin-top: 1.2em; }
-.extrait + .extrait { margin-top: 0.8em; }
+.extrait + .extrait { margin-top: 0.4em; }
 
 /* Apartés */
-.autre-corps{
-  font-size: 0.95em;
-  color: #808080;
-  max-width: 34ch;
-  line-height: 1.65;
-}
+.autre-corps{ font-size: 0.95em; color: var(--muted); max-width: 36ch; }
 
 /* #endregion BASE — GLOBALES */
 
@@ -206,17 +166,17 @@ p + .extrait { margin-top: 1.2em; }
   display: block;
 }
 
-/* Ratios par sections (ajustés pour coller au PDF) */
+/* Ratios par sections (approx. fidèles au PDF) */
 .placeholder-p1s1 { aspect-ratio: 4 / 3; }
 .placeholder-p2   { aspect-ratio: 3 / 2; }
 .placeholder-p3   { aspect-ratio: 3 / 2; }
-.placeholder-p4-1 { aspect-ratio: 5 / 8; }  /* + vertical */
+.placeholder-p4-1 { aspect-ratio: 2 / 3; }
 .placeholder-p5-1 { aspect-ratio: 16 / 9; }
 .placeholder-p5-2 { aspect-ratio: 1 / 1; }
-.placeholder-p6   { aspect-ratio: 3 / 4; }  /* vertical classique */
+.placeholder-p6   { aspect-ratio: 4 / 5; }
 .placeholder-p7-1 { aspect-ratio: 3 / 2; }
 .placeholder-p7-2 { aspect-ratio: 9 / 16; }
-.placeholder-p8s1 { aspect-ratio: 24 / 9; } /* pano plus étiré */
+.placeholder-p8s1 { aspect-ratio: 21 / 9; }
 .placeholder-p8s2 { aspect-ratio: 4 / 3; }
 .placeholder-p9   { aspect-ratio: 16 / 9; }
 
@@ -227,30 +187,25 @@ p + .extrait { margin-top: 1.2em; }
    #region PROJET 1 — LIAISONS VÉGÉTALES
    ========================================= */
 
-.grid-p1s1,
-.grid-p1s2{
+/* Grilles locales */
+.grid-p1s1, .grid-p1s2{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: var(--gutter);
-  row-gap: 36px;
   padding-left: var(--margin-x);
   padding-right: var(--margin-x);
 }
 
+/* Colonnes */
 .col-p1s1-1, .col-p1s1-2, .col-p1s1-3,
 .col-p1s2-1, .col-p1s2-2, .col-p1s2-3{
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--flow-gap) * 1.2);
+  display: flex; flex-direction: column; gap: calc(var(--flow-gap) * 1.2);
 }
 
-/* Micro-décalages (rythme asynchrone des colonnes) */
-.col-p1s1-2{ margin-top: 12px; }
-.col-p1s2-3{ margin-top: 20px; }
+/* Blocs texte */
+.text-block-p1s1, .text-block-p1s2{ max-width: 42ch; }
 
-.text-block-p1s1,
-.text-block-p1s2{ max-width: 38ch; }
-
+/* Média */
 .media-block-p1s1{ display: flex; flex-direction: column; gap: 8px; }
 
 /* #endregion PROJET 1 */
@@ -261,19 +216,12 @@ p + .extrait { margin-top: 1.2em; }
    ========================================= */
 
 .grid-p2{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: grid; grid-template-columns: repeat(3, 1fr);
   column-gap: var(--gutter);
-  row-gap: 36px;
-  padding-left: var(--margin-x);
-  padding-right: var(--margin-x);
+  padding-left: var(--margin-x); padding-right: var(--margin-x);
 }
-.col-p2-1, .col-p2-2{
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--flow-gap) * 1.2);
-}
-.text-block-p2{ max-width: 38ch; }
+.col-p2-1, .col-p2-2{ display: flex; flex-direction: column; gap: calc(var(--flow-gap) * 1.2); }
+.text-block-p2{ max-width: 42ch; }
 
 /* #endregion PROJET 2 */
 
@@ -283,21 +231,12 @@ p + .extrait { margin-top: 1.2em; }
    ========================================= */
 
 .grid-p3{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: grid; grid-template-columns: repeat(3, 1fr);
   column-gap: var(--gutter);
-  row-gap: 36px;
-  padding-left: var(--margin-x);
-  padding-right: var(--margin-x);
+  padding-left: var(--margin-x); padding-right: var(--margin-x);
 }
-.col-p3-1, .col-p3-2{
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--flow-gap) * 1.2);
-}
-.text-block-p3-1,
-.text-block-p3-2,
-.text-block-p3-3{ max-width: 38ch; }
+.col-p3-1, .col-p3-2{ display: flex; flex-direction: column; gap: calc(var(--flow-gap) * 1.2); }
+.text-block-p3-1, .text-block-p3-2, .text-block-p3-3{ max-width: 42ch; }
 
 /* #endregion PROJET 3 */
 
@@ -307,20 +246,12 @@ p + .extrait { margin-top: 1.2em; }
    ========================================= */
 
 .grid-p4{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: grid; grid-template-columns: repeat(3, 1fr);
   column-gap: var(--gutter);
-  row-gap: 36px;
-  padding-left: var(--margin-x);
-  padding-right: var(--margin-x);
+  padding-left: var(--margin-x); padding-right: var(--margin-x);
 }
-.col-p4-1, .col-p4-2{
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--flow-gap) * 1.2);
-}
-.text-block-p4-1,
-.text-block-p4-2{ max-width: 38ch; }
+.col-p4-1, .col-p4-2{ display: flex; flex-direction: column; gap: calc(var(--flow-gap) * 1.2); }
+.text-block-p4-1, .text-block-p4-2{ max-width: 42ch; }
 
 /* #endregion PROJET 4 */
 
@@ -330,19 +261,12 @@ p + .extrait { margin-top: 1.2em; }
    ========================================= */
 
 .grid-p5{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: grid; grid-template-columns: repeat(3, 1fr);
   column-gap: var(--gutter);
-  row-gap: 36px;
-  padding-left: var(--margin-x);
-  padding-right: var(--margin-x);
+  padding-left: var(--margin-x); padding-right: var(--margin-x);
 }
-.col-p5-1, .col-p5-2{
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--flow-gap) * 1.2);
-}
-.text-block-p5-1{ max-width: 38ch; }
+.col-p5-1, .col-p5-2{ display: flex; flex-direction: column; gap: calc(var(--flow-gap) * 1.2); }
+.text-block-p5-1{ max-width: 42ch; }
 
 /* #endregion PROJET 5 */
 
@@ -352,19 +276,12 @@ p + .extrait { margin-top: 1.2em; }
    ========================================= */
 
 .grid-p6{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: grid; grid-template-columns: repeat(3, 1fr);
   column-gap: var(--gutter);
-  row-gap: 36px;
-  padding-left: var(--margin-x);
-  padding-right: var(--margin-x);
+  padding-left: var(--margin-x); padding-right: var(--margin-x);
 }
-.col-p6-1{
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--flow-gap) * 1.2);
-}
-.text-block-p6-1{ max-width: 38ch; }
+.col-p6-1{ display: flex; flex-direction: column; gap: calc(var(--flow-gap) * 1.2); }
+.text-block-p6-1{ max-width: 42ch; }
 
 /* #endregion PROJET 6 */
 
@@ -374,19 +291,12 @@ p + .extrait { margin-top: 1.2em; }
    ========================================= */
 
 .grid-p7{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: grid; grid-template-columns: repeat(3, 1fr);
   column-gap: var(--gutter);
-  row-gap: 36px;
-  padding-left: var(--margin-x);
-  padding-right: var(--margin-x);
+  padding-left: var(--margin-x); padding-right: var(--margin-x);
 }
-.col-p7-1, .col-p7-2{
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--flow-gap) * 1.2);
-}
-.text-block-p7-1{ max-width: 38ch; }
+.col-p7-1, .col-p7-2{ display: flex; flex-direction: column; gap: calc(var(--flow-gap) * 1.2); }
+.text-block-p7-1{ max-width: 42ch; }
 
 /* #endregion PROJET 7 */
 
@@ -397,34 +307,20 @@ p + .extrait { margin-top: 1.2em; }
 
 /* Section 8 — sous-parties */
 .grid-p8s1, .grid-p8s2{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: grid; grid-template-columns: repeat(3, 1fr);
   column-gap: var(--gutter);
-  row-gap: 36px;
-  padding-left: var(--margin-x);
-  padding-right: var(--margin-x);
+  padding-left: var(--margin-x); padding-right: var(--margin-x);
 }
 
-.col-p8s1,
-.col-p8s2-1, .col-p8s2-2, .col-p8s2-3{
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--flow-gap) * 1.2);
+.col-p8s1, .col-p8s2-1, .col-p8s2-2, .col-p8s2-3{
+  display: flex; flex-direction: column; gap: calc(var(--flow-gap) * 1.2);
 }
 
-/* Micro-offset pour retrouver la “danse” */
-.col-p8s2-2{ margin-top: 16px; }
-
-.media-block-p8s1,
-.media-block-p8s2{
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.media-block-p8s1, .media-block-p8s2{
+  display: flex; flex-direction: column; gap: 8px;
 }
 
-.text-block-p8s2-1,
-.text-block-p8s2-2,
-.text-block-p8s2-3{ max-width: 38ch; }
+.text-block-p8s2-1, .text-block-p8s2-2, .text-block-p8s2-3{ max-width: 42ch; }
 
 /* #endregion PROJET 8 */
 
@@ -434,19 +330,14 @@ p + .extrait { margin-top: 1.2em; }
    ========================================= */
 
 .grid-p9{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: grid; grid-template-columns: repeat(3, 1fr);
   column-gap: var(--gutter);
-  row-gap: 36px;
-  padding-left: var(--margin-x);
-  padding-right: var(--margin-x);
+  padding-left: var(--margin-x); padding-right: var(--margin-x);
 }
 .col-p9-1, .col-p9-2, .col-p9-3{
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--flow-gap) * 1.2);
+  display: flex; flex-direction: column; gap: calc(var(--flow-gap) * 1.2);
 }
-.text-block-p9{ max-width: 38ch; }
+.text-block-p9{ max-width: 42ch; }
 .media-block-p9{ display: flex; flex-direction: column; gap: 8px; }
 
 /* #endregion PROJET 9 */
