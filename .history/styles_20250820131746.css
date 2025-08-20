@@ -398,11 +398,11 @@ text-align: right;
 
 /* 2 blocks et elements */
 .media-block-p5-1 {
-  aspect-ratio: 4 / 6;
+  aspect-ratio: 6 / 3;
   background-color: black;
 }
 .placeholder-p5-2 {
-  aspect-ratio: 4 / 6;
+  aspect-ratio: 6 / 3;
   background-color: black;
 }
 

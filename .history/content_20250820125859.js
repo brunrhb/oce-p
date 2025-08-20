@@ -168,164 +168,67 @@ Nous sortons en enlevant les t-shirts questionnants.
 
 // #region PROJET5
 
-content["p5-credit"] = `
+content["p4-protocole-titre"] = `
 01.02.2023 @WIELS, Bruxelles
 `
 
-content["p5-intro"] = `
+content["p4-protocole-titre"] = `
 Gestes possibles : <br>
 Porter les questions
 
 `
 
-content["p5-autre-corps-1"] = `
+content["p4-protocole-titre"] = `
 Ce travail consiste à chercher des moyens de se frayer un chemin dans l’institution, en y portant les questions cultivées dans l’école. Ce qui offre la possibilité d’être dans l’institution tout en étant ailleurs, partout où ces questions sont posées. Cela a été mis en place par le protocole de “visite sorcière” de l’action Gestes possibles.
 `
 
-content["p5-protocole-titre"] = `
+content["p4-protocole-titre"] = `
 Protocole co-écrit avec Stevie Ango :
 `
-content["p5-autre-corps-2"] = `
+content["p4-protocole-titre"] = `
 1. Porter des t-shirts arborant différentes questions adressées au musée.<br>
 2. Reproduire des gestes de soutien repris dans l’inventaire<br>
 réalisés lors de la session d’expérimentation du mois passé.
 3. L’arpentage du livre L’art impossible de Geoffroy de Lagasnerie,
 consistant à lire des extraits au groupe, mais aussi pour celleux qui le désirent, aux personnes présentes dans le musée.<br>
 A la fin de la déambulation donner votre extrait à un.e des visiteur.euses.<br>
- <br>
+
 Il vous sera demandé de toujours avoir dans votre champ de vision une personne du groupe. Quelques pistes que vous pouvez explorer, garder à l’esprit, pendant cette déambulation :<br>
- <br>
+
 Qu’est-ce que c’est que de marcher en conscience ? Comment rester un groupe même si nous sommes dans des espaces différents ?<br>
 Comment intégrer du soin dans nos déplacements? Comment se fondre dans le décor ?<br>
 Comment faire attention/s’occuper les un.es les autres dans un musée ? Raconter/transmettre, qu’est-ce que cela implique ?<br>
- <br>
+
 Nous tenons à préciser que cette “performance-intervention-action” se veut bienveillante et portée par ce que Bell Hooks nomme une éthique de l’amour. Il s’agit donc d’être dans une ouverture et un désir de soin. Nous ne cherchons aucunement à être dans une attitude défensive face au musée et encore moins dans une posture agressive. L’idée est de passer inaperçu, de se fondre dans le musée. <br>
- <br>
+
 Si lors de la déambulation un.e agent.e de sécurité vient vous demander ce que nous sommes en train de faire, nous vous proposons de répondre : “Je me demandais comment porter une éthique de l’amour dans le musée”. Si ce.tte dernier.ère vous demande de sortir, faites- le. Nous ne cherchons pas d’altercation. <br>
 `
-// #endregion
 
 // #region PROJET6
-
-
-content["p6-credit"] = `
-16.06.2023 @Recyclart
-`
-
-content["p6-intro"] = `
-Les marges forcées
-`
-
-content["p6-autre-corps-1"] = `
-Ce travail ne s’adressant pas aux institutions mais aux usager.ères de ces dernières, je me suis interrogée sur sa place et sa traduction dans un cadre non-institutionnel. Ce qui a donné lieu à la performance Les marges forcées, dans laquelle j’investigue les possibilités du cabaret.
-`
-
-content["p6-extrait"] = `
-Extrait du texte
-`
-
-content["p6-autre-corps-2"] = `
-“Outsider, non pas par choix mais par impossibilité. Les marges sont forcées. Certes, le monde s’y construit aussi. Pourtant, comment cet “en dehors“ qui est pourtant “ici“ serait plus praticable. Il n’y a pas un “hors les murs“ qui nous attendrait les bras ouverts, prêt à accueillir le changement, où il serait possible de tout tenter. Nos corps semblent avoir été faits pour encaisser et ils continuent de prendre des coups. Ils continuent d’en faire les frais. Mais jusqu’à quand ? Il est important de changer les conditions de vie qui sont les nôtres, de ne pas uniquement chercher “comment manger“ mais repenser le système qui nous permet ou non de le faire. Mais quelles sont les temporalités de ces luttes ? Entre-temps, que faisons-nous ? Entre-temps, comment survivre et surtout où le faire ? Et cette peur de ne pas pouvoir subvenir à nos besoins est concrète, bien plus que cet après- post-capitalisme. C’est une peur pour mes adelphes de luttes présentes et dispersées. Que faire de ce maintenant qui ressemble à un sol glissant, sur lequel il faut bien avancer en triturant les possibles des impossibles ? En sachant qu’il n’y a pas de main pour être rattrapé car celles qui le voudraient sont en train de tâtonner à leur propre survie. Pourtant, je ne doute pas de notre capacité à déplacer des montagnes. En réalité, c’est ce que nous sommes déjà toustes en train de faire. Toustes affairé.es que nous sommes dans ce transfuge de la survie vers la vie. Car tâtonner ailleurs ne nous a jamais empêché de nous serrer fort, dans cette nuit que nous n’avons pas choisie, dès que l’on bouscule l’un.e d’entre nous que l’on reconnaît à tâtonner aussi. Mais cela reste fragile, une communauté d’équilibristes qui s’effleurent.“
-`
-
+content["p6-credit-1"] = "@FRAC Réunion 2022";
+content["p6-autre-corps-1"] = `Hier c’est déjà demain a été réalisé au Pavillon Martin du FRAC Réunion avec Amandine Benintendi. Ce temps de création au FRAC a permis de questionner le “faire mémoire”.`;
+content["p6-autre-corps-2"] = `En utilisant l’archivage comme un médium, le projet le met en tension dans une approche transversale. Celle-ci se saisit des aspects performatifs du texte, du textile, et de leur interdiscursivité. Il en a résulté une installation de grands panneaux de tulles sur lesquels étaient peints des fragments de texte. Leurs dispositions dans l’espace structuraient le lieu et invitaient à la déambulation, comme au touché.`;
+content["p6-credit-2"] = `Vue de l’installation avec Amandine Benintendi @FRAC Réunion`;
 // #endregion
 
 // #region PROJET7
-content["p7-credit-1"] = `
-Vue de l’installation @Pavillon Martin
-`;
-
-content["p7-credit"] = `
-Hier c’est déjà demain a été réalisé au Pavillon Martin du FRAC Réunion avec Amandine Benintendi. Ce temps de création au FRAC, a permis de questionner le “faire mémoire”. En utilisant l’archivage comme un médium afin de le mettre en tension dans une approche transversale. Celle-ci se saisit des aspects performatifs du texte, du textile, et leur interdiscursivité.
-`;
-
-content["p7-credit"] = `
-Ce projet m’a permis de réfléchir à mettre les mots en espace. Il en a résulté une installation de grands panneaux de tulles sur lesquels étaient peints des fragments de texte. Leurs dispositions dans l’espace structuraient le lieu et invitaient à la déambulation, comme au touché. C’était une manière de penser des formes qui deviennent des support à la théorie, mais aussi à la médiation.
-`;
-
-
-content["p7-credit-2"] = `
-Performance Hier c’est déjà demain <br>
-avec Amandine Benintendi @FRAC Réunion 2022
-`;
-
-
+content["p7s1-credit"] = `Extraits de captation - ESAR 2022`;
+content["p7s2-credit-1"] = `Présentée à LALANBIK (centre chorégraphique de l’Océan Indien)`;
+content["p7s2-credit-2"] = `Avec Thabo Kobeli`;
+content["p7s2-extrait1"] = `À toutes les personnes qui ont été forcées au déplacement. La perte est dans mes gènes. Je suis faite de nos départs : En ruine et en tension. À toutes les personnes qui ont appris à laisser, qui sont nées arrachées, qui en ont fait une force.`;
+content["p7s2-extrait2"] = `À toustes celleux qui sont le mouvement. Qui ne s’enracinent nulle part. Qui font des impensés la vie même. Aucun de nos trajets ne reste silencieux. À celleux qui sont adapté·es aux fluctuations, aux migrations qui avancent avec les changements du monde. Il faudra continuer d’ensemencer, porter aux vents et par tous temps, repartir à chaque fois, jamais pour de bon, mais rester en effusion.`;
+content["p7s2-protocole-titre"] = `Protocole :`;
+content["p7s2-protocole-corps"] = `Sur le sol est déroulée une bande de papier blanc. Cette bande traverse la salle dans sa longueur. À l’extrémité droite se trouve un monticule de sable noir. Poignée après poignée, je transporte le sable dans le creux de mes mains. Lentement, l’îlot s’érige à l’opposé. Il s’agit alors de recommencer, encore et encore, jusqu’à ce que le sillon soit foulé de mes pieds nus.`;
 // #endregion
 
 // #region PROJET8
-
-content["p8-credit-1"] = `
-Procédure :
-`;
-
-content["p8-credit-2"] = `
-Procédure :
-`;
-
-content["p8-extrait-1"] = `
-A toutes les personnes <br> 
-qui ont été forcées <br> 
-au déplacement. <br> 
-La perte est dans mes gènes. <br>  
-Je suis faite de nos départs: <br> 
-En ruine et en tension <br> 
-À toutes les personnes <br> 
-qui ont appris à laisser, <br> 
-qui sont nées arrachées, <br> 
-qui en ont fait une force. <br> 
-
-`;
-
-content["p8-extrait-2"] = `
-A tous.tes celleux <br> 
-qui sont le mouvement <br> 
-Qui ne s’enracinent nulle part<br> 
-Qui font des impensés la vie même Aucun de nos trajets<br> 
-ne restent silencieux<br> 
-A celleux<br> 
-qui sont adapté.e.s aux fluctuations, aux migrations qui avancent<br> 
-avec les changements du monde<br> 
-Il faudra continuer d’ensemencer, porter aux vents<br> 
-et par tous temps,<br> 
-repartir à chaque fois,<br> 
-jamais pour de bon<br> 
-mais rester en effusion<br> 
-En deçà de nos diasporas<br> 
-L’archive de nos déplacements.<br> 
-`;
-
-content["p8-protocole-titre"] = `
-Protocole :
-`;
-
-content["p8-autre-corps"] = `
-Sur le sol est déroulée une bande de papier blanc. Cette bande traverse la salle dans sa longueur, une première traversée. Au départ de l’extrémité droite se trouve un monticule de sable noir. Poignée après poignée, le plus précautionneusement possible, je transporte le sable dans le creux de mes mains. Lentement et malgré son éparpillement, l’îlot s’érige à son opposé. Il s’agit alors de recommencer encore et encore, inlassablement, d’opposé en opposé jusqu’à ce que l’îlot soit devenu sillon foulé de mes pieds nus.
-`;
-
-content["p8-credit-3"] = `
-Présentée à LALANBIK (le centre choréographique de l’Océan Indien) en première partie du chorégraphe Thabo Kobeli
-`;
-
+content["p8-extrait"] = `Seulement, ma romance sous l’Équateur a lieu au Gol. On aura beau chercher, ça a l’air de tout sauf d’une carte postale, tout y est vrai. Les chiens errants traînent la patte sous la chaleur. En fond, les cris d’enfants. Il y a des gens qui vivent et qui attendent, des chaises en plastique et des objets abandonnés. Le temps s’étire et tire en longueur. La vie s’allonge, les gestes sont lents. Et toujours la même rengaine : le jour puis la nuit, la nuit puis le jour. Pourtant on est toujours surpris. Coincé entre terre et mer, entre aujourd’hui et demain. Un jour quelque chose a changé. Je ne cherchais plus le soleil, j’attendais les nuages.`;
+content["p8-protocole-titre"] = `Procédure :`;
+content["p8-protocole-corps"] = `Déclamer le texte en triant du riz, face aux spectateur·ices. Réappropriation d’un geste vu de nombreuses fois chez les femmes de ma famille.`;
+content["p8-credit"] = `Nyaze & Agency © David Garcia`;
 // #endregion
 
-content["p9-extrait"] = `
-[...] Seulement, ma romance sous l’Équateur a lieu au Gol. On aura beau chercher, ça a l’air de tout sauf d’une carte postale, tout y est vrai. Les chiens errants trainent la patte sous la chaleur. En fond, les cris d’enfants, certains s’y balladent pieds nus. Il y a des gens qui vivent et qui attendent, des chaises en plastiques et des objets abandonnés. Dans l’air c’est électrique. On attend que quelque chose se passe. Ce qui est certain, c’est qu’il n’y a pas de travail. Au moins, il reste du temps en abondance. Il s’étire et tire en longueur. La vie s’allonge, les gestes sont lents. Et toujours la même rengaine: le jour puis la nuit, la nuit puis le jour. C’est pareil pour le ciel: du noir, puis du bleu et du blanc. Pourtant on est toujours surpris. On a à peine le temps de terminer sa phrase que la nuit est tombée ou le jour s’est levé. Ce temps en saccade, en cascade, vous laisse démuni. Coincé entre terre et mer, entre aujourd’hui et demain. Seulement, un jour quelque chose a changé. Je ne cherchais plus le soleil, j’attendais les nuages. Ils reviennent chaque jour. Chaque jour amène son lot de nuages.
-Mais d’où viennent-t-ils ? [...]
-`;
 
-content["p9-procedure-titre"] = `
-Procédure :
-`;
-
-content["p9-procedure-corps"] = `
-Déclamer le texte en triant du riz, face spectateur.ices. Réappropriation d’un geste vue de nombreuses fois chez les femmes de ma famille.
-`;
-
-content["p9-credit"] = `
-Nyaze & Agency © David Garcia
-`;
-
-// #endregion
 
 // #region injection
 window.addEventListener("DOMContentLoaded", () => {

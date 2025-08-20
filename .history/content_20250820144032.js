@@ -258,74 +258,34 @@ content["p8-credit-1"] = `
 Procédure :
 `;
 
-content["p8-credit-2"] = `
+content["p8-protocole-titre"] = `
 Procédure :
-`;
-
-content["p8-extrait-1"] = `
-A toutes les personnes <br> 
-qui ont été forcées <br> 
-au déplacement. <br> 
-La perte est dans mes gènes. <br>  
-Je suis faite de nos départs: <br> 
-En ruine et en tension <br> 
-À toutes les personnes <br> 
-qui ont appris à laisser, <br> 
-qui sont nées arrachées, <br> 
-qui en ont fait une force. <br> 
-
-`;
-
-content["p8-extrait-2"] = `
-A tous.tes celleux <br> 
-qui sont le mouvement <br> 
-Qui ne s’enracinent nulle part<br> 
-Qui font des impensés la vie même Aucun de nos trajets<br> 
-ne restent silencieux<br> 
-A celleux<br> 
-qui sont adapté.e.s aux fluctuations, aux migrations qui avancent<br> 
-avec les changements du monde<br> 
-Il faudra continuer d’ensemencer, porter aux vents<br> 
-et par tous temps,<br> 
-repartir à chaque fois,<br> 
-jamais pour de bon<br> 
-mais rester en effusion<br> 
-En deçà de nos diasporas<br> 
-L’archive de nos déplacements.<br> 
 `;
 
 content["p8-protocole-titre"] = `
-Protocole :
-`;
-
-content["p8-autre-corps"] = `
-Sur le sol est déroulée une bande de papier blanc. Cette bande traverse la salle dans sa longueur, une première traversée. Au départ de l’extrémité droite se trouve un monticule de sable noir. Poignée après poignée, le plus précautionneusement possible, je transporte le sable dans le creux de mes mains. Lentement et malgré son éparpillement, l’îlot s’érige à son opposé. Il s’agit alors de recommencer encore et encore, inlassablement, d’opposé en opposé jusqu’à ce que l’îlot soit devenu sillon foulé de mes pieds nus.
-`;
-
-content["p8-credit-3"] = `
-Présentée à LALANBIK (le centre choréographique de l’Océan Indien) en première partie du chorégraphe Thabo Kobeli
-`;
-
-// #endregion
-
-content["p9-extrait"] = `
-[...] Seulement, ma romance sous l’Équateur a lieu au Gol. On aura beau chercher, ça a l’air de tout sauf d’une carte postale, tout y est vrai. Les chiens errants trainent la patte sous la chaleur. En fond, les cris d’enfants, certains s’y balladent pieds nus. Il y a des gens qui vivent et qui attendent, des chaises en plastiques et des objets abandonnés. Dans l’air c’est électrique. On attend que quelque chose se passe. Ce qui est certain, c’est qu’il n’y a pas de travail. Au moins, il reste du temps en abondance. Il s’étire et tire en longueur. La vie s’allonge, les gestes sont lents. Et toujours la même rengaine: le jour puis la nuit, la nuit puis le jour. C’est pareil pour le ciel: du noir, puis du bleu et du blanc. Pourtant on est toujours surpris. On a à peine le temps de terminer sa phrase que la nuit est tombée ou le jour s’est levé. Ce temps en saccade, en cascade, vous laisse démuni. Coincé entre terre et mer, entre aujourd’hui et demain. Seulement, un jour quelque chose a changé. Je ne cherchais plus le soleil, j’attendais les nuages. Ils reviennent chaque jour. Chaque jour amène son lot de nuages.
-Mais d’où viennent-t-ils ? [...]
-`;
-
-content["p9-procedure-titre"] = `
 Procédure :
 `;
 
-content["p9-procedure-corps"] = `
-Déclamer le texte en triant du riz, face spectateur.ices. Réappropriation d’un geste vue de nombreuses fois chez les femmes de ma famille.
+content["p8-protocole-titre"] = `
+Procédure :
 `;
 
-content["p9-credit"] = `
-Nyaze & Agency © David Garcia
+content["p8-protocole-titre"] = `
+Procédure :
 `;
+
+content["p8-protocole-titre"] = `
+Procédure :
+`;
+
+content["p8-protocole-titre"] = `
+Procédure :
+`;
+
 
 // #endregion
+
+
 
 // #region injection
 window.addEventListener("DOMContentLoaded", () => {

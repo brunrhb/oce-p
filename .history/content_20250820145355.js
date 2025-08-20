@@ -263,22 +263,12 @@ Procédure :
 `;
 
 content["p8-extrait-1"] = `
-A toutes les personnes <br> 
-qui ont été forcées <br> 
-au déplacement. <br> 
-La perte est dans mes gènes. <br>  
-Je suis faite de nos départs: <br> 
-En ruine et en tension <br> 
-À toutes les personnes <br> 
-qui ont appris à laisser, <br> 
-qui sont nées arrachées, <br> 
-qui en ont fait une force. <br> 
-
+Procédure :
 `;
 
 content["p8-extrait-2"] = `
 A tous.tes celleux <br> 
-qui sont le mouvement <br> 
+qui sont le mouvement<br> 
 Qui ne s’enracinent nulle part<br> 
 Qui font des impensés la vie même Aucun de nos trajets<br> 
 ne restent silencieux<br> 
@@ -308,24 +298,7 @@ Présentée à LALANBIK (le centre choréographique de l’Océan Indien) en pre
 
 // #endregion
 
-content["p9-extrait"] = `
-[...] Seulement, ma romance sous l’Équateur a lieu au Gol. On aura beau chercher, ça a l’air de tout sauf d’une carte postale, tout y est vrai. Les chiens errants trainent la patte sous la chaleur. En fond, les cris d’enfants, certains s’y balladent pieds nus. Il y a des gens qui vivent et qui attendent, des chaises en plastiques et des objets abandonnés. Dans l’air c’est électrique. On attend que quelque chose se passe. Ce qui est certain, c’est qu’il n’y a pas de travail. Au moins, il reste du temps en abondance. Il s’étire et tire en longueur. La vie s’allonge, les gestes sont lents. Et toujours la même rengaine: le jour puis la nuit, la nuit puis le jour. C’est pareil pour le ciel: du noir, puis du bleu et du blanc. Pourtant on est toujours surpris. On a à peine le temps de terminer sa phrase que la nuit est tombée ou le jour s’est levé. Ce temps en saccade, en cascade, vous laisse démuni. Coincé entre terre et mer, entre aujourd’hui et demain. Seulement, un jour quelque chose a changé. Je ne cherchais plus le soleil, j’attendais les nuages. Ils reviennent chaque jour. Chaque jour amène son lot de nuages.
-Mais d’où viennent-t-ils ? [...]
-`;
 
-content["p9-procedure-titre"] = `
-Procédure :
-`;
-
-content["p9-procedure-corps"] = `
-Déclamer le texte en triant du riz, face spectateur.ices. Réappropriation d’un geste vue de nombreuses fois chez les femmes de ma famille.
-`;
-
-content["p9-credit"] = `
-Nyaze & Agency © David Garcia
-`;
-
-// #endregion
 
 // #region injection
 window.addEventListener("DOMContentLoaded", () => {

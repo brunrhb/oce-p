@@ -313,16 +313,12 @@ content["p9-extrait"] = `
 Mais d’où viennent-t-ils ? [...]
 `;
 
-content["p9-procedure-titre"] = `
+content["p9-procédure-titre"] = `
 Procédure :
 `;
 
-content["p9-procedure-corps"] = `
-Déclamer le texte en triant du riz, face spectateur.ices. Réappropriation d’un geste vue de nombreuses fois chez les femmes de ma famille.
-`;
-
-content["p9-credit"] = `
-Nyaze & Agency © David Garcia
+content["p8-credit-1"] = `
+Procédure :
 `;
 
 // #endregion

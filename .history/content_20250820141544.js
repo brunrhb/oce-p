@@ -231,101 +231,34 @@ content["p6-autre-corps-2"] = `
 // #endregion
 
 // #region PROJET7
-content["p7-credit-1"] = `
+content["p7s1-credit"] = `
 Vue de l’installation @Pavillon Martin
 `;
 
-content["p7-credit"] = `
+content["p7s1-credit"] = `
 Hier c’est déjà demain a été réalisé au Pavillon Martin du FRAC Réunion avec Amandine Benintendi. Ce temps de création au FRAC, a permis de questionner le “faire mémoire”. En utilisant l’archivage comme un médium afin de le mettre en tension dans une approche transversale. Celle-ci se saisit des aspects performatifs du texte, du textile, et leur interdiscursivité.
 `;
 
-content["p7-credit"] = `
+content["p7s1-credit"] = `
 Ce projet m’a permis de réfléchir à mettre les mots en espace. Il en a résulté une installation de grands panneaux de tulles sur lesquels étaient peints des fragments de texte. Leurs dispositions dans l’espace structuraient le lieu et invitaient à la déambulation, comme au touché. C’était une manière de penser des formes qui deviennent des support à la théorie, mais aussi à la médiation.
 `;
 
-
-content["p7-credit-2"] = `
-Performance Hier c’est déjà demain <br>
-avec Amandine Benintendi @FRAC Réunion 2022
+content["p7s1-credit"] = `
+Vue de l’installation @Pavillon Martin
+Performance Hier c’est déjà demain avec Amandine Benintendi @FRAC Réunion 202
 `;
 
 
 // #endregion
 
 // #region PROJET8
-
-content["p8-credit-1"] = `
-Procédure :
-`;
-
-content["p8-credit-2"] = `
-Procédure :
-`;
-
-content["p8-extrait-1"] = `
-A toutes les personnes <br> 
-qui ont été forcées <br> 
-au déplacement. <br> 
-La perte est dans mes gènes. <br>  
-Je suis faite de nos départs: <br> 
-En ruine et en tension <br> 
-À toutes les personnes <br> 
-qui ont appris à laisser, <br> 
-qui sont nées arrachées, <br> 
-qui en ont fait une force. <br> 
-
-`;
-
-content["p8-extrait-2"] = `
-A tous.tes celleux <br> 
-qui sont le mouvement <br> 
-Qui ne s’enracinent nulle part<br> 
-Qui font des impensés la vie même Aucun de nos trajets<br> 
-ne restent silencieux<br> 
-A celleux<br> 
-qui sont adapté.e.s aux fluctuations, aux migrations qui avancent<br> 
-avec les changements du monde<br> 
-Il faudra continuer d’ensemencer, porter aux vents<br> 
-et par tous temps,<br> 
-repartir à chaque fois,<br> 
-jamais pour de bon<br> 
-mais rester en effusion<br> 
-En deçà de nos diasporas<br> 
-L’archive de nos déplacements.<br> 
-`;
-
-content["p8-protocole-titre"] = `
-Protocole :
-`;
-
-content["p8-autre-corps"] = `
-Sur le sol est déroulée une bande de papier blanc. Cette bande traverse la salle dans sa longueur, une première traversée. Au départ de l’extrémité droite se trouve un monticule de sable noir. Poignée après poignée, le plus précautionneusement possible, je transporte le sable dans le creux de mes mains. Lentement et malgré son éparpillement, l’îlot s’érige à son opposé. Il s’agit alors de recommencer encore et encore, inlassablement, d’opposé en opposé jusqu’à ce que l’îlot soit devenu sillon foulé de mes pieds nus.
-`;
-
-content["p8-credit-3"] = `
-Présentée à LALANBIK (le centre choréographique de l’Océan Indien) en première partie du chorégraphe Thabo Kobeli
-`;
-
+content["p8-extrait"] = `Seulement, ma romance sous l’Équateur a lieu au Gol. On aura beau chercher, ça a l’air de tout sauf d’une carte postale, tout y est vrai. Les chiens errants traînent la patte sous la chaleur. En fond, les cris d’enfants. Il y a des gens qui vivent et qui attendent, des chaises en plastique et des objets abandonnés. Le temps s’étire et tire en longueur. La vie s’allonge, les gestes sont lents. Et toujours la même rengaine : le jour puis la nuit, la nuit puis le jour. Pourtant on est toujours surpris. Coincé entre terre et mer, entre aujourd’hui et demain. Un jour quelque chose a changé. Je ne cherchais plus le soleil, j’attendais les nuages.`;
+content["p8-protocole-titre"] = `Procédure :`;
+content["p8-protocole-corps"] = `Déclamer le texte en triant du riz, face aux spectateur·ices. Réappropriation d’un geste vu de nombreuses fois chez les femmes de ma famille.`;
+content["p8-credit"] = `Nyaze & Agency © David Garcia`;
 // #endregion
 
-content["p9-extrait"] = `
-[...] Seulement, ma romance sous l’Équateur a lieu au Gol. On aura beau chercher, ça a l’air de tout sauf d’une carte postale, tout y est vrai. Les chiens errants trainent la patte sous la chaleur. En fond, les cris d’enfants, certains s’y balladent pieds nus. Il y a des gens qui vivent et qui attendent, des chaises en plastiques et des objets abandonnés. Dans l’air c’est électrique. On attend que quelque chose se passe. Ce qui est certain, c’est qu’il n’y a pas de travail. Au moins, il reste du temps en abondance. Il s’étire et tire en longueur. La vie s’allonge, les gestes sont lents. Et toujours la même rengaine: le jour puis la nuit, la nuit puis le jour. C’est pareil pour le ciel: du noir, puis du bleu et du blanc. Pourtant on est toujours surpris. On a à peine le temps de terminer sa phrase que la nuit est tombée ou le jour s’est levé. Ce temps en saccade, en cascade, vous laisse démuni. Coincé entre terre et mer, entre aujourd’hui et demain. Seulement, un jour quelque chose a changé. Je ne cherchais plus le soleil, j’attendais les nuages. Ils reviennent chaque jour. Chaque jour amène son lot de nuages.
-Mais d’où viennent-t-ils ? [...]
-`;
 
-content["p9-procedure-titre"] = `
-Procédure :
-`;
-
-content["p9-procedure-corps"] = `
-Déclamer le texte en triant du riz, face spectateur.ices. Réappropriation d’un geste vue de nombreuses fois chez les femmes de ma famille.
-`;
-
-content["p9-credit"] = `
-Nyaze & Agency © David Garcia
-`;
-
-// #endregion
 
 // #region injection
 window.addEventListener("DOMContentLoaded", () => {

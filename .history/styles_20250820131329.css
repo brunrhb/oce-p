@@ -393,20 +393,11 @@ text-align: right;
 .col-p5-2 {
 }
 
-.col-p5-2 {
-}
-
 /* 2 blocks et elements */
-.media-block-p5-1 {
-  aspect-ratio: 4 / 6;
-  background-color: black;
+.media-block-p5 {
 }
-.placeholder-p5-2 {
-  aspect-ratio: 4 / 6;
-  background-color: black;
+.placeholder-p5 {
 }
-
-
 .credit {
 }
 .text-block-p5-1 {
