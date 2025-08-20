@@ -1,6 +1,6 @@
 const content = {};
 
-// #region PROJET1 LIAISON VÉGÉTALE
+// #region PROJET1
 
 // #region p1s1
 content["p1s1-credit1"] = "2024 ©La Nature Festival Liège";
@@ -102,7 +102,7 @@ Je sais qu’il faudra du temps, [...]";
 
 
 
-// #region PROJET2 P󱀐NSER
+// #region PROJET2
 content["p2-credit"] = "25.04.2024 @La Balsamine";
 content["p2-protocole-titre"] = "Protocole :";
 content["p2-protocole-corps"] = `Le texte est peint sur du tulle. Il est structuré sur la répétition, revenant à chaque fois sur lui-même. À l’intérieur de cette spirale, se glisse par instant une ouverture, une respiration. Le texte tourne sur lui-même jusqu’à ce que je le déchire. J’utilise ensuite ces morceaux de tissus pour réaliser un pansement avec de l’argile que je viens appliquer sur ma poitrine.`;

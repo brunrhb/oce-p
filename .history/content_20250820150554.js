@@ -1,6 +1,6 @@
 const content = {};
 
-// #region PROJET1 LIAISON VÉGÉTALE
+// #region PROJET1
 
 // #region p1s1
 content["p1s1-credit1"] = "2024 ©La Nature Festival Liège";
