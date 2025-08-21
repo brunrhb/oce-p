@@ -120,6 +120,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
   background-color: crimson;
 }
 
@@ -127,6 +128,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  gap: 2vw;
   background-color: royalblue;
 }
 
@@ -134,6 +136,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  gap: 2vw;
   background-color: seagreen;
 }
 
