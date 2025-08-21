@@ -113,7 +113,7 @@ body {
   padding-top: 5rem;
   padding-left: 5rem;
   padding-right: 5rem;
-  column-gap: 2vw;
+  column-gap: 0vw;
 }
 
 .col-p1s1-1 {
@@ -159,7 +159,7 @@ body {
   aspect-ratio: 1 / 1;
   background-color: white;
   padding: 0;
-  margin-top: calc(2.68*(1vw + 0.5vh));
+  margin: 0;
   gap: 0;
 }
 
