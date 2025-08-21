@@ -321,11 +321,6 @@ body {
 }
 
 /* 2 blocks et elements */
-.text-block-p3-1 {
-}
-.text-block-p3-2 {
-}
-
 
 .text-block-p3-3 {
   display: flex;
@@ -334,7 +329,6 @@ body {
 }
 
 .intro-p3 {
-  margin-left: 30%;
 }
 .autre-corps {
 }

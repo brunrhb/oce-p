@@ -85,7 +85,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: calc(1.618*(1.618*(1vw + 0.5vh))) ;
+  gap: 4vw;
 }
 
 
@@ -101,7 +101,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: calc(1.618*(1vw + 0.5vh)) ;
+  gap: 4vw;
 }
 
 
@@ -330,11 +330,11 @@ body {
 .text-block-p3-3 {
   display: flex;
   flex-direction: column;
+  width: 50%;
   gap: 2vw;
 }
 
 .intro-p3 {
-  margin-left: 30%;
 }
 .autre-corps {
 }

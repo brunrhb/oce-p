@@ -60,10 +60,7 @@
 .intro {
   font-size: calc(1vw + 0.5vh) ;
   font-family: Roboto;
-  font-weight: bold;
-  font-style: italic;
-
-  text-align: right; 
+  font: bold;
 }
 
 .lien {
@@ -85,10 +82,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: calc(1.618*(1.618*(1vw + 0.5vh))) ;
+  gap: 4vw;
 }
 
-
+.intro {
+  font-weight: bold;   /* rend le texte gras */
+  text-align: right;   /* aligne le texte à droite */
+}
 /* #endregion */
 
 
@@ -101,7 +101,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: calc(1.618*(1vw + 0.5vh)) ;
+  gap: 4vw;
 }
 
 
@@ -330,11 +330,11 @@ body {
 .text-block-p3-3 {
   display: flex;
   flex-direction: column;
+  width: 50%;
   gap: 2vw;
 }
 
 .intro-p3 {
-  margin-left: 30%;
 }
 .autre-corps {
 }
@@ -412,7 +412,8 @@ text-align: right;
 
 .text-block-p4-1 {
 }
-
+.intro {
+}
 .autre-corps {
 }
 .lien {
@@ -458,7 +459,8 @@ text-align: right;
 
 .text-block-p5-1 {
 }
-
+.intro {
+}
 .autre-corps {
 }
 .lien {
