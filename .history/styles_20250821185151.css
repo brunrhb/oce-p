@@ -2,12 +2,10 @@
 
 /* #region FONTS */
 /* stacks globales */
-@font-face {
-  font-family: DINdong;
-  src: url("fonts/DINdong.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+@font-face{
+  font-family:"DINdong";
+  src:url("./DINdong.woff2") format("woff2"); /* ← bon chemin selon ton UI VS Code */
+  font-weight:400; font-style:normal; font-display:swap;
 }
 
 :root{
@@ -24,9 +22,8 @@
 .credit {
   font-size: 1rem;
   line-height: 1.2;
-  margin-top: calc(5px + 0.5rem +0.5em) ;
+  margin-top: calc(5px + 1.1rem) ;
   z-index: 10;
-  font-family: DINdong;
 }
 
 .protocole-titre {
