@@ -1,45 +1,26 @@
 /* #region ALLL */
 
-/* #region FONTS */
-/* stacks globales */
-@font-face{
-  font-family:"DINdong";
-  src:url("./DINdong.woff2") format("woff2"); /* ← bon chemin selon ton UI VS Code */
-  font-weight:400; font-style:normal; font-display:swap;
-}
-
-:root{
-  --ff-body: "Roboto Condensed", Roboto, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-  --ff-ui:   Roboto, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-  --ff-title:"DINdong","Roboto Condensed", Arial, sans-serif;
-}
-
-
-/* #endregion */
-
-/* #region AUTRES */
-
-/* #endregion */
-
-/* #region BEFORE */
 body {
   margin: 0;
-  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  font-family: sans-serif;
+  font-size: clamp(10vh, 1.5vw, 10vw);
 }
 
 .allproject {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 4vw;
+  gap: 6vw;
 }
 
 .intro {
   font-weight: bold;   /* rend le texte gras */
   text-align: right;   /* aligne le texte à droite */
 }
-/* #endregion */
 
+.media-block
+
+.col
 
 
 

@@ -24,6 +24,7 @@
 /* #region BEFORE */
 body {
   margin: 0;
+  font-family: sans-serif;
   font-size: clamp(0.9rem, 1.5vw, 1.2rem);
 }
 
