@@ -1,452 +1,538 @@
-/* =========================================
-   #region BASE — GLOBALES (non responsive)
-   ========================================= */
+/* #region ALLL */
 
-:root{
-  --page-width: 1080px;
-  --margin-x: 100px;
-  --section-gap: 140px;
-  --gutter: 28px;
-  --flow-gap: 20px;
-  --title: 40px;
-  --subtitle: 17px;
-  --body: 16px;
-  --small: 11px;
-  --leading-body: 1.6;
-  --leading-poem: 2.0;
-  --ink: #111;
-  --muted: #7a7a7a;
-  --grid-line: #e6e6e6;
-  --placeholder-bg: #f1f1f1;
-  --placeholder-line: #dedede;
-}
-
-* { box-sizing: border-box; }
-html, body { height: 100%; }
-
-body{
+body {
   margin: 0;
-  color: var(--ink);
-  font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: var(--body);
-  line-height: var(--leading-body);
-  letter-spacing: 0.1px;
-  background: #fff;
+  font-family: sans-serif;
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
 }
 
-.allproject{
-  width: var(--page-width);
-  margin: 0 auto;
+.allproject {
   display: flex;
   flex-direction: column;
-  gap: var(--section-gap);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  justify-content: flex-start;
+  gap: 4vw;
 }
 
-/* Grilles génériques */
-[class^="grid-"], [class*=" grid-"]{
+.intro {
+  font-weight: bold;   /* rend le texte gras */
+  text-align: right;   /* aligne le texte à droite */
+}
+
+
+/* #endregion */
+
+/* #region PROJET1 LIASONS VEGETALES */
+.p1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 4vw;
+}
+
+
+/* #region slide1 */
+
+/* 1 grille et colonnes */
+.grid-p1s1 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: var(--gutter);
-  row-gap: 36px;
-  padding-left: var(--margin-x);
-  padding-right: var(--margin-x);
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  column-gap: 2vw;
 }
 
-/* Colonnes génériques */
-[class^="col-"], [class*=" col-"]{
+.col-p1s1-1 {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--flow-gap) * 1.2);
+  justify-content: flex-start;
+  gap: 2vw;
+  background-color: crimson;
 }
 
-/* Blocs média */
-[class^="media-block-"], [class*=" media-block-"]{
+.col-p1s1-2 {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  justify-content: flex-start;
+  gap: 2vw;
+  background-color: royalblue;
 }
 
-/* Texte courant / blocs */
-.text-block, [class^="text-block-"], [class*=" text-block-"]{
-  max-width: 38ch;
+.col-p1s1-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2vw;
+  background-color: seagreen;
 }
 
-/* Titraille */
-.titre{
-  font-weight: 700;
-  font-size: var(--title);
-  text-transform: uppercase;
-  letter-spacing: 1.4px;
-  margin: 0 0 12px 0;
-}
-.sous-titre{
-  font-weight: 400;
-  font-size: var(--subtitle);
-  color: var(--muted);
-  margin: 0 0 32px 0;
-}
 
-/* Protocole */
-.protocole-titre{
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin: 0 0 6px 0;
-}
-.protocole-corps{
-  margin: 0;
-  hyphens: auto;
-  text-align: left;
-  word-break: normal;
-}
-
-/* Extraits poétiques */
-.extrait{
-  margin: 0;
-  line-height: var(--leading-poem);
-  white-space: pre-wrap;
-  letter-spacing: 0.2px;
-}
-.extrait + .extrait{ margin-top: 0.8em; }
-.extrait br + br{ line-height: 2.8; content: ""; }
-
-/* Crédit / légendes */
-.credit{
-  margin: 0;
-  font-size: var(--small);
-  color: var(--muted);
-  letter-spacing: 0.2px;
-}
-.media-block-p1s1 .credit,
-.media-block-p8s2 .credit{ padding-left: 2px; }
-
-/* Traits */
-.trait{
-  height: 1px;
-  background: var(--grid-line);
-  margin: 24px 0;
-  border: 0;
-}
-
-/* Bibliographie / notes */
-.biblio{
-  font-size: var(--small);
-  color: var(--muted);
-  max-width: 60ch;
-}
-
-/* Liens neutres */
-a{
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-thickness: 0.06em;
-  text-underline-offset: 3px;
-}
-
-/* Small caps “visuelles” */
-.smallcaps{
-  text-transform: uppercase;
-  font-size: 0.9em;
-  letter-spacing: 0.08em;
-}
-
-/* Médias */
-img, svg, video, canvas{
-  max-width: 100%;
-  height: auto;
+/* 2 blocks et elements */
+.media-block-p1s1 {
   display: block;
-}
-
-/* Rangées locales si présentes */
-[class^="row-"], [class*=" row-"]{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: var(--gutter);
-  row-gap: var(--gutter);
-}
-
-/* Blocs “intro” en tête de projet */
-.intro{
-  padding-left: var(--margin-x);
-  padding-right: var(--margin-x);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: var(--gutter);
-  padding-top: 12px;
-  padding-bottom: 8px;
-}
-
-/* Espacements fins */
-p + p { margin-top: 0.6em; }
-p + .extrait { margin-top: 1.2em; }
-.extrait + .extrait { margin-top: 0.8em; }
-
-/* Apartés */
-.autre-corps{
-  font-size: 0.95em;
-  color: #808080;
-  max-width: 34ch;
-  line-height: 1.65;
-}
-
-/* #endregion BASE — GLOBALES */
-
-
-/* =========================================
-   #region PLACEHOLDERS (proportions fixes)
-   ========================================= */
-
-[class^="placeholder-"], [class*=" placeholder-"]{
   width: 100%;
-  border: 1px solid var(--grid-line);
-  background:
-    repeating-linear-gradient(45deg, var(--placeholder-bg), var(--placeholder-bg) 12px, var(--placeholder-line) 12px, var(--placeholder-line) 24px);
+}
+
+.placeholder-p1s1 {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  background-color: black;
+}
+
+.credit {
+  position: absolute;
+  font-size: 1rem;
+  line-height: 1.2;
+  margin: 0;
+  z-index: 10;
+}
+
+.text-block-p1s1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  gap: 0;
+}
+
+.protocole-titre {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.protocole-corps {
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* #endregion */
+
+
+/* #region slide2 */
+
+/* 1 grille et colonnes */
+.grid-p1s2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  column-gap: 2vw;
+}
+
+.col-p1s2-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20vw;
+}
+
+.col-p1s2-2 {
+  display: flex;
+}
+
+.col-p1s2-3 {
+  display: flex;
+}
+
+
+/* 2 blocks et elements */
+.media-block-p1s2-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  position: relative;
+  width: 100%;
+}
+
+.media-block-p1s2-2 {
   display: block;
+  position: relative;
+  width: 100%;
 }
 
-/* Ratios par sections (ajustés pour coller au PDF) */
-.placeholder-p1s1 { aspect-ratio: 4 / 3; }
-.placeholder-p2   { aspect-ratio: 3 / 2; }
-.placeholder-p3   { aspect-ratio: 3 / 2; }
-.placeholder-p4-1 { aspect-ratio: 5 / 8; }  /* + vertical */
-.placeholder-p5-1 { aspect-ratio: 16 / 9; }
-.placeholder-p5-2 { aspect-ratio: 1 / 1; }
-.placeholder-p6   { aspect-ratio: 3 / 4; }  /* vertical classique */
-.placeholder-p7-1 { aspect-ratio: 3 / 2; }
-.placeholder-p7-2 { aspect-ratio: 9 / 16; }
-.placeholder-p8s1 { aspect-ratio: 24 / 9; } /* pano plus étiré */
-.placeholder-p8s2 { aspect-ratio: 4 / 3; }
-.placeholder-p9   { aspect-ratio: 16 / 9; }
+.text-block-p1s2 {
+  gap: 0;
+}
 
-/* #endregion PLACEHOLDERS */
+.extrait {
+  font-size: 1.1rem;
+}
+
+/* #endregion */
+
+/* #endregion */
 
 
-/* =========================================
-   #region PROJET 1 — LIAISONS VÉGÉTALES
-   ========================================= */
+/* #region P2 PAENSER */
 
-.grid-p1s1,
-.grid-p1s2{
+
+.p2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* 1 grille et colonnes */
+.grid-p2 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: var(--gutter);
-  row-gap: 36px;
-  padding-left: var(--margin-x);
-  padding-right: var(--margin-x);
+  grid-template-columns: 0.7fr 1.3fr;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  column-gap: 5vw;
 }
-
-.col-p1s1-1, .col-p1s1-2, .col-p1s1-3,
-.col-p1s2-1, .col-p1s2-2, .col-p1s2-3{
+.col-p2-1 {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  gap: 2vw;
+}
+.col-p2-2 {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--flow-gap) * 1.2);
+  justify-content: flex-start;
+  gap: 2vw;
 }
 
-/* Micro-décalages (rythme asynchrone des colonnes) */
-.col-p1s1-2{ margin-top: 12px; }
-.col-p1s2-3{ margin-top: 20px; }
+/* 2 blocks et elements */
+.media-block-p2 {
+  display: block;
+  width: 100%;
+  
+}
+.placeholder-p2 {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  background-color: black;
+}
+.credit-p2 {
+  text-align: right;
+  margin: top 0.5rem; 
+   margin-left: auto;
+}
+.text-block-p2 {
+  text-align: right;  /* Aligne tout le texte à droite */
+}
 
-.text-block-p1s1,
-.text-block-p1s2{ max-width: 38ch; }
+/* Si besoin de contrôle plus fin sur certains éléments */
+.protocole-titre-p2 {
+  text-align: right;  /* Aligne tout le texte à droite */
+  font-size: 1.5rem;
+  }
 
-.media-block-p1s1{ display: flex; flex-direction: column; gap: 8px; }
+.protocole-corps-p2 {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  font-size: 1.1rem;
+  }
 
-/* #endregion PROJET 1 */
+.lien-p2 {
+  text-align: right;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  color: inherit; /* garde la couleur du texte parent */
+  cursor: pointer;
+}
+.extrait {
+}
+
+/* #endregion */
 
 
-/* =========================================
-   #region PROJET 2
-   ========================================= */
+/* #region P3 DES NORMES AUX MORNES : MARRONNER EN SOI. */
 
-.grid-p2{
+/* 1 grille et colonnes */
+.grid-p3 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: var(--gutter);
-  row-gap: 36px;
-  padding-left: var(--margin-x);
-  padding-right: var(--margin-x);
+  grid-template-columns: 1fr 1fr;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  column-gap: 2vw;
 }
-.col-p2-1, .col-p2-2{
+.col-p3-1 {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  gap: 2vw;
+}
+.col-p3-2 {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  gap: 2vw;
+}
+
+/* 2 blocks et elements */
+.text-block-p3-1 {
+}
+.text-block-p3-2 {
+}
+
+
+.text-block-p3-3 {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--flow-gap) * 1.2);
+  width: 50%;
+  gap: 2vw;
 }
-.text-block-p2{ max-width: 38ch; }
 
-/* #endregion PROJET 2 */
+.intro-p3 {
+}
+.autre-corps {
+}
+.biblio {
+}
+.media-block-p3 {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  width: 100%;
+}
+
+.credit-p3 {
+text-align: right;
+}
+
+.placeholder-p3 {
+  aspect-ratio: 1 / 1;
+  width: 50%;  /* Chaque placeholder prend la moitié de l'espace */
+  background-color: black;
+  text-align: right;
+}
+
+.lien-p3 {
+text-align: right;
+}
+
+/* #endregion */
 
 
-/* =========================================
-   #region PROJET 3
-   ========================================= */
+/* #region P4 ECOLE COMME CAISSE D RESONNANCE */
 
-.grid-p3{
+/* 1 grille et colonnes */
+.grid-p4 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: var(--gutter);
-  row-gap: 36px;
-  padding-left: var(--margin-x);
-  padding-right: var(--margin-x);
+  grid-template-columns: 1fr 1fr 1fr;
+
+  padding-left: 5rem;
+  padding-right: 5rem;
+  column-gap: 2vw;
 }
-.col-p3-1, .col-p3-2{
+
+.col-p4-1 {
+}
+.col-p4-2 {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--flow-gap) * 1.2);
+  justify-content: flex-start;
+  gap: 2vw;
+  background-color: crimson;
 }
-.text-block-p3-1,
-.text-block-p3-2,
-.text-block-p3-3{ max-width: 38ch; }
+.col-p4-3 {
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2vw;
+}
 
-/* #endregion PROJET 3 */
+/* 2 blocks et elements */
+.media-block-p4-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2vw;
+    }
+
+.placeholder-p4-1 {
+  aspect-ratio: 6 / 3;
+
+  background-color: black;
+  }
+
+.placeholder-p4-2 {
+}
+.credit {
+}
+.text-block-p4-1 {
+}
+.intro {
+}
+.autre-corps {
+}
+.lien {
+}
+.text-block-p4-2 {
+}
+.protocole-titre {
+}
+
+/* #endregion */
 
 
-/* =========================================
-   #region PROJET 4
-   ========================================= */
+/* #region P5 GESTES POSSIBLES */
 
-.grid-p4{
+/* 1 grille et colonnes */
+.grid-p5 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: var(--gutter);
-  row-gap: 36px;
-  padding-left: var(--margin-x);
-  padding-right: var(--margin-x);
-}
-.col-p4-1, .col-p4-2{
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--flow-gap) * 1.2);
-}
-.text-block-p4-1,
-.text-block-p4-2{ max-width: 38ch; }
-
-/* #endregion PROJET 4 */
-
-
-/* =========================================
-   #region PROJET 5
-   ========================================= */
-
-.grid-p5{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: var(--gutter);
-  row-gap: 36px;
-  padding-left: var(--margin-x);
-  padding-right: var(--margin-x);
-}
-.col-p5-1, .col-p5-2{
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--flow-gap) * 1.2);
-}
-.text-block-p5-1{ max-width: 38ch; }
-
-/* #endregion PROJET 5 */
-
-
-/* =========================================
-   #region PROJET 6
-   ========================================= */
-
-.grid-p6{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: var(--gutter);
-  row-gap: 36px;
-  padding-left: var(--margin-x);
-  padding-right: var(--margin-x);
-}
-.col-p6-1{
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--flow-gap) * 1.2);
-}
-.text-block-p6-1{ max-width: 38ch; }
-
-/* #endregion PROJET 6 */
-
-
-/* =========================================
-   #region PROJET 7
-   ========================================= */
-
-.grid-p7{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: var(--gutter);
-  row-gap: 36px;
-  padding-left: var(--margin-x);
-  padding-right: var(--margin-x);
-}
-.col-p7-1, .col-p7-2{
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--flow-gap) * 1.2);
-}
-.text-block-p7-1{ max-width: 38ch; }
-
-/* #endregion PROJET 7 */
-
-
-/* =========================================
-   #region PROJET 8
-   ========================================= */
-
-/* Section 8 — sous-parties */
-.grid-p8s1, .grid-p8s2{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: var(--gutter);
-  row-gap: 36px;
-  padding-left: var(--margin-x);
-  padding-right: var(--margin-x);
+  grid-template-columns: 0.2fr 0.2fr 0.6fr;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  column-gap: 2vw;
 }
 
-.col-p8s1,
-.col-p8s2-1, .col-p8s2-2, .col-p8s2-3{
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--flow-gap) * 1.2);
+.col-p5-1 {
+}
+.col-p5-2 {
 }
 
-/* Micro-offset pour retrouver la “danse” */
-.col-p8s2-2{ margin-top: 16px; }
-
-.media-block-p8s1,
-.media-block-p8s2{
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.col-p5-2 {
 }
 
-.text-block-p8s2-1,
-.text-block-p8s2-2,
-.text-block-p8s2-3{ max-width: 38ch; }
-
-/* #endregion PROJET 8 */
-
-
-/* =========================================
-   #region PROJET 9
-   ========================================= */
-
-.grid-p9{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: var(--gutter);
-  row-gap: 36px;
-  padding-left: var(--margin-x);
-  padding-right: var(--margin-x);
+/* 2 blocks et elements */
+.media-block-p5-1 {
+  aspect-ratio: 4 / 6;
+  background-color: black;
 }
-.col-p9-1, .col-p9-2, .col-p9-3{
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--flow-gap) * 1.2);
+.placeholder-p5-2 {
+  aspect-ratio: 4 / 6;
+  background-color: black;
 }
-.text-block-p9{ max-width: 38ch; }
-.media-block-p9{ display: flex; flex-direction: column; gap: 8px; }
 
-/* #endregion PROJET 9 */
+
+.credit {
+}
+.text-block-p5-1 {
+}
+.intro {
+}
+.autre-corps {
+}
+.lien {
+}
+.extrait {
+}
+
+/* #endregion */
+
+
+/* #region P6 LES MARGES FORCÉES */
+
+/* 1 grille et colonnes */
+.grid-p6 {
+}
+.col-p6-1 {
+}
+.col-p6-2 {
+}
+
+/* 2 blocks et elements */
+.media-block-p6-1 {
+}
+.placeholder-p6-1 {
+}
+.credit {
+}
+.autre-corps {
+}
+.text-block-p6-1 {
+}
+.media-block-p6-2 {
+}
+.placeholder-p6-2 {
+}
+
+/* #endregion */
+
+/* #region P7  */
+/* #region P7S1 */
+
+/* 1 grille et colonnes */
+.grid-p7s1 {
+}
+.col-p7s1 {
+}
+
+/* 2 blocks et elements */
+.media-block-p7s1 {
+}
+.placeholder-p7s1 {
+}
+.credit {
+}
+
+/* #endregion */
+
+
+/* #region P7S2 */
+
+/* 1 grille et colonnes */
+.grid-p7s2 {
+}
+.row-p7s2-1 {
+}
+.row-p7s2-2 {
+}
+
+/* 2 blocks et elements */
+.placeholder-p7s2 {
+}
+.media-block-p7s2 {
+}
+.credit {
+}
+.text-block-p7s2-1 {
+}
+.extrait {
+}
+.text-block-p7s2-2 {
+}
+.text-block-p7s2-3 {
+}
+.trait {
+}
+.protocole-titre {
+}
+.protocole-corps {
+}
+
+/* #endregion */
+/* #endregion */
+
+
+/* #region P8 */
+
+/* 1 grille et colonnes */
+.grid-p8 {
+}
+.col-p8-1 {
+}
+.col-p8-2 {
+}
+
+/* 2 blocks et elements */
+.text-block-p8 {
+}
+.extrait {
+}
+.trait {
+}
+.protocole-titre {
+}
+.protocole-corps {
+}
+.media-block-p8 {
+}
+.placeholder-p8 {
+}
+.credit {
+}
+
+/* #endregion */
