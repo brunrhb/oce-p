@@ -159,7 +159,7 @@ body {
   aspect-ratio: 1 / 1;
   background-color: white;
   padding: 0;
-  margin-top: calc(1.299*(1vw + 0.5vh));
+  margin-top: calc(1.29*(1vw + 0.5vh));
   gap: 0;
 }
 
