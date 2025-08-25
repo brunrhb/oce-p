@@ -437,10 +437,6 @@ text-align: right;
 .protocole-titre {
 }
 
-.credit-p4 {
-  text-align: right;
-}
-
 /* #endregion */
 
 
@@ -571,14 +567,6 @@ text-align: right;
   background-color: black;
 }
 
-.text-block-p7-1 {
-   display: grid;
-  grid-template-columns: 0.4fr 0.6fr ;
-}
-
-.credit-p2-2 {
- text-align: right;
-}
 
 
 /* #endregion */

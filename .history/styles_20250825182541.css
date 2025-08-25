@@ -313,9 +313,6 @@ body {
   justify-content: flex-start;
   gap: 2vw;
 }
-
-
-
 .col-p3-2 {
   display: flex;
   flex-direction: column; 
@@ -325,10 +322,6 @@ body {
 
 /* 2 blocks et elements */
 .text-block-p3-1 {
-  display: flex;
-  flex-direction: column;
-  flex: 1;       /* occupe toute la hauteur dispo dans la colonne */
-  min-height: 0; /* très important en contexte grid */
 }
 .text-block-p3-2 {
 }
@@ -359,7 +352,7 @@ text-align: right;
 }
 
 .biblio-p3 {
-margin-top: auto;
+margin-top: calc(3vw + 1vh);
 }
 
 .placeholder-p3 {
@@ -435,10 +428,6 @@ text-align: right;
 .text-block-p4-2 {
 }
 .protocole-titre {
-}
-
-.credit-p4 {
-  text-align: right;
 }
 
 /* #endregion */
@@ -571,14 +560,6 @@ text-align: right;
   background-color: black;
 }
 
-.text-block-p7-1 {
-   display: grid;
-  grid-template-columns: 0.4fr 0.6fr ;
-}
-
-.credit-p2-2 {
- text-align: right;
-}
 
 
 /* #endregion */
