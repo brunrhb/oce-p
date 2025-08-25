@@ -235,11 +235,11 @@ content["p7-credit-1"] = `
 Vue de l’installation @Pavillon Martin
 `;
 
-content["p7-credit"] = `
+content["p7-autre-corps-1"] = `
 Hier c’est déjà demain a été réalisé au Pavillon Martin du FRAC Réunion avec Amandine Benintendi. Ce temps de création au FRAC, a permis de questionner le “faire mémoire”. En utilisant l’archivage comme un médium afin de le mettre en tension dans une approche transversale. Celle-ci se saisit des aspects performatifs du texte, du textile, et leur interdiscursivité.
 `;
 
-content["p7-credit"] = `
+content["p7-autre-corps-2"] = `
 Ce projet m’a permis de réfléchir à mettre les mots en espace. Il en a résulté une installation de grands panneaux de tulles sur lesquels étaient peints des fragments de texte. Leurs dispositions dans l’espace structuraient le lieu et invitaient à la déambulation, comme au touché. C’était une manière de penser des formes qui deviennent des support à la théorie, mais aussi à la médiation.
 `;
 

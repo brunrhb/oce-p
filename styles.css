@@ -471,7 +471,7 @@ text-align: right;
 .text-block-p5-1 {
 }
 
-.context-p4 {
+.context-p5 {
   margin-left: calc(5vw + 1vh) ;
 }
 .lien {
@@ -485,17 +485,33 @@ text-align: right;
 
 /* 1 grille et colonnes */
 .grid-p6 {
+  display: grid;
+  grid-template-columns: 0.35fr 0.5fr ;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  column-gap: calc(20px + 6vw + 4vh);
 }
+
+
 .col-p6-1 {
 }
 .col-p6-2 {
 }
 
 /* 2 blocks et elements */
-.media-block-p6-1 {
+.media-block-p6 {
+
+
 }
-.placeholder-p6-1 {
+.placeholder-p6 {
+  aspect-ratio: 4 / 4;
+  background-color: black;
 }
+
+.credit-p6 {
+text-align: right;
+}
+
 
 .autre-corps {
 }
@@ -508,20 +524,39 @@ text-align: right;
 
 /* #endregion */
 
-/* #region P7  */
+/* #region P7 HIER ET C EST DEJA DEMAIN  */
 /* #region P7S1 */
 
 /* 1 grille et colonnes */
-.grid-p7s1 {
+.grid-p7 {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr ;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  column-gap: 2vw;
 }
-.col-p7s1 {
+
+.col-p7-1 {
+}
+
+.col-p7-2 {
 }
 
 /* 2 blocks et elements */
-.media-block-p7s1 {
+.media-block-p7-1 {
 }
-.placeholder-p7s1 {
+.placeholder-p7-1 {
+  aspect-ratio: 4 / 4;
+  background-color: black;
 }
+
+
+.placeholder-p7-2 {
+  aspect-ratio: 4 / 4;
+  background-color: black;
+}
+
+
 
 /* #endregion */
 
