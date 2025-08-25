@@ -384,7 +384,7 @@ text-align: right;
   flex-direction: column;
   justify-content: flex-start;
   gap: 2vw;
-  background-color: crimson;
+ 
 }
 .col-p4-3 {
     display: flex;
@@ -402,12 +402,15 @@ text-align: right;
     }
 
 .placeholder-p4-1 {
-  aspect-ratio: 6 / 3;
+  aspect-ratio: 6 / 4;
 
   background-color: black;
   }
 
 .placeholder-p4-2 {
+  aspect-ratio: 6 / 4;
+
+  background-color: black;
 }
 
 .text-block-p4-1 {
@@ -415,7 +418,8 @@ text-align: right;
 
 .autre-corps {
 }
-.lien {
+.lien-p4 {
+  text-align: right;
 }
 .text-block-p4-2 {
 }
@@ -430,15 +434,19 @@ text-align: right;
 /* 1 grille et colonnes */
 .grid-p5 {
   display: grid;
-  grid-template-columns: 0.2fr 0.2fr 0.6fr;
+  grid-template-columns: 0.3fr 0.3fr 0.6fr;
   padding-left: 5rem;
   padding-right: 5rem;
   column-gap: 2vw;
 }
 
 .col-p5-1 {
+  z-index: 1;
+  
 }
 .col-p5-2 {
+  margin-left: -5vw ;
+  z-index: 0;
 }
 
 .col-p5-2 {
@@ -446,11 +454,15 @@ text-align: right;
 
 /* 2 blocks et elements */
 .media-block-p5-1 {
-  aspect-ratio: 4 / 6;
-  background-color: black;
+  margin-top: calc(20px + 10vw + 12vh) ;
+}
+
+.placeholder-p5-1 {
+  aspect-ratio: 3.33 / 6.33;
+  background-color: rgb(211, 196, 196);
 }
 .placeholder-p5-2 {
-  aspect-ratio: 4 / 6;
+  aspect-ratio: 4 / 5;
   background-color: black;
 }
 
@@ -459,7 +471,8 @@ text-align: right;
 .text-block-p5-1 {
 }
 
-.autre-corps {
+.context-p4 {
+  margin-left: calc(5vw + 1vh) ;
 }
 .lien {
 }
