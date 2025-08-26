@@ -685,49 +685,13 @@ text-align: right;
   display: flex;
   flex-direction: column;
   gap:2vw;
-
+ 
 }
 
-.credit-p8-3{
-margin-top: auto;
-}
-/* #endregion */
 
 
-/* #region P9 NOUS SOMMES LE PAYSAGE */
 
-.grid-p9{
-display: grid;
-grid-template-columns: 1fr 1fr ;
-padding-left: 5rem;
-padding-right: 5rem;
-column-gap: 2vw;
-}
 
-.placeholder-p9{
-  aspect-ratio: 1 / 1;
-  width: 100%;  
-  background-color: black;
-}
-
-.credit-p9{
-text-align: right;
-}
-
-.credit-p8-3{
-margin-top: auto;
-}
-
-.credit-p8-3{
-margin-top: auto;
-}
-
-.trait {
-  width: 60px;           /* longueur du trait */
-  border: none;          /* on supprime le style par défaut */
-  border-top: 2px solid black; /* épaisseur et couleur */
-  margin: 10px 0;        /* espace au-dessus et en dessous */
-}
 
 
 /* #endregion */

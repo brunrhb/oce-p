@@ -710,10 +710,6 @@ column-gap: 2vw;
   background-color: black;
 }
 
-.credit-p9{
-text-align: right;
-}
-
 .credit-p8-3{
 margin-top: auto;
 }
@@ -722,12 +718,8 @@ margin-top: auto;
 margin-top: auto;
 }
 
-.trait {
-  width: 60px;           /* longueur du trait */
-  border: none;          /* on supprime le style par défaut */
-  border-top: 2px solid black; /* épaisseur et couleur */
-  margin: 10px 0;        /* espace au-dessus et en dessous */
+.credit-p8-3{
+margin-top: auto;
 }
-
 
 /* #endregion */
