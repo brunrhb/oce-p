@@ -266,7 +266,7 @@ Extraits de captation - ESAR 2022
 `;
 
 content["p8-credit-2"] = `
-Extraits de captation - ESAR 2022
+Procédure :
 `;
 
 content["p8-extrait-1"] = `
