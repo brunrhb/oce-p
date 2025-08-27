@@ -100,28 +100,21 @@ body {
 /* #region HOME */
 
 
-.HOME {
+.PROJET {
   display: grid;
   grid-template-columns: 1fr;
-  padding-top: calc(3vw + 3vh);
+  padding-top: 5rem;
   padding-left: 5rem;
   padding-right: 5rem;
-  row-gap: calc(1.5vw + 1.5vh);
-} 
-
-.PROJET {
-  font-size: calc(1.618*(1.618*(1vw + 0.5vh))) ;
-  font-family: DINdong;
-  margin: 0;
-  padding: 0;
-  transition: transform 0.3s ease;
+  row-gap: 2vw;
 }
 
-.PROJET:hover {
-  transform: scale(1.05);
-  transform: translateX(calc(0.5vw + 0.5vh));
-  cursor: pointer;
-  font-weight: 1000; /* 600 is semi-bold, between normal (400) and bold (700) */
+.PROJET {
+  font-size: calc(1.618*(1vw + 0.5vh)) ;
+  font-family: DINdong;
+
+  margin: 0;
+  padding: 0;
 }
 
 

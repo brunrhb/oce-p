@@ -121,7 +121,7 @@ body {
   transform: scale(1.05);
   transform: translateX(calc(0.5vw + 0.5vh));
   cursor: pointer;
-  font-weight: 1000; /* 600 is semi-bold, between normal (400) and bold (700) */
+  font-weight: 800; /* 600 is semi-bold, between normal (400) and bold (700) */
 }
 
 
