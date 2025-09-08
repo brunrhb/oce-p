@@ -885,6 +885,9 @@ text-align: right;
   top: -5%;
   left: -5%;
   object-fit: cover;
-  will-change: transform;
-  transition: transform 0.1s linear;
+  transition: transform 0.3s ease-out;
+}
+
+[class*="placeholder"]:hover img {
+  transform: scale(1.05);
 }

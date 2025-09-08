@@ -886,5 +886,4 @@ text-align: right;
   left: -5%;
   object-fit: cover;
   will-change: transform;
-  transition: transform 0.1s linear;
 }
