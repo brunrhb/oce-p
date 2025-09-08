@@ -83,11 +83,35 @@ body {
 
 }
 
-.allproject {
+
+:root{
+  --spacer: clamp(24px, 4vh, 64px); /* marge de confort quand un projet est ouvert */
+}
+
+.allproject{
   display: flex;
   flex-direction: column;
+  gap: calc(1.618*(1.618*(1vw + 0.5vh)));
+  min-height: 100vh;
+
+  /* État "tout fermé" → centré au milieu */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dès qu’au moins UNE section n’a plus .is-hidden */
+.allproject:has(section:not(.is-hidden)){
+  /* on repasse à un flux normal en haut + on étire horizontalement 
   justify-content: flex-start;
-  gap: calc(1.618*(1.618*(1vw + 0.5vh))) ;
+  align-items: stretch;*/
+
+  /* espace en haut pour éviter l’effet "collé" du premier titre */
+  padding-top: var(--spacer);
+}
+
+/* Optionnel : petite marge supplémentaire sous le premier titre */
+.allproject:has(section:not(.is-hidden)) .initialspace{
+  margin-top: var(--spacer);
 }
 
 
@@ -133,9 +157,7 @@ body {
 
 /* #region PROJET1 LIASONS VEGETALES */
 
-.initialspace{
-margin-top: calc(3vw + 1vh);
-}
+
 
 .p1 {
   display: flex;
