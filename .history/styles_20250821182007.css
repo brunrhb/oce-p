@@ -1,0 +1,563 @@
+/* #region ALLL */
+
+/* #region FONTS */
+/* stacks globales */
+@font-face{
+  font-family:"DINdong";
+  src:url("./DINdong.woff2") format("woff2"); /* ← bon chemin selon ton UI VS Code */
+  font-weight:400; font-style:normal; font-display:swap;
+}
+
+:root{
+  --ff-body: "Roboto Condensed", Roboto, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --ff-ui:   Roboto, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --ff-title:"DINdong","Roboto Condensed", Arial, sans-serif;
+}
+
+
+/* #endregion */
+
+/* #region AUTRES */
+
+/* #endregion */
+
+/* #region BEFORE */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+}
+
+.allproject {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 4vw;
+}
+
+.intro {
+  font-weight: bold;   /* rend le texte gras */
+  text-align: right;   /* aligne le texte à droite */
+}
+/* #endregion */
+
+
+
+
+/* #endregion */
+
+/* #region PROJET1 LIASONS VEGETALES */
+.p1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 4vw;
+}
+
+
+/* #region slide1 */
+
+/* 1 grille et colonnes */
+.grid-p1s1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  column-gap: 2vw;
+}
+
+.col-p1s1-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2vw;
+  background-color: crimson;
+}
+
+.col-p1s1-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2vw;
+  background-color: royalblue;
+}
+
+.col-p1s1-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2vw;
+  background-color: seagreen;
+}
+
+
+/* 2 blocks et elements */
+.media-block-p1s1 {
+  display: block;
+  width: 100%;
+}
+
+.placeholder-p1s1 {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  background-color: black;
+}
+
+.credit {
+  position: absolute;
+  font-size: 1rem;
+  line-height: 1.2;
+  margin: 0;
+  z-index: 10;
+}
+
+.text-block-p1s1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  gap: 0;
+}
+
+.protocole-titre {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.protocole-corps {
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* #endregion */
+
+
+/* #region slide2 */
+
+/* 1 grille et colonnes */
+.grid-p1s2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  column-gap: 2vw;
+}
+
+.col-p1s2-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20vw;
+}
+
+.col-p1s2-2 {
+  display: flex;
+}
+
+.col-p1s2-3 {
+  display: flex;
+}
+
+
+/* 2 blocks et elements */
+.media-block-p1s2-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  position: relative;
+  width: 100%;
+}
+
+.media-block-p1s2-2 {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.text-block-p1s2 {
+  gap: 0;
+}
+
+.extrait {
+  font-size: 1.1rem;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+
+/* #region P2 PAENSER */
+
+
+.p2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* 1 grille et colonnes */
+.grid-p2 {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  column-gap: 5vw;
+}
+.col-p2-1 {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  gap: 2vw;
+}
+.col-p2-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2vw;
+}
+
+/* 2 blocks et elements */
+.media-block-p2 {
+  display: block;
+  width: 100%;
+  
+}
+.placeholder-p2 {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  background-color: black;
+}
+.credit-p2 {
+  text-align: right;
+  margin: top 0.5rem; 
+   margin-left: auto;
+}
+.text-block-p2 {
+  text-align: right;  /* Aligne tout le texte à droite */
+}
+
+/* Si besoin de contrôle plus fin sur certains éléments */
+.protocole-titre-p2 {
+  text-align: right;  /* Aligne tout le texte à droite */
+  font-size: 1.5rem;
+  }
+
+.protocole-corps-p2 {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  font-size: 1.1rem;
+  }
+
+.lien-p2 {
+  text-align: right;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  color: inherit; /* garde la couleur du texte parent */
+  cursor: pointer;
+}
+.extrait {
+}
+
+/* #endregion */
+
+
+/* #region P3 DES NORMES AUX MORNES : MARRONNER EN SOI. */
+
+/* 1 grille et colonnes */
+.grid-p3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  column-gap: 2vw;
+}
+.col-p3-1 {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  gap: 2vw;
+}
+.col-p3-2 {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  gap: 2vw;
+}
+
+/* 2 blocks et elements */
+.text-block-p3-1 {
+}
+.text-block-p3-2 {
+}
+
+
+.text-block-p3-3 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 2vw;
+}
+
+.intro-p3 {
+}
+.autre-corps {
+}
+.biblio {
+}
+.media-block-p3 {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  width: 100%;
+}
+
+.credit-p3 {
+text-align: right;
+}
+
+.placeholder-p3 {
+  aspect-ratio: 1 / 1;
+  width: 50%;  /* Chaque placeholder prend la moitié de l'espace */
+  background-color: black;
+  text-align: right;
+}
+
+.lien-p3 {
+text-align: right;
+}
+
+/* #endregion */
+
+
+/* #region P4 ECOLE COMME CAISSE D RESONNANCE */
+
+/* 1 grille et colonnes */
+.grid-p4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  padding-left: 5rem;
+  padding-right: 5rem;
+  column-gap: 2vw;
+}
+
+.col-p4-1 {
+}
+.col-p4-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2vw;
+  background-color: crimson;
+}
+.col-p4-3 {
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2vw;
+}
+
+/* 2 blocks et elements */
+.media-block-p4-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2vw;
+    }
+
+.placeholder-p4-1 {
+  aspect-ratio: 6 / 3;
+
+  background-color: black;
+  }
+
+.placeholder-p4-2 {
+}
+.credit {
+}
+.text-block-p4-1 {
+}
+.intro {
+}
+.autre-corps {
+}
+.lien {
+}
+.text-block-p4-2 {
+}
+.protocole-titre {
+}
+
+/* #endregion */
+
+
+/* #region P5 GESTES POSSIBLES */
+
+/* 1 grille et colonnes */
+.grid-p5 {
+  display: grid;
+  grid-template-columns: 0.2fr 0.2fr 0.6fr;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  column-gap: 2vw;
+}
+
+.col-p5-1 {
+}
+.col-p5-2 {
+}
+
+.col-p5-2 {
+}
+
+/* 2 blocks et elements */
+.media-block-p5-1 {
+  aspect-ratio: 4 / 6;
+  background-color: black;
+}
+.placeholder-p5-2 {
+  aspect-ratio: 4 / 6;
+  background-color: black;
+}
+
+
+.credit {
+}
+.text-block-p5-1 {
+}
+.intro {
+}
+.autre-corps {
+}
+.lien {
+}
+.extrait {
+}
+
+/* #endregion */
+
+
+/* #region P6 LES MARGES FORCÉES */
+
+/* 1 grille et colonnes */
+.grid-p6 {
+}
+.col-p6-1 {
+}
+.col-p6-2 {
+}
+
+/* 2 blocks et elements */
+.media-block-p6-1 {
+}
+.placeholder-p6-1 {
+}
+.credit {
+}
+.autre-corps {
+}
+.text-block-p6-1 {
+}
+.media-block-p6-2 {
+}
+.placeholder-p6-2 {
+}
+
+/* #endregion */
+
+/* #region P7  */
+/* #region P7S1 */
+
+/* 1 grille et colonnes */
+.grid-p7s1 {
+}
+.col-p7s1 {
+}
+
+/* 2 blocks et elements */
+.media-block-p7s1 {
+}
+.placeholder-p7s1 {
+}
+.credit {
+}
+
+/* #endregion */
+
+
+/* #region P7S2 */
+
+/* 1 grille et colonnes */
+.grid-p7s2 {
+}
+.row-p7s2-1 {
+}
+.row-p7s2-2 {
+}
+
+/* 2 blocks et elements */
+.placeholder-p7s2 {
+}
+.media-block-p7s2 {
+}
+.credit {
+}
+.text-block-p7s2-1 {
+}
+.extrait {
+}
+.text-block-p7s2-2 {
+}
+.text-block-p7s2-3 {
+}
+.trait {
+}
+.protocole-titre {
+}
+.protocole-corps {
+}
+
+/* #endregion */
+/* #endregion */
+
+
+/* #region P8 */
+
+/* 1 grille et colonnes */
+.grid-p8 {
+}
+.col-p8-1 {
+}
+.col-p8-2 {
+}
+
+/* 2 blocks et elements */
+.text-block-p8 {
+}
+.extrait {
+}
+.trait {
+}
+.protocole-titre {
+}
+.protocole-corps {
+}
+.media-block-p8 {
+}
+.placeholder-p8 {
+}
+.credit {
+}
+
+/* #endregion */
