@@ -17,22 +17,20 @@ content["projet4"] = `
 L’ÉCOLE COMME CAISSE DE RÉSONANCE
 `;
 
-content["projet5"] = `
+content["projet6"] = `
 GESTES POSSIBLES
 `;
 
-content["projet6"] = `
+content["projet7"] = `
 LES MARGES FORCÉES
 `;
 
-content["projet7"] = `
-HIER C’EST DÉJÀ DEMAIN`;
-
 content["projet8"] = `
-NOUS SOMMES LE PAYSAGE`;
+LES MARGES FORCÉES
+`;
 
 content["projet9"] = `
-NYAZE`;
+HIER C’EST DÉJÀ DEMAIN`;
 
 // #endregion
 

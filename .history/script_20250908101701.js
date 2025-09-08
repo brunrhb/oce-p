@@ -1,6 +1,6 @@
 (function () {
   // Sélecteur des titres cliquables
-  const triggers = document.querySelectorAll('.PROJET');
+  const triggers = document.querySelectorAll('.project-title');
 
   triggers.forEach((t) => {
     const targetSelector = t.getAttribute('data-target');

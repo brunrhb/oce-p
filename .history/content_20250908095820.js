@@ -25,14 +25,12 @@ content["projet6"] = `
 LES MARGES FORCÉES
 `;
 
-content["projet7"] = `
-HIER C’EST DÉJÀ DEMAIN`;
-
 content["projet8"] = `
-NOUS SOMMES LE PAYSAGE`;
+LES MARGES FORCÉES
+`;
 
 content["projet9"] = `
-NYAZE`;
+HIER C’EST DÉJÀ DEMAIN`;
 
 // #endregion
 

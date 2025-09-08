@@ -28,12 +28,6 @@ LES MARGES FORCÉES
 content["projet7"] = `
 HIER C’EST DÉJÀ DEMAIN`;
 
-content["projet8"] = `
-NOUS SOMMES LE PAYSAGE`;
-
-content["projet9"] = `
-NYAZE`;
-
 // #endregion
 
 // #region PROJET1 LIAISON VÉGÉTALE

@@ -28,11 +28,11 @@ LES MARGES FORCÉES
 content["projet7"] = `
 HIER C’EST DÉJÀ DEMAIN`;
 
-content["projet8"] = `
+content["projet7"] = `
 NOUS SOMMES LE PAYSAGE`;
 
-content["projet9"] = `
-NYAZE`;
+content["projet7"] = `
+HIER C’EST DÉJÀ DEMAIN`;
 
 // #endregion
 
