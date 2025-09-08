@@ -409,6 +409,7 @@ body {
 
 .intro-p3 {
   margin-left: 30%;
+  margin-bottom:calc(  1vw + 0.5vh) ;
 }
 .autre-corps {
 }
@@ -456,6 +457,7 @@ text-align: right;
 }
 
 .col-p4-1 {
+  gap: calc(  1vw + 0.5vh) ;
 }
 .col-p4-2 {
   display: flex;
