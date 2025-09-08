@@ -888,3 +888,38 @@ text-align: right;
   will-change: transform;
   transition: transform 0.1s linear;
 }
+
+/* Augmenter l'effet de parallax au scroll pour toutes les images */
+.placeholder-p1s1 img,
+.placeholder-p2 img,
+.placeholder-p3 img,
+.placeholder-p4-1 img,
+.placeholder-p4-2 img,
+.placeholder-p5-1 img,
+.placeholder-p5-2 img,
+.placeholder-p6 img,
+.placeholder-p8-1 img,
+.placeholder-p8-2 img,
+.placeholder-p9 img {
+    transform: translateY(-15%); /* Augmentation de la position initiale hors-champ */
+    transition: transform 0.4s ease-out;
+    height: 110%; /* Augmentation légère de la hauteur pour avoir plus de contenu à révéler */
+    width: auto;
+    object-fit: cover;
+}
+
+/* Ajustement de l'overflow pour masquer proprement le débordement */
+.placeholder-p1s1,
+.placeholder-p2,
+.placeholder-p3,
+.placeholder-p4-1,
+.placeholder-p4-2,
+.placeholder-p5-1,
+.placeholder-p5-2,
+.placeholder-p6,
+.placeholder-p8-1,
+.placeholder-p8-2,
+.placeholder-p9 {
+    overflow: hidden;
+    position: relative;
+}
