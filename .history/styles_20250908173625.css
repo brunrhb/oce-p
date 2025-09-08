@@ -51,7 +51,7 @@
 .extrait {
   font-size: calc(1vw + 0.5vh) ;
   font-family: DINdong;
-  line-height: calc(1.25vw + 0.75vh);
+  line-height: calc(1vw + 0.5vh);
 }
 
 .context {
@@ -610,7 +610,8 @@ margin-top: calc(1vw + 0.5vh);
 }
 
 
-
+.lien {
+}
 
 /* #endregion */
 
@@ -688,10 +689,6 @@ hanging-punctuation: first; /* laisse le guillemet “pendre” proprement (Safa
 }
 
 
-.lien-p6 {
-margin-top: calc(1vw + 1vh);
-text-align: right;
-}
 
 
 /* #endregion */
@@ -738,14 +735,40 @@ text-align: right;
 }
 
 
-.context-p7 {
- margin-top: calc(2vw + 1vh);
-}
-
 /* #endregion */
 
 
+/* #region P7S2 */
 
+/* 1 grille et colonnes */
+.grid-p7s2 {
+}
+.row-p7s2-1 {
+}
+.row-p7s2-2 {
+}
+
+/* 2 blocks et elements */
+.placeholder-p7s2 {
+}
+.media-block-p7s2 {
+}
+
+.text-block-p7s2-1 {
+}
+
+.text-block-p7s2-2 {
+}
+.text-block-p7s2-3 {
+}
+
+.protocole-titre {
+}
+.protocole-corps {
+}
+
+/* #endregion */
+/* #endregion */
 
 
 /* #region P8 NOUS SOMMES LE PAYSAGE */
@@ -821,54 +844,36 @@ text-align: right;
 .credit-p8-3{
 margin-top: auto;
 }
-
-.credit-p8-3{
-margin-top: auto;
-}
-
-.credit-p8-3{
-margin-top: auto;
-}
 /* #endregion */
 
 
-/* #region P9 NYAZE */
+/* #region P9 NOUS SOMMES LE PAYSAGE */
 
 .grid-p9{
 display: grid;
 grid-template-columns: 1fr 1fr ;
 padding-left: 5rem;
 padding-right: 5rem;
-column-gap: 6vw;
+column-gap: 2vw;
 }
 
 .placeholder-p9{
   aspect-ratio: 1 / 1;
   width: 100%;  
   background-color: black;
-   margin-top: calc(2vw + 1vh);
 }
 
 .credit-p9{
 text-align: right;
 }
 
-
-
-.trait-p9 {
- margin-top: calc(4vw + 2vh); /* Keeping the smaller margin value */
+.credit-p8-3{
+margin-top: auto;
 }
 
-.extrait-p9 {
- text-indent: 10ch;          /* ≈ deux « caractères » d'indent */
- hanging-punctuation: first;}
-
-.protocole-corps-p9 {
- margin-top: calc(2vw + 1vh);
- margin-right: 25%;
+.credit-p8-3{
+margin-top: auto;
 }
 
-.protocole-titre-p9 {
- margin-top: calc(2vw + 1vh);
-}
+
 /* #endregion */

@@ -51,7 +51,7 @@
 .extrait {
   font-size: calc(1vw + 0.5vh) ;
   font-family: DINdong;
-  line-height: calc(1.25vw + 0.75vh);
+  line-height: calc(1vw + 0.5vh);
 }
 
 .context {
@@ -76,7 +76,7 @@
 .trait {
   width: calc(6vw + 3vh) ;           
   border: none;          
-  border-top: calc(5px + 0.05vw + 0.05vh) solid black; 
+  border-top: 2px solid black; 
   margin: 10px 0;    
 
 }
@@ -524,25 +524,14 @@ text-align: right;
 .text-block-p4-1 {
 }
 
-
-.intro-p4 {
-margin-top: calc(1vw + 0.5vh) ;
-}
-
-.context-p4 {
-margin-top: calc(1vw + 0.5vh) ;
-}
-
 .autre-corps {
 }
 .lien-p4 {
   text-align: right;
-  margin-top: calc(1vw + 0.5vh) ;
 }
 .text-block-p4-2 {
 }
-.protocole-corps-p4 {
-  margin-top: calc(1vw + 0.5vh) ;
+.protocole-titre {
 }
 
 .credit-p4 {
@@ -597,19 +586,8 @@ margin-top: calc(1vw + 0.5vh) ;
 .context-p5 {
   margin-left: calc(5vw + 1vh) ;
 }
-.intro-p5{
-margin-top: calc(1vw + 0.5vh);
+.lien {
 }
-
-.context-p5 {
-  margin-top: calc(1vw + 0.5vh);
-}
-
-.protocole-corps-p5{
-  margin-top: calc(1vw + 0.5vh);
-}
-
-
 
 
 /* #endregion */
@@ -656,44 +634,6 @@ text-align: right;
 .placeholder-p6-2 {
 }
 
-.context-p6 {
-  margin-top: calc(2vw + 1vh);
-  justify-content: baseline;
-}
-
-.placeholder-p6-2 {
-}
-
-.placeholder-p6-2 {
-}
-
-
-/* Justification harmonisée pour les textes longs */
-.context-p6,
-.extrait-p6,
-.protocole-corps-p6 {
-  text-align: justify;          /* aligne des 2 côtés */
-  text-align-last: left;        /* dernière ligne non justifiée (évite l'effet étiré) */
-  hyphens: auto;                /* césure automatique */
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  /* optionnel : un poil d'espace pour un gris plus régulier */
-  /* word-spacing: 0.02em; */
-}
-
-.extrait-p6 {
-margin-top: calc(1vw + 1vh);
-text-indent: 10ch;          /* ≈ deux « caractères » d’indent */
-hanging-punctuation: first; /* laisse le guillemet “pendre” proprement (Safari/Chromium récents) */
-}
-
-
-.lien-p6 {
-margin-top: calc(1vw + 1vh);
-text-align: right;
-}
-
-
 /* #endregion */
 
 /* #region P7 HIER ET C EST DEJA DEMAIN  */
@@ -738,14 +678,40 @@ text-align: right;
 }
 
 
-.context-p7 {
- margin-top: calc(2vw + 1vh);
-}
-
 /* #endregion */
 
 
+/* #region P7S2 */
 
+/* 1 grille et colonnes */
+.grid-p7s2 {
+}
+.row-p7s2-1 {
+}
+.row-p7s2-2 {
+}
+
+/* 2 blocks et elements */
+.placeholder-p7s2 {
+}
+.media-block-p7s2 {
+}
+
+.text-block-p7s2-1 {
+}
+
+.text-block-p7s2-2 {
+}
+.text-block-p7s2-3 {
+}
+
+.protocole-titre {
+}
+.protocole-corps {
+}
+
+/* #endregion */
+/* #endregion */
 
 
 /* #region P8 NOUS SOMMES LE PAYSAGE */
@@ -821,54 +787,36 @@ text-align: right;
 .credit-p8-3{
 margin-top: auto;
 }
-
-.credit-p8-3{
-margin-top: auto;
-}
-
-.credit-p8-3{
-margin-top: auto;
-}
 /* #endregion */
 
 
-/* #region P9 NYAZE */
+/* #region P9 NOUS SOMMES LE PAYSAGE */
 
 .grid-p9{
 display: grid;
 grid-template-columns: 1fr 1fr ;
 padding-left: 5rem;
 padding-right: 5rem;
-column-gap: 6vw;
+column-gap: 2vw;
 }
 
 .placeholder-p9{
   aspect-ratio: 1 / 1;
   width: 100%;  
   background-color: black;
-   margin-top: calc(2vw + 1vh);
 }
 
 .credit-p9{
 text-align: right;
 }
 
-
-
-.trait-p9 {
- margin-top: calc(4vw + 2vh); /* Keeping the smaller margin value */
+.credit-p8-3{
+margin-top: auto;
 }
 
-.extrait-p9 {
- text-indent: 10ch;          /* ≈ deux « caractères » d'indent */
- hanging-punctuation: first;}
-
-.protocole-corps-p9 {
- margin-top: calc(2vw + 1vh);
- margin-right: 25%;
+.credit-p8-3{
+margin-top: auto;
 }
 
-.protocole-titre-p9 {
- margin-top: calc(2vw + 1vh);
-}
+
 /* #endregion */

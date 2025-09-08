@@ -161,7 +161,7 @@ Pendant mes deux années de master, j’ai réfléchi à ma place dans les insti
 `;
 
 content["p3-biblio"] =`
-1. &nbsp MARBOEUF, O. (2022), Suites décoloniales : S’enfuir de la plantation, Éditions du commun, Rennes, pp. 128-129
+1     MARBOEUF, O. (2022), Suites décoloniales : S’enfuir de la plantation, Éditions du commun, Rennes, pp. 128-129
 `;
 
 content["p3-autre-corps-2"] =`
@@ -269,11 +269,6 @@ Extrait du texte
 content["p6-autre-corps-2"] = `
 “Outsider, non pas par choix mais par impossibilité. Les marges sont forcées. Certes, le monde s’y construit aussi. Pourtant, comment cet “en dehors“ qui est pourtant “ici“ serait plus praticable. Il n’y a pas un “hors les murs“ qui nous attendrait les bras ouverts, prêt à accueillir le changement, où il serait possible de tout tenter. Nos corps semblent avoir été faits pour encaisser et ils continuent de prendre des coups. Ils continuent d’en faire les frais. Mais jusqu’à quand ? Il est important de changer les conditions de vie qui sont les nôtres, de ne pas uniquement chercher “comment manger“ mais repenser le système qui nous permet ou non de le faire. Mais quelles sont les temporalités de ces luttes ? Entre-temps, que faisons-nous ? Entre-temps, comment survivre et surtout où le faire ? Et cette peur de ne pas pouvoir subvenir à nos besoins est concrète, bien plus que cet après- post-capitalisme. C’est une peur pour mes adelphes de luttes présentes et dispersées. Que faire de ce maintenant qui ressemble à un sol glissant, sur lequel il faut bien avancer en triturant les possibles des impossibles ? En sachant qu’il n’y a pas de main pour être rattrapé car celles qui le voudraient sont en train de tâtonner à leur propre survie. Pourtant, je ne doute pas de notre capacité à déplacer des montagnes. En réalité, c’est ce que nous sommes déjà toustes en train de faire. Toustes affairé.es que nous sommes dans ce transfuge de la survie vers la vie. Car tâtonner ailleurs ne nous a jamais empêché de nous serrer fort, dans cette nuit que nous n’avons pas choisie, dès que l’on bouscule l’un.e d’entre nous que l’on reconnaît à tâtonner aussi. Mais cela reste fragile, une communauté d’équilibristes qui s’effleurent.“
 `
-
-content["p6-lien"] = `
-lien video
-`
-
 
 // #endregion
 
@@ -383,4 +378,3 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 // #endregion
-

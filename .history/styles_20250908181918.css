@@ -859,13 +859,11 @@ text-align: right;
  margin-top: calc(4vw + 2vh); /* Keeping the smaller margin value */
 }
 
-.extrait-p9 {
- text-indent: 10ch;          /* ≈ deux « caractères » d'indent */
- hanging-punctuation: first;}
-
 .protocole-corps-p9 {
  margin-top: calc(2vw + 1vh);
  margin-right: 25%;
+text-indent: 10ch;          /* ≈ deux « caractères » d’indent */
+hanging-punctuation: first;
 }
 
 .protocole-titre-p9 {

@@ -271,7 +271,7 @@ content["p6-autre-corps-2"] = `
 `
 
 content["p6-lien"] = `
-lien video
+https://www.youtube.com/shorts/2oIry71oKdk
 `
 
 
