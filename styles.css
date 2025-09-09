@@ -16,6 +16,13 @@
   --ff-title:"DINdong","Roboto Condensed", Arial, sans-serif;
 }
 
+[class*="placeholder"] { position: relative; overflow: hidden; }
+[class*="placeholder"] img {
+  position: absolute; width:110%; height:110%; top:-5%; left:-5%;
+  object-fit: cover; will-change: transform; transition: transform 0.1s linear;
+}
+
+
 
 /* #endregion */
 
