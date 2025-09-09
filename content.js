@@ -1,5 +1,78 @@
 const content = {};
 
+
+// === word-hover helpers (coller après `const content = {};`) ===
+function injectWordHoverStyles() {
+  if (document.getElementById("word-hover-style")) return;
+  const style = document.createElement("style");
+  style.id = "word-hover-style";
+  style.textContent = `
+    .word-hover {
+      display: inline-block;
+      transition: transform 0.15s ease;
+      transform-origin: 50% 80%;
+    }
+    .word-hover:hover {
+      transform: scale(1.1);
+    }
+  `;
+  document.head.appendChild(style);
+}
+
+function wrapWordsInElement(root) {
+  // Exclusions : titres .PROJET et balises techniques
+  const EXCLUDED_TAGS = new Set(["SCRIPT", "STYLE", "NOSCRIPT", "CODE", "PRE", "TEXTAREA", "SVG"]);
+  if (!root || root.closest(".PROJET")) return;
+
+  const walker = document.createTreeWalker(
+    root,
+    NodeFilter.SHOW_TEXT,
+    {
+      acceptNode(textNode) {
+        const parent = textNode.parentElement;
+        if (!parent) return NodeFilter.FILTER_REJECT;
+        if (EXCLUDED_TAGS.has(parent.tagName)) return NodeFilter.FILTER_REJECT;
+        // ne pas retraiter un texte déjà directement dans un span.word-hover
+        if (parent.classList && parent.classList.contains("word-hover")) return NodeFilter.FILTER_REJECT;
+        if (!textNode.nodeValue || !textNode.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    }
+  );
+
+  const toWrap = [];
+  let node;
+  while ((node = walker.nextNode())) toWrap.push(node);
+
+  // Définition d’un "mot" (latin étendu + chiffres + apostrophes) ; espaces/ponctuation conservés
+  const SEP = /(\s+|[^A-Za-zÀ-ÖØ-öø-ÿĀ-ž0-9’']+)/;
+
+  function wrapTextNode(textNode) {
+    const text = textNode.nodeValue;
+    const parts = text.split(SEP);
+    const frag = document.createDocumentFragment();
+
+    for (const part of parts) {
+      if (!part) continue;
+      if (SEP.test(part)) {
+        frag.appendChild(document.createTextNode(part)); // espaces/ponctuation
+      } else {
+        const span = document.createElement("span");
+        span.className = "word-hover";
+        span.textContent = part;
+        frag.appendChild(span);
+      }
+    }
+    textNode.parentNode.replaceChild(frag, textNode);
+  }
+
+  toWrap.forEach(wrapTextNode);
+}
+// === fin helpers ===
+
+
+
+
 // #region HOME
 
 content["projet1"] = `
@@ -375,12 +448,23 @@ Nyaze & Agency © David Garcia
 
 // #endregion
 
+
 // #region injection
 window.addEventListener("DOMContentLoaded", () => {
+  injectWordHoverStyles();
+
   Object.entries(content).forEach(([key, value]) => {
     const el = document.querySelector(`[data-content="${key}"]`);
-    if (el) el.innerHTML = value;
+    if (!el) return;
+
+    // on injecte d'abord le HTML depuis content.js
+    el.innerHTML = value;
+
+    // ne PAS appliquer l'effet aux titres .PROJET
+    if (!el.classList.contains("PROJET")) {
+      // on wrappe immédiatement le contenu injecté
+      wrapWordsInElement(el);
+    }
   });
 });
 // #endregion
-
