@@ -48,7 +48,7 @@ content["p1s1-credit5"] = "2022 workshop @Salazie";
 content["p1s1-protocole-titre"] = "Protocole :";
 content["p1s1-protocole-corps"] = `
   En pleine nature, dans un jardin,<br>
-  ou n’importe où avec de la nature mobile.<br>
+  ou n’importe où avec de la nature mobile .<br>
   Face aux regardeur.euses,<br>
   établir une connexion visuelle<br>
   avec chaque personne.<br>
