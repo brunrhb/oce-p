@@ -15,8 +15,7 @@
   --ff-ui:   Roboto, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   --ff-title:"DINdong","Roboto Condensed", Arial, sans-serif;
   --marging_projects: calc(8vw + 4vh); 
-  --font_unit: calc(0.8vw + 0.6vh); 
-  --heigntline_unit: calc(1.25vw + 0.75vh); 
+  --font_unit: calc(1vw + 0.5vh); 
 }
 
 [class*="placeholder"] { position: relative; overflow: hidden; }
@@ -32,7 +31,7 @@
 /* #region AUTRES */
 
 .credit {
-  font-size: calc(1.3*((var(--font_unit))/1.618));
+  font-size: calc(1.3*((--font_unit)/1.618));
 
   margin-top: calc(5px + 0.5rem + 0.5em) ;
   z-index: 10;
@@ -40,7 +39,7 @@
 }
 
 .protocole-titre {
-  font-size: calc(1.618*(var(--font_unit))) ;
+  font-size: calc(1.618*(--font_unit)) ;
   font-family: DINdong;
 
   margin: 0;
@@ -48,29 +47,29 @@
 }
 
 .protocole-corps {
-  font-size: var(--font_unit) ;
+  font-size: calc(1vw + 0.5vh) ;
    font-family: Roboto;
 
 }
 
 .extrait-titre {
-  font-size: calc(1.618*(var(--font_unit))) ;
+  font-size: calc(1.618*(1vw + 0.5vh)) ;
   font-family: DINdong;
 }
 
 .extrait {
-  font-size: var(--font_unit) ;
+  font-size: calc(1vw + 0.5vh) ;
   font-family: DINdong;
-  line-height: var(--heigntline_unit);
+  line-height: calc(1.25vw + 0.75vh);
 }
 
 .context {
-  font-size: var(--font_unit) ;
+  font-size: calc(1vw + 0.5vh) ;
   font-family: Roboto;
 }
 
 .intro {
-  font-size: var(--font_unit) ;
+  font-size: calc(1vw + 0.5vh) ;
   font-family: Roboto;
   font-weight: bold;
   font-style: italic;
@@ -79,7 +78,7 @@
 }
 
 .lien {
-  font-size: var(--font_unit) ;
+  font-size: calc(1vw + 0.5vh) ;
   font-family: DINdong;
 }
 
@@ -781,7 +780,7 @@ text-align: right;
 
 /* 2 blocks et elements */
 .credit-p8-1 {
-margin-left: var(--marging_projects);
+margin-left: 5rem;
 }
 
 

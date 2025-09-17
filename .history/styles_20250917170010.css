@@ -61,7 +61,7 @@
 .extrait {
   font-size: var(--font_unit) ;
   font-family: DINdong;
-  line-height: var(--heigntline_unit);
+  line-height: calc(1.25vw + 0.75vh);
 }
 
 .context {
@@ -781,7 +781,7 @@ text-align: right;
 
 /* 2 blocks et elements */
 .credit-p8-1 {
-margin-left: var(--marging_projects);
+margin-left: 5rem;
 }
 
 

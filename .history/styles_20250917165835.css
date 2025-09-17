@@ -16,7 +16,6 @@
   --ff-title:"DINdong","Roboto Condensed", Arial, sans-serif;
   --marging_projects: calc(8vw + 4vh); 
   --font_unit: calc(0.8vw + 0.6vh); 
-  --heigntline_unit: calc(1.25vw + 0.75vh); 
 }
 
 [class*="placeholder"] { position: relative; overflow: hidden; }
@@ -61,7 +60,7 @@
 .extrait {
   font-size: var(--font_unit) ;
   font-family: DINdong;
-  line-height: var(--heigntline_unit);
+  line-height: calc(1.25vw + 0.75vh);
 }
 
 .context {
@@ -781,7 +780,7 @@ text-align: right;
 
 /* 2 blocks et elements */
 .credit-p8-1 {
-margin-left: var(--marging_projects);
+margin-left: 5rem;
 }
 
 
