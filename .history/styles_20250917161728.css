@@ -14,7 +14,7 @@
   --ff-body: "Roboto Condensed", Roboto, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   --ff-ui:   Roboto, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   --ff-title:"DINdong","Roboto Condensed", Arial, sans-serif;
-  --marging_projects: calc(6vw + 4vh); 
+  --marging_projects: calc(1vw + 1vh); 
 }
 
 [class*="placeholder"] { position: relative; overflow: hidden; }
@@ -194,8 +194,8 @@ body {
 .grid-p1s1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-left: var(--marging_projects);
-  padding-right: var(--marging_projects);
+  padding-left: 5rem;
+  padding-right: 5rem;
   column-gap: 2vw;
 }
 
@@ -258,8 +258,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding-bottom: 5rem;
-  padding-left: var(--marging_projects);
-  padding-right: var(--marging_projects);
+  padding-left: 5rem;
+  padding-right: 5rem;
   column-gap: 2vw;
 }
 
@@ -318,8 +318,8 @@ body {
 .grid-p2 {
   display: grid;
   grid-template-columns: 0.7fr 1.3fr;
-  padding-left: var(--marging_projects);
-  padding-right: var(--marging_projects);
+  padding-left: 5rem;
+  padding-right: 5rem;
   column-gap: 5vw;
 }
 .col-p2-1 {
@@ -385,8 +385,8 @@ body {
 .grid-p3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-left: var(--marging_projects);
-  padding-right: var(--marging_projects);
+  padding-left: 5rem;
+  padding-right: 5rem;
   column-gap: 2vw;
 }
 
@@ -487,8 +487,8 @@ text-align: right;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
-  padding-left: var(--marging_projects);
-  padding-right: var(--marging_projects);
+  padding-left: 5rem;
+  padding-right: 5rem;
   column-gap: 2vw;
 }
 
@@ -566,8 +566,8 @@ margin-top: calc(1vw + 0.5vh) ;
 .grid-p5 {
   display: grid;
   grid-template-columns: 0.3fr 0.3fr 0.6fr;
-  padding-left: var(--marging_projects);
-  padding-right: var(--marging_projects);
+  padding-left: 5rem;
+  padding-right: 5rem;
   column-gap: 2vw;
 }
 
@@ -629,8 +629,8 @@ margin-top: calc(1vw + 0.5vh);
 .grid-p6 {
   display: grid;
   grid-template-columns: 0.35fr 0.5fr ;
-  padding-left: var(--marging_projects);
-  padding-right: var(--marging_projects);
+  padding-left: 5rem;
+  padding-right: 5rem;
   column-gap: calc(20px + 6vw + 4vh);
 }
 
@@ -711,8 +711,8 @@ text-align: right;
 .grid-p7 {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr ;
-  padding-left: var(--marging_projects);
-  padding-right: var(--marging_projects);
+  padding-left: 5rem;
+  padding-right: 5rem;
   column-gap: 2vw;
 }
 
@@ -762,8 +762,8 @@ text-align: right;
 .grid-p8-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-left: var(--marging_projects);
-  padding-right: var(--marging_projects);
+  padding-left: 5rem;
+  padding-right: 5rem;
   column-gap: 2vw;
 }
 
@@ -790,8 +790,8 @@ margin-left: 5rem;
 .row-p8-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding-left: var(--marging_projects);
-  padding-right: var(--marging_projects);
+  padding-left: 5rem;
+  padding-right: 5rem;
   column-gap: 2vw;
 }
 
@@ -808,8 +808,8 @@ text-align: right;
 .row-p8-2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1.5fr;
-  padding-left: var(--marging_projects);
-  padding-right: var(--marging_projects);
+  padding-left: 5rem;
+  padding-right: 5rem;
   column-gap: 2vw;
 }
 
@@ -845,8 +845,8 @@ margin-top: auto;
 .grid-p9{
 display: grid;
 grid-template-columns: 1fr 1fr ;
-padding-left: var(--marging_projects);
-padding-right: var(--marging_projects);
+padding-left: 5rem;
+padding-right: 5rem;
 column-gap: 6vw;
 }
 
