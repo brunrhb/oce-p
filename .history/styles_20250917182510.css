@@ -14,7 +14,7 @@
   --ff-body: "Roboto Condensed", Roboto, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   --ff-ui:   Roboto, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   --ff-title:"DINdong","Roboto Condensed", Arial, sans-serif;
-  --marging_projects: calc(3rem + 15vw + 4vh); 
+  --marging_projects: calc(3rem + 05vw + 4vh); 
   --marging_home: calc(3rem + 1vw + 2vh); 
   --font_unit: calc(0.65vw + 0.6vh); 
   --heigntline_unit: calc(1vw + 0.70vh); 
