@@ -109,7 +109,7 @@ body {
 .allproject{
   display: flex;
   flex-direction: column;
-  gap: calc(1.618*(1.618*(0.4rem + 0.6vh - 0.05vw)));
+  gap: calc(1.618*(1.618*(0.5rem + 0.5vh - 0.2vw)));
   min-height: 100vh;
 
   /* État "tout fermé" → centré au milieu */
@@ -155,7 +155,7 @@ body {
 } 
 
 .PROJET {
-  font-size: calc(1.618*(1.618*(0.65rem + 0.7vw - 0.1vh ))) ;
+  font-size: calc(1.618*(1.618*(0.75rem + 0.5vw ))) ;
   font-family: DINdong;
 
   padding: 0;
