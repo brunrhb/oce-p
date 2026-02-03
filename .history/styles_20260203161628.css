@@ -76,7 +76,7 @@
 .trait {
   width: calc(6vw + 3vh) ;           
   border: none;          
-  border-top: calc(1.5px + 0.05vw + 0.05vh) solid black; 
+  border-top: calc(5px + 0.05vw + 0.05vh) solid black; 
   margin: 10px 0;    
 
 }
@@ -726,10 +726,6 @@ display: inline-block;
   background-color: black;
 }
 
-.media-block-p7-2 {
-  margin-block: clamp(10px, 3vh, 30px); 
-  margin-left: clamp(10px, 3vh, 30px);
-}
 
 .placeholder-p7-2 {
   aspect-ratio: 4 / 4;

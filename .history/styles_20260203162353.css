@@ -76,7 +76,7 @@
 .trait {
   width: calc(6vw + 3vh) ;           
   border: none;          
-  border-top: calc(1.5px + 0.05vw + 0.05vh) solid black; 
+  border-top: calc(5px + 0.05vw + 0.05vh) solid black; 
   margin: 10px 0;    
 
 }
