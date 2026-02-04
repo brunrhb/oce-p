@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggle = () => {
       const isHidden = target.classList.toggle('is-hidden');
       requestAnimationFrame(() => syncExtraitOffset(target));
-      window.__afterToggleRecalc = afterToggleRecalc;
       t.setAttribute('aria-expanded', String(!isHidden));
     };
 
@@ -76,4 +75,47 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Liaison vegetal calc marge top
+function syncExtraitOffset(scope = document) {
+  scope.querySelectorAll('.p1').forEach(p1 => {
+    const zone = p1.querySelector('.text-block-pls2');
+    if (!zone) return;
+
+    const titre = zone.querySelector('.extrait-titre');
+    const body  = zone.querySelector('.extrait');
+    if (!titre || !body) return;
+
+    const offset = Math.max(
+      0,
+      Math.ceil(body.getBoundingClientRect().top - titre.getBoundingClientRect().top)
+    );
+
+    p1.style.setProperty('--extrait-offset', `${offset}px`);
+  });
+}
+
+function afterToggleRecalc(targetEl) {
+  requestAnimationFrame(() => syncExtraitOffset(targetEl || document));
+}
+
+// auto-run
+document.addEventListener('DOMContentLoaded', () => syncExtraitOffset());
+if (document.fonts?.ready) document.fonts.ready.then(() => syncExtraitOffset());
+
+let _r;
+window.addEventListener('resize', () => {
+  clearTimeout(_r);
+  _r = setTimeout(() => syncExtraitOffset(), 120);
+});
+
+if ('ResizeObserver' in window) {
+  const ro = new ResizeObserver(() => requestAnimationFrame(() => syncExtraitOffset()));
+  function observeZones() {
+    document.querySelectorAll('.p1 .text-block-pls2').forEach(z => ro.observe(z));
+  }
+  document.addEventListener('DOMContentLoaded', observeZones);
+  if (document.fonts?.ready) document.fonts.ready.then(observeZones);
+}
+
+// hook pour le toggle
+window.__afterToggleRecalc = afterToggleRecalc;
 

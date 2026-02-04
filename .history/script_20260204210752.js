@@ -72,3 +72,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initParallax();
 });
+
+// Liaison vegetal calc marge top
+function syncExtraitOffset() {
+  document.querySelectorAll('.p1').forEach(p1 => {
+    const titre = p1.querySelector('.extrait-titre');
+    if (!titre) return;
+
+    const h = Math.ceil(titre.getBoundingClientRect().height);
+
+    // si tu veux inclure l'espace sous le titre, ajoute-le ici :
+    const gap = 24; // doit matcher ton margin-bottom visuel
+    const offset = h + gap;
+
+    p1.style.setProperty('--extrait-offset', `${offset}px`);
+  });
+}
+
+window.addEventListener('load', syncExtraitOffset);
+window.addEventListener('resize', syncExtraitOffset);

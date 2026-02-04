@@ -260,12 +260,6 @@ body {
   background-color: black;
 }
 
-@media (min-width: 1200px){
-  .placeholder-pls1{
-    max-width: 800px;                 /* optionnel mais souvent nécessaire */
-    height: clamp(650px, 100vw, 1000px); /* vw => plus large = plus haut, plafonné par vh */
-  }
-}
 
 .text-block-p1s1 {
   display: flex;
@@ -307,9 +301,8 @@ body {
 
 .col-p1s2-3 {
   display: flex;
-
+  margin-top: var(--extrait-offset, 0px);
 }
-
 
 
 /* 2 blocks et elements */
@@ -325,7 +318,7 @@ body {
   display: block;
   position: relative;
   width: 100%;
-
+  margin-top: var(--extrait-offset, 0px);
 }
 
 .text-block-p1s2 {

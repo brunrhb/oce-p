@@ -146,15 +146,9 @@ body {
 
 /* #region UTILITAIRES */
 
-.marges-lateral{
-  padding-left:  clamp(12px, 3vw, 120px);
-  padding-right: clamp(12px, 3vw, 120px);
-}
-@media (min-width: 1400px){
-  .marges-lateral{
-    padding-left:  clamp(24px, 20vw, 600px);
-    padding-right: clamp(24px, 20vw, 600px);
-  }
+.marges-lateral {
+  padding-left: clamp(24px, 5vw, 80px);
+  padding-right: clamp(24px, 5vw, 80px);
 }
 
 /* #endregion */
@@ -255,17 +249,11 @@ body {
 .placeholder-p1s1 {
   width: 100%;
   min-width: 240px;           /* ajuste */
-  max-width: 500px;   
-  height: min(clamp(500px, 80vh, 900px), 100vh);
+  max-width: 360px;   
+  height: min(clamp(600px, 80vh, 900px), 120vh);
   background-color: black;
 }
 
-@media (min-width: 1200px){
-  .placeholder-pls1{
-    max-width: 800px;                 /* optionnel mais souvent nécessaire */
-    height: clamp(650px, 100vw, 1000px); /* vw => plus large = plus haut, plafonné par vh */
-  }
-}
 
 .text-block-p1s1 {
   display: flex;
@@ -307,9 +295,7 @@ body {
 
 .col-p1s2-3 {
   display: flex;
-
 }
-
 
 
 /* 2 blocks et elements */
@@ -325,7 +311,6 @@ body {
   display: block;
   position: relative;
   width: 100%;
-
 }
 
 .text-block-p1s2 {
@@ -800,7 +785,7 @@ display: inline-block;
 
 /* 2 blocks et elements */
 .credit-p8-1 {
-margin-left: 0;
+margin-left: 5rem;
 }
 
 
@@ -864,6 +849,8 @@ margin-top: auto;
 .grid-p9{
 display: grid;
 grid-template-columns: 1fr 1fr ;
+padding-left: 5rem;
+padding-right: 5rem;
 column-gap: 6vw;
 }
 
@@ -915,4 +902,3 @@ text-align: right;
 }
 
 /* #endregion */
-

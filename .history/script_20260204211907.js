@@ -18,8 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const toggle = () => {
       const isHidden = target.classList.toggle('is-hidden');
-      requestAnimationFrame(() => syncExtraitOffset(target));
-      window.__afterToggleRecalc = afterToggleRecalc;
       t.setAttribute('aria-expanded', String(!isHidden));
     };
 
@@ -76,4 +74,28 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Liaison vegetal calc marge top
+// --- Offset auto (aligner image + col3 sur le début du body) ---
+function syncExtraitOffset(scope = document) {
+  scope.querySelectorAll('.p1').forEach(p1 => {
+    const titre = p1.querySelector('.extrait-titre');
+    if (!titre) return;
 
+    const rect = titre.getBoundingClientRect();
+    const mb = parseFloat(getComputedStyle(titre).marginBottom) || 0;
+
+    const offset = Math.ceil(rect.height + mb);
+    p1.style.setProperty('--extrait-offset', `${offset}px`);
+  });
+}
+
+// recalcul après chargement des fontes (évite les mesures fausses)
+if (document.fonts && document.fonts.ready) {
+  document.fonts.ready.then(() => syncExtraitOffset());
+}
+
+// resize throttlé
+let _r;
+window.addEventListener('resize', () => {
+  clearTimeout(_r);
+  _r = setTimeout(() => syncExtraitOffset(), 120);
+});

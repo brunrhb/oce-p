@@ -262,8 +262,8 @@ body {
 
 @media (min-width: 1200px){
   .placeholder-pls1{
-    max-width: 800px;                 /* optionnel mais souvent nécessaire */
-    height: clamp(650px, 100vw, 1000px); /* vw => plus large = plus haut, plafonné par vh */
+    max-width: 1000px;                 /* optionnel mais souvent nécessaire */
+    height: clamp(650px, 100vw, 120vh); /* vw => plus large = plus haut, plafonné par vh */
   }
 }
 

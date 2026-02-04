@@ -99,8 +99,8 @@ Ma sœur<br><br>
 Chaque jour, les structures rigides de mon quotidien<br>
 me rappellent ce système absurde dans lequel je vis.
  `;
-content["p1s2-extrait2"] = 
-`Tout comme, chaque jour,<br>
+content["p1s2-extrait2"] = `
+Tout comme, chaque jour,<br>
 mon existence et celle du vivant<br>
 rappellent à ce système<br>
 qu’il peut toujours en être autrement.<br>
