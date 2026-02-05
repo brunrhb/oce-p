@@ -764,7 +764,7 @@ text-align: right;
 /* 1 grille et colonnes */
 .grid-p7 {
   display: grid;
-  grid-template-columns: 0.655fr 0.455fr ;
+  grid-template-columns: 0.5fr 0.5fr ;
   column-gap: 2vw;
 }
 

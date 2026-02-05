@@ -280,8 +280,7 @@ lien video
 
 // #region PROJET7 HIER C’EST DÉJÀ DEMAIN
 content["p7-credit-1"] = `
-Performance Hier c'est deja demain <br>
-avec Amendine Benintendi @FRAC Réunion 2022
+Vue de l’installation @Pavillon Martin
 `;
 
 content["p7-autre-corps-1"] = `

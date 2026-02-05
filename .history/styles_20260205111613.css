@@ -255,7 +255,7 @@ body {
 
 .align-extrait-top .extrait-titre{
   margin-top: 0;                 /* alignement */
-  margin-bottom: var(--gap-extrait, 0.6em); /* respiration */
+  margin-bottom: var(--gap-extrait, 0.9em); /* respiration */
 }
 
 /* optionnel : si tes <p> ont encore des marges ailleurs */
@@ -700,7 +700,6 @@ text-align: right;
 .autre-corps {
 }
 .text-block-p6-1 {
-margin-top: clamp(20px,0.5vh + 0.5vw,20px) ;
 }
 .media-block-p6-2 {
 }
@@ -708,16 +707,9 @@ margin-top: clamp(20px,0.5vh + 0.5vw,20px) ;
 }
 
 .context-p6 {
-  margin-top: clamp(20px, 0.5vh + 0.5vw, 40px);
+  margin-top: calc(2vw + 1vh);
   justify-content: baseline;
 }
-
-
-.intro-p6 {
-  margin-top: clamp(20px, 0.5vh + 0.5vw, 40px);
-  justify-content: baseline;
-}
-
 
 .placeholder-p6-2 {
 }
@@ -748,12 +740,9 @@ hanging-punctuation: first; /* laisse le guillemet “pendre” proprement (Safa
 
 .lien-p6 {
 margin-top: calc(1vw + 1vh );
-display:block; 
-width:100%; 
 text-align: right;
-
+display: inline-block; 
 }
-
 
 
 /* #endregion */
@@ -764,7 +753,7 @@ text-align: right;
 /* 1 grille et colonnes */
 .grid-p7 {
   display: grid;
-  grid-template-columns: 0.655fr 0.455fr ;
+  grid-template-columns: 0.5fr 0.5fr ;
   column-gap: 2vw;
 }
 

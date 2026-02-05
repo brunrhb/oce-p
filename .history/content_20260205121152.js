@@ -280,25 +280,16 @@ lien video
 
 // #region PROJET7 HIER C’EST DÉJÀ DEMAIN
 content["p7-credit-1"] = `
-Performance Hier c'est deja demain <br>
-avec Amendine Benintendi @FRAC Réunion 2022
+Vue de l’installation @Pavillon Martin
 `;
 
 content["p7-autre-corps-1"] = `
 
 
 Ce projet de recherche développé au Pavillon Martin du FRAC Réunion, en collaboration avec Amandine Benintendi, s'inscrit dans une réflexion sur la mémoire institutionnelle et collective à partir d'une question centrale: comment faire mémoire d'une école ? Plutôt que d'envisager la mémoire comme un objet fixe ou rétrospectif, le projet la pense comme un processus situé, incarné et continuellement réactivé.
-<br>
-<br>
 Le travail prend la forme d'une archive sensible composée des questions formulées par les étudiantes de l'ESA Réunion. Cette archive n'est pas conçue comme un simple lieu de conservation, mais comme un dispositif performatif, façonné par les voix, les corps et les contextes quila produisent.
-<br>
-<br>
 En ce sens, le projet interroge à la fois la performativité de l'archive et sa spatialisation, en envisageant l'archivage comme une pratique active et relationnelle, plutot que comme un mode de préservation seul.
-<br>
-<br>
 Le temps de création au FRAC a offert un cadre propice pour questionner le « faire mémoire » en mobilisant l'archivage comme un médium et en le mettant en tension à travers une approche transversale. Celle-ci s'appuie sur l'interdiscursivité du texte et du textile, en considérant leurs capacités matérielles et performatives comme des espaces où la théorie n'est pas seulement représentée, mais mise en acte.
-<br>
-<br>
 L'installation résultante se composait de grands panneaux de tulle sur lesquels étaient peints des fragments de texte. Leur agencement dans l'espace structurait le parcours et invitait à un engagement corporel par le mouvement et le toucher. Ce faisant, le projet propose des formes qui fonctionnent simultanément comme des supports théoriques et des dispositifs de médiation, permettant aux savoirs de circuler à travers l'expérience incarnée et la rencontre collective.
 
 `;
