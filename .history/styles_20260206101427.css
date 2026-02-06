@@ -112,7 +112,7 @@ body {
 
 
 :root{
-  --spacer: clamp(24px, 4vh, 64px); /* marge de confort quand un projet est ouvert */
+  --spacer: clamp(24px, 4vh, 10px); /* marge de confort quand un projet est ouvert */
 }
 
 .allproject{
@@ -865,7 +865,6 @@ text-align: right;
 
 .grid-p8-2 {
   display: grid;
-  align-items: start;
   grid-template-rows: 1fr 1fr ;
  
 }
