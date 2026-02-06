@@ -904,7 +904,6 @@ margin-top: clamp(30px, 3vh + 3vw, 60px);
 display: grid;
 grid-template-columns: 1fr 1fr ;
 column-gap: 6vw;
-align-items: start;
 }
 
 
@@ -918,7 +917,7 @@ align-items: start;
   aspect-ratio: 1 / 1;
   width: 100%;  
   background-color: black;
-  margin-top: 0;
+   margin-top: calc(2vw + 1vh);
 }
 
 .credit-p9{

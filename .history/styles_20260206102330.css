@@ -861,7 +861,7 @@ text-align: right;
   display: grid;
   grid-template-columns: 1fr 1fr 1.5fr;
   column-gap: 2vw;
-  margin-top: clamp(20px,0.5vh + 0.5vw ,40px);
+  margin-top: clamp(10px,0.5vh +0.5vw ,40px);
 }
 
 .grid-p8-2 {
@@ -888,46 +888,29 @@ margin-top: auto;
 .credit-p8-3{
 margin-top: auto;
 }
-
-.col-p8-new{
-margin-top: clamp(30px, 3vh + 3vw, 60px);
-}
 /* #endregion */
 
 
 /* #region P9 NYAZE */
 
-
-
-
 .grid-p9{
 display: grid;
 grid-template-columns: 1fr 1fr ;
 column-gap: 6vw;
-align-items: start;
-}
-
-
-.col-p9-1{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; ;
 }
 
 .placeholder-p9{
   aspect-ratio: 1 / 1;
   width: 100%;  
   background-color: black;
-  margin-top: 0;
+   margin-top: calc(2vw + 1vh);
 }
 
 .credit-p9{
 text-align: right;
 }
 
-.extrait-titre-p9 {
-margin-bottom: 2vw;
-}
+
 
 .trait-p9 {
  margin-top: calc(4vw + 2vh); /* Keeping the smaller margin value */

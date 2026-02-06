@@ -377,10 +377,6 @@ Présentée à LALANBIK (le centre choréographique de l’Océan Indien) en pre
 // #endregion
 
 // #region PROJET9 NYAZE
-content["p9-extrait-titre"] = `
-Extrait du texte
-`;
-
 content["p9-extrait"] = `
 [...] Seulement, ma romance sous l’Équateur a lieu au Gol. On aura beau chercher, ça a l’air de tout sauf d’une carte postale, tout y est vrai. Les chiens errants trainent la patte sous la chaleur. En fond, les cris d’enfants, certains s’y balladent pieds nus. Il y a des gens qui vivent et qui attendent, des chaises en plastiques et des objets abandonnés. Dans l’air c’est électrique. On attend que quelque chose se passe. Ce qui est certain, c’est qu’il n’y a pas de travail. Au moins, il reste du temps en abondance. Il s’étire et tire en longueur. La vie s’allonge, les gestes sont lents. Et toujours la même rengaine: le jour puis la nuit, la nuit puis le jour. C’est pareil pour le ciel: du noir, puis du bleu et du blanc. Pourtant on est toujours surpris. On a à peine le temps de terminer sa phrase que la nuit est tombée ou le jour s’est levé. Ce temps en saccade, en cascade, vous laisse démuni. Coincé entre terre et mer, entre aujourd’hui et demain. Seulement, un jour quelque chose a changé. Je ne cherchais plus le soleil, j’attendais les nuages. Ils reviennent chaque jour. Chaque jour amène son lot de nuages.
 Mais d’où viennent-t-ils ? [...]

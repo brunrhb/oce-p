@@ -904,7 +904,6 @@ margin-top: clamp(30px, 3vh + 3vw, 60px);
 display: grid;
 grid-template-columns: 1fr 1fr ;
 column-gap: 6vw;
-align-items: start;
 }
 
 
