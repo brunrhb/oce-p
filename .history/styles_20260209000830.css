@@ -26,9 +26,6 @@
 /* EXTRACT — rythme texte */
 /* 1 propriété principale : respiration avant et après le bloc */
 
-.allproject{
- gap: calc(1.618*(1.618*(1vw + 0.5vh)));
-  }
 
 .jump-extrait-body{
   margin-bottom: 10px;  /* EXAGÉRÉ POUR TEST VISUEL */
@@ -57,17 +54,14 @@
 
 .jump-bloc-lien{
   margin-top: 10px;
-  outline: 2px dashed rgba(129, 91, 112, 0.8);
 }
 
 
 /* si jump est sur un <a>, marges fiables */
 a.lien.jump-bloc-lien{ display:block; }
 
-.jump-body-titre{
-  margin-top: 100px;
-  outline: 2px dashed rgba(34, 62, 26, 0.8);
-}
+
+
 /* #endregion */
 
 
@@ -190,6 +184,7 @@ body {
 .allproject{
   display: flex;
   flex-direction: column;
+  gap: calc(1.618*(1.618*(1vw + 0.5vh)));
   min-height: 100vh;
 
   /* État "tout fermé" → centré au milieu */
@@ -655,7 +650,7 @@ margin-top: calc(1vw + 0.5vh) ;
 }
 .lien-p4 {
   text-align: right;
-
+  margin-top: 0;
 }
 .text-block-p4-2 {
 }

@@ -190,6 +190,7 @@ body {
 .allproject{
   display: flex;
   flex-direction: column;
+  gap: calc(1.618*(1.618*(1vw + 0.5vh)));
   min-height: 100vh;
 
   /* État "tout fermé" → centré au milieu */
