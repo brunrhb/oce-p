@@ -24,41 +24,51 @@
    Tu ajustes au fur et à mesure.
    ========================= */
 /* EXTRACT — rythme texte */
-/* 1 propriété principale : respiration avant et après le bloc */
-
-
-.jump-extrait-body{
-  margin-bottom: 100px;  /* EXAGÉRÉ POUR TEST VISUEL */
-  outline: 2px dashed rgba(100, 200, 255, 0.8);
-  background: rgba(100, 200, 255, 0.1);
+.extrait.jump-extrait-body{
+  max-width: 62ch;
+  margin-top: clamp(12px, 0.9vw + 0.6vh, 20px);
+  margin-bottom: clamp(32px, 2.4vw + 1.6vh, 56px);
 }
 
-
-
+/* PROTOCOLE — rythme texte */
 .protocole-corps.jump-protocole-body{
+  max-width: 62ch;
+  margin-top: clamp(12px, 0.9vw + 0.6vh, 20px);
   margin-bottom: clamp(20px, 1.4vw + 1.0vh, 32px);
-   outline: 2px dashed rgba(255, 100, 177, 0.8);
-   background: rgba(50, 16, 171, 0.1);
 }
 
+/* INTRO — rythme texte */
 .intro.jump-intro-body{
+  max-width: 62ch;
+  margin-top: clamp(20px, 1.4vw + 1.0vh, 32px);
   margin-bottom: clamp(20px, 1.4vw + 1.0vh, 32px);
-   outline: 2px dashed rgba(100, 255, 188, 0.8);
-   background: rgba(9, 109, 27, 0.1);
 }
 
+/* TITRES — état liste (fermé) */
+.titre-projet.jump-titre-projet{
+  margin-block: clamp(12px, 0.9vw + 0.6vh, 20px);
+}
+
+/* TITRES — état ouvert (headline) */
+.projet-titre.jump-projet-titre{
+  margin-top: clamp(20px, 1.4vw + 1.0vh, 32px);
+  margin-bottom: clamp(12px, 0.9vw + 0.6vh, 20px);
+}
+
+/* CREDITS */
 .credit.jump-bloc-credit{
+  margin-top: clamp(12px, 0.9vw + 0.6vh, 20px);
   margin-bottom: clamp(20px, 1.4vw + 1.0vh, 32px);
 }
 
+/* LIENS */
 .lien.jump-bloc-lien{
+  margin-top: clamp(8px, 0.6vw + 0.4vh, 12px);
   margin-bottom: clamp(20px, 1.4vw + 1.0vh, 32px);
 }
-
 
 /* si jump est sur un <a>, marges fiables */
 a.lien.jump-bloc-lien{ display:block; }
-
 
 
 /* #endregion */
@@ -313,16 +323,20 @@ body {
 
 /* aligne le titre sur le haut de colonne (même ligne que l’image / texte) */
 .extrait-titre{
-        /* <- clé */
+  margin: 0;          /* <- clé */
   padding: 0;
   line-height: 1;
 }
 
-
+.align-extrait-top .extrait-titre{
+  margin-top: 0;                 /* alignement */
+  margin-bottom: var(--gap-extrait, 0.6em); /* respiration */
+}
 
 /* optionnel : si tes <p> ont encore des marges ailleurs */
-
-
+.text-block-p1s2 p{ margin: 0; }
+.text-block-p1s2{ display:flex; flex-direction:column; }
+.text-block-p1s2 .extrait{ margin-top: clamp(6px, 0.8vw, 14px); }
 
 
 
@@ -379,7 +393,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
- 
+  gap: 20vw;
 }
 
 .col-p1s2-2 {
@@ -409,7 +423,9 @@ body {
 
 }
 
-
+.text-block-p1s2 {
+  gap: 0;
+}
 
 
 
@@ -983,7 +999,9 @@ align-items: start;
 text-align: right;
 }
 
-
+.extrait-titre-p9 {
+margin-bottom: 2vw;
+}
 
 .trait-p9 {
  margin-top: calc(4vw + 2vh); /* Keeping the smaller margin value */

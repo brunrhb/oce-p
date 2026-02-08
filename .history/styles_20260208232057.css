@@ -25,15 +25,17 @@
    ========================= */
 /* EXTRACT — rythme texte */
 /* 1 propriété principale : respiration avant et après le bloc */
-
-
 .jump-extrait-body{
   margin-bottom: 100px;  /* EXAGÉRÉ POUR TEST VISUEL */
   outline: 2px dashed rgba(100, 200, 255, 0.8);
   background: rgba(100, 200, 255, 0.1);
 }
 
-
+.jump-body-extrait{
+  margin-top: 200px;  /* EXAGÉRÉ POUR TEST VISUEL */
+  outline: 2px dashed rgba(162, 100, 255, 0.8);
+  background: rgba(100, 200, 255, 0.1);
+}
 
 .protocole-corps.jump-protocole-body{
   margin-bottom: clamp(20px, 1.4vw + 1.0vh, 32px);

@@ -25,10 +25,8 @@
    ========================= */
 /* EXTRACT — rythme texte */
 /* 1 propriété principale : respiration avant et après le bloc */
-
-
 .jump-extrait-body{
-  margin-bottom: 100px;  /* EXAGÉRÉ POUR TEST VISUEL */
+  margin-bottom: 500px;  /* EXAGÉRÉ POUR TEST VISUEL */
   outline: 2px dashed rgba(100, 200, 255, 0.8);
   background: rgba(100, 200, 255, 0.1);
 }
