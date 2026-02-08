@@ -79,12 +79,6 @@
   margin-bottom: var(--jump-gap-m);
 }
 
-/* Force bloc pour liens <a> et verrouille les marges */
-.lien.jump-bloc-lien{
-  display: block;
-  margin-top: var(--jump-gap-xs);
-  margin-bottom: var(--jump-gap-m);
-}
 
 /* #endregion */
 

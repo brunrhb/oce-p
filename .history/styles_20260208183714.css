@@ -25,17 +25,12 @@
    ========================= */
 
 :root{
-  /* XS = micro respiration : interlignes, petits séparateurs (≈ 8px → 12px) */
-  --jump-gap-xs: clamp(8px,  0.6vw + 0.4vh, 12px);
+  --jump-gap-xs: clamp(0.5rem, 0.6vw, 0.75rem);
+  --jump-gap-s:  clamp(100px, 100px, 100px);
+  --jump-gap-m:  clamp(1.25rem, 1.8vw, 2.25rem);
+  --jump-gap-l:  clamp(2rem, 3vw, 4rem);
 
-  /* S = respiration courte : titre ↔ premier bloc, petits écarts (≈ 12px → 20px) */
-  --jump-gap-s:  clamp(12px, 0.9vw + 0.6vh, 20px);
-
-  /* M = respiration standard : entre blocs texte/média (≈ 20px → 32px) */
-  --jump-gap-m:  clamp(20px, 1.4vw + 1.0vh, 32px);
-
-  /* L = grande respiration : séparation de sections / fin de projet (≈ 32px → 56px) */
-  --jump-gap-l:  clamp(32px, 2.4vw + 1.6vh, 56px);
+  --jump-text-max: 62ch;
 }
 
 /* Rythme texte */
@@ -79,12 +74,6 @@
   margin-bottom: var(--jump-gap-m);
 }
 
-/* Force bloc pour liens <a> et verrouille les marges */
-.lien.jump-bloc-lien{
-  display: block;
-  margin-top: var(--jump-gap-xs);
-  margin-bottom: var(--jump-gap-m);
-}
 
 /* #endregion */
 

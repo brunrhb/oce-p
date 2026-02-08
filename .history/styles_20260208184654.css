@@ -26,7 +26,7 @@
 
 :root{
   /* XS = micro respiration : interlignes, petits séparateurs (≈ 8px → 12px) */
-  --jump-gap-xs: clamp(8px,  0.6vw + 0.4vh, 12px);
+  --jump-gap-xs: clamp(15px,  0.6vw + 0.4vh, 12px);
 
   /* S = respiration courte : titre ↔ premier bloc, petits écarts (≈ 12px → 20px) */
   --jump-gap-s:  clamp(12px, 0.9vw + 0.6vh, 20px);
@@ -79,12 +79,6 @@
   margin-bottom: var(--jump-gap-m);
 }
 
-/* Force bloc pour liens <a> et verrouille les marges */
-.lien.jump-bloc-lien{
-  display: block;
-  margin-top: var(--jump-gap-xs);
-  margin-bottom: var(--jump-gap-m);
-}
 
 /* #endregion */
 
