@@ -8,7 +8,8 @@ document.addEventListener("project:open", (e) => {
 
   // Réglages
   const OFFSET = 10;        // 12–24 : respiration au-dessus du titre
-  const DURATION = 900;     // 500–900 : plus grand = plus lent
+  const DURATION = 650;     // 500–900 : plus grand = plus lent
+  const VIEWPORT_ZONE = 0.25; // si le titre est déjà dans le 1er quart, ne bouge pas
   const EPS = 6;            // évite micro-mouvements
 
   function easeOutCubic(t) {

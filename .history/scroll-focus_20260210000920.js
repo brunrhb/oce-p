@@ -8,7 +8,7 @@ document.addEventListener("project:open", (e) => {
 
   // Réglages
   const OFFSET = 10;        // 12–24 : respiration au-dessus du titre
-  const DURATION = 900;     // 500–900 : plus grand = plus lent
+  const DURATION = 650;     // 500–900 : plus grand = plus lent
   const EPS = 6;            // évite micro-mouvements
 
   function easeOutCubic(t) {

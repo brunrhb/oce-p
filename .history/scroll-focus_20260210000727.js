@@ -7,8 +7,9 @@ document.addEventListener("project:open", (e) => {
   const reduce = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
 
   // Réglages
-  const OFFSET = 10;        // 12–24 : respiration au-dessus du titre
-  const DURATION = 900;     // 500–900 : plus grand = plus lent
+  const OFFSET = 18;        // 12–24 : respiration au-dessus du titre
+  const DURATION = 650;     // 500–900 : plus grand = plus lent
+  const VIEWPORT_ZONE = 0.25; // si le titre est déjà dans le 1er quart, ne bouge pas
   const EPS = 6;            // évite micro-mouvements
 
   function easeOutCubic(t) {
@@ -36,7 +37,8 @@ document.addEventListener("project:open", (e) => {
     const rect = trigger.getBoundingClientRect();
     const vh = window.innerHeight || 1;
 
-
+    // Si déjà bien placé, pas de scroll
+    if (rect.top >= 0 && rect.top <= vh * VIEWPORT_ZONE) return null;
 
     let targetY = window.scrollY + rect.top - OFFSET;
 
