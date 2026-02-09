@@ -1,45 +1,28 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const triggers = document.querySelectorAll('.PROJET');
-  let openItem = null;
+document.querySelectorAll('.PROJET').forEach((t) => {
+  const target = document.querySelector(t.getAttribute('data-target'));
+  if (!target) return;
 
-  triggers.forEach((t) => {
-    const targetSelector = t.getAttribute('data-target');
-    const target = targetSelector ? document.querySelector(targetSelector) : null;
-    if (!target) return;
+  // état initial
+  target.classList.add('is-hidden');
 
-    // état initial : tout fermé (si pas déjà)
-    target.classList.add('is-hidden');
+  t.addEventListener('click', () => {
+    const willOpen = target.classList.contains('is-hidden');
 
-    const close = () => {
-      target.classList.add('is-hidden');
-      t.classList.remove('is-open');
-    };
+    // fermer tous les projets
+    document.querySelectorAll('section[id^="projet"]').forEach((s) => s.classList.add('is-hidden'));
+    document.querySelectorAll('.PROJET').forEach((x) => x.classList.remove('is-open'));
 
-    const open = () => {
+    // ouvrir seulement si on voulait ouvrir
+    if (willOpen) {
       target.classList.remove('is-hidden');
       t.classList.add('is-open');
-    };
-
-    const toggle = () => {
-      const isOpening = target.classList.contains('is-hidden');
-
-      if (isOpening && openItem && openItem.t !== t) {
-        openItem.close();
-      }
-
-      if (isOpening) {
-        open();
-        openItem = { t, close };
-      } else {
-        close();
-        openItem = null;
-      }
-    };
-
-    t.addEventListener('click', toggle);
+    }
   });
+});
 
-  
+
+
+
 
 
 

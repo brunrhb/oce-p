@@ -1,48 +1,36 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Sélecteur des titres cliquables
   const triggers = document.querySelectorAll('.PROJET');
-  let openItem = null;
 
   triggers.forEach((t) => {
     const targetSelector = t.getAttribute('data-target');
     const target = targetSelector ? document.querySelector(targetSelector) : null;
     if (!target) return;
 
-    // état initial : tout fermé (si pas déjà)
+    // état initial: caché
     target.classList.add('is-hidden');
 
-    const close = () => {
-      target.classList.add('is-hidden');
-      t.classList.remove('is-open');
-    };
-
-    const open = () => {
-      target.classList.remove('is-hidden');
-      t.classList.add('is-open');
-    };
+    // accessibilité de base
+    t.setAttribute('role', 'button');
+    t.setAttribute('tabindex', '0');
+    t.setAttribute('aria-controls', target.id);
+    t.setAttribute('aria-expanded', 'false');
 
     const toggle = () => {
-      const isOpening = target.classList.contains('is-hidden');
-
-      if (isOpening && openItem && openItem.t !== t) {
-        openItem.close();
-      }
-
-      if (isOpening) {
-        open();
-        openItem = { t, close };
-      } else {
-        close();
-        openItem = null;
-      }
+      const isHidden = target.classList.toggle('is-hidden');
+      requestAnimationFrame(() => syncExtraitOffset(target));
+      window.__afterToggleRecalc = afterToggleRecalc;
+      t.setAttribute('aria-expanded', String(!isHidden));
     };
 
     t.addEventListener('click', toggle);
+    t.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggle();
+      }
+    });
   });
-
-  
-
-
-
 
   // Ajouter la gestion du parallax
   function handleParallax() {

@@ -7,24 +7,39 @@ document.addEventListener('DOMContentLoaded', () => {
     const target = targetSelector ? document.querySelector(targetSelector) : null;
     if (!target) return;
 
-    // état initial : tout fermé (si pas déjà)
+    // état initial: tout fermé
     target.classList.add('is-hidden');
 
+    // accessibilité
+    t.setAttribute('role', 'button');
+    t.setAttribute('tabindex', '0');
+    t.setAttribute('aria-controls', target.id);
+    t.setAttribute('aria-expanded', 'false');
+
     const close = () => {
+      if (target.classList.contains('is-hidden')) return;
       target.classList.add('is-hidden');
       t.classList.remove('is-open');
+      t.setAttribute('aria-expanded', 'false');
+      requestAnimationFrame(() => syncExtraitOffset(target));
     };
 
     const open = () => {
+      if (!target.classList.contains('is-hidden')) return;
       target.classList.remove('is-hidden');
       t.classList.add('is-open');
+      t.setAttribute('aria-expanded', 'true');
+      requestAnimationFrame(() => syncExtraitOffset(target));
+      window.__afterToggleRecalc = afterToggleRecalc;
     };
 
     const toggle = () => {
       const isOpening = target.classList.contains('is-hidden');
 
+      // ouvrir -> fermer l’ancien si besoin
       if (isOpening && openItem && openItem.t !== t) {
         openItem.close();
+        openItem = null;
       }
 
       if (isOpening) {
@@ -37,9 +52,16 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     t.addEventListener('click', toggle);
+    t.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggle();
+      }
+    });
   });
 
-  
+
+
 
 
 
