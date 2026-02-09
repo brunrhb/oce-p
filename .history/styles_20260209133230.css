@@ -839,7 +839,7 @@ text-align: right;
 }
 .placeholder-p7-1 {
   width: 100%;  
-  height:clamp(500px, 50vh + 25vw, 900px);
+  height: min(clamp(400px, 80vh, 900px), 100vh);
 
 }
 
@@ -940,7 +940,6 @@ text-align: right;
 
 .credit-p8-3{
 margin-top: auto;
-width: clamp(200px, 25vw + 25vh, 900px);
 }
 
 .credit-p8-3{

@@ -371,8 +371,8 @@ Sur le sol est déroulée une bande de papier blanc. Cette bande traverse la sal
 `;
 
 content["p8-credit-3"] = `
-Première partie du chorégraphe Thabo Kobeli. <br>
-Présentée à LALANBIK (le centre choréographique de l’Océan Indien).<br>
+Présentée à LALANBIK <br>(le centre choréographique de l’Océan Indien)<br>
+ en première partie du chorégraphe Thabo Kobeli
 `;
 
 // #endregion
