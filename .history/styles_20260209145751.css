@@ -770,6 +770,7 @@ margin-top: clamp(20px,0.5vh + 0.5vw,20px) ;
 }
 
 .context-p6 {
+  margin-top: clamp(20px, 0.5vh + 0.5vw, 40px);
   justify-content: baseline;
 }
 

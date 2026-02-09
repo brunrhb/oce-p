@@ -717,7 +717,9 @@ margin-top: calc(1vw + 0.5vh) ;
 margin-top: calc(1vw + 0.5vh);
 }
 
-
+.context-p5 {
+  margin-top: calc(1vw + 0.5vh);
+}
 
 .protocole-corps-p5{
 
@@ -770,11 +772,13 @@ margin-top: clamp(20px,0.5vh + 0.5vw,20px) ;
 }
 
 .context-p6 {
+  margin-top: clamp(20px, 0.5vh + 0.5vw, 40px);
   justify-content: baseline;
 }
 
 
 .intro-p6 {
+  margin-top: clamp(20px, 0.5vh + 0.5vw, 40px);
   justify-content: baseline;
 }
 
