@@ -31,23 +31,33 @@
   }
 
 .jump-extrait-body{
-  margin-bottom: clamp(16px, 1vw + 0.8vh, 56px);
+  margin-bottom: 0px;  /* EXAGÉRÉ POUR TEST VISUEL */
+  outline: 2px dashed rgba(100, 200, 255, 0.8);
+  background: rgba(100, 200, 255, 0.1);
 }
+
 
 .jump-protocole-body{
-  margin-bottom: clamp(20px, 1.2vw + 1vh, 72px);
+  margin-bottom: 0px;
+   outline: 2px dashed rgba(255, 100, 177, 0.8);
+   background: rgba(50, 16, 171, 0.1);
 }
 
+
 .jump-intro-body{
-  margin-bottom: clamp(12px, 0.8vw + 0.6vh, 48px);
+   margin-bottom: 0px;
+   outline: 2px dashed rgba(100, 255, 188, 0.8);
+   background: rgba(9, 109, 27, 0.1);
 }
 
 .jump-bloc-credit{
-  margin-top: clamp(10px, 1.1vw + 0.9vh, 20px);
+  margin-top: 0px;
+    outline: 2px dashed rgba(250, 100, 255, 0.8);
 }
 
 .jump-bloc-lien{
-  margin-top: clamp(10px, 0.7vw + 0.6vh, 40px);
+  margin-top: 0px;
+  outline: 2px dashed rgba(129, 91, 112, 0.8);
 }
 
 
@@ -56,7 +66,7 @@ a.lien.jump-bloc-lien{ display:block; }
 
 .jump-body-titre{
   margin-top: 0px;
-
+  outline: 2px dashed rgba(34, 62, 26, 0.8);
 }
 /* #endregion */
 

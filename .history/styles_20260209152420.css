@@ -43,7 +43,7 @@
 }
 
 .jump-bloc-credit{
-  margin-top: clamp(10px, 1.1vw + 0.9vh, 20px);
+  margin-top: clamp(12px, 1.1vw + 0.9vh, 50px);
 }
 
 .jump-bloc-lien{
