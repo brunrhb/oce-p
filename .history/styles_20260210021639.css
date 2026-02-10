@@ -307,7 +307,9 @@ body.has-open .voile{ opacity: 0; }
   margin: 0 auto;          /* centre le bloc lui-même */
 }
 
-
+.body.has-open{
+  font-size: clamp(30px, 2.618*( 0.1vw + 2vh), 40px);
+}
 
 
 .PROJET:hover {

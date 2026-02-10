@@ -241,60 +241,45 @@ body {
   row-gap: calc(1.5vw + 1.5vh);
 } 
 
-/* VOILE — visible quand tout est fermé, disparaît quand un projet est ouvert */
-.allproject{ position: relative; }
-
-/* contenu au-dessus du voile */
-.allproject > *:not(.voile){
-  position: relative;
-  z-index: 2;
+.voile {
+  transform: scale(1.05);
 }
 
-/* voile derrière */
 .voile{
-  position: fixed;
+  position: fixed;   /* ou absolute si tu préfères rester dans .allproject */
   inset: 0;
-  width: 100vw;
-  height: 100vh;
   pointer-events: none;
-  z-index: 1;
+  z-index: 0;
 
   background:
-  
-    radial-gradient(70% 60% at 60% 35%,
-      rgba(214,196,170,0.55),
-      rgba(214,196,170,0.00) 60%),
-
-    radial-gradient(65% 55% at 35% 70%,
-      rgba(214,196,170,0.35),
-      rgba(214,196,170,0.00) 65%),
-
-    /* trame (maille) */
+    radial-gradient(70% 55% at 55% 35%, rgba(230,230,230,0.22), rgba(255,255,255,0) 60%),
+    radial-gradient(60% 50% at 35% 65%, rgba(210,210,210,0.16), rgba(255,255,255,0) 65%),
     repeating-linear-gradient(115deg,
-      rgba(214,196,170,0.22) 0px,
-      rgba(214,196,170,0.22) 2px,
-      rgba(214,196,170,0.00) 7px),
+      rgba(0,0,0,0.010) 0px,
+      rgba(0,0,0,0.010) 2px,
+      rgba(255,255,255,0.000) 6px);
 
-    /* trame croisée */
-    repeating-linear-gradient(25deg,
-      rgba(214,196,170,0.14) 0px,
-      rgba(214,196,170,0.14) 1px,
-      rgba(214,196,170,0.00) 6px);
-
-
-  
-  opacity: 1;
-  mix-blend-mode: multiply;             /* donne matière sur blanc */
+  opacity: 0.075;              /* ajuste 0.04–0.10 */
+  mix-blend-mode: multiply;    /* ou soft-light */
   transition: opacity 220ms ease;
 }
 
-/* un projet ouvert => voile OFF */
-body.has-open .voile{ opacity: 0; }
+/* pour que le contenu passe au-dessus */
+.allproject > *:not(.voile){
+  position: relative;
+  z-index: 1;
+}
+
+/* ON : un projet ouvert => voile off */
+body.has-open .voile{
+  opacity: 0;
+
+}
 
 
 
 .PROJET {
-  font-size: clamp(15px, 2.618*( 0.1vw + 1.1vh), 40px);
+  font-size: clamp(22px, 2.618*( 1vw + 0.5vh), 40px);
   font-family: DINdong;
 
   padding: 0;
@@ -307,9 +292,6 @@ body.has-open .voile{ opacity: 0; }
   margin: 0 auto;          /* centre le bloc lui-même */
 }
 
-
-
-
 .PROJET:hover {
   transform: scale(1.05);
   transform: translateX(calc(0.5vw + 0.5vh));
@@ -317,20 +299,6 @@ body.has-open .voile{ opacity: 0; }
   font-weight: 1000; /* 600 is semi-bold, between normal (400) and bold (700) */
 }
 
-/* mode editorial dès qu’un projet est ouvert */
-body.has-open .PROJET{
-  font-size: clamp(30px, 2.618*(0.1vw + 2vh), 60px);
-}
-
-
-.micro-retour{
-  display: inline-block;
-  margin-left: 0.55em;
-  font-size: 0.72em;
-  letter-spacing: 0.02em;
-  opacity: 0.45;
-  transform: translateY(-0.08em);
-}
 
 
 /* #endregion */
