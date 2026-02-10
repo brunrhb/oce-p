@@ -260,31 +260,15 @@ body {
   z-index: 1;
 
   background:
-  
-    radial-gradient(70% 60% at 60% 35%,
-      rgba(214,196,170,0.55),
-      rgba(214,196,170,0.00) 60%),
-
-    radial-gradient(65% 55% at 35% 70%,
-      rgba(214,196,170,0.35),
-      rgba(214,196,170,0.00) 65%),
-
-    /* trame (maille) */
+    radial-gradient(70% 55% at 55% 35%, rgba(230,230,230,0.22), rgba(255,255,255,0) 60%),
+    radial-gradient(60% 50% at 35% 65%, rgba(210,210,210,0.16), rgba(255,255,255,0) 65%),
     repeating-linear-gradient(115deg,
-      rgba(214,196,170,0.22) 0px,
-      rgba(214,196,170,0.22) 2px,
-      rgba(214,196,170,0.00) 7px),
+      rgba(0,0,0,0.012) 0px,
+      rgba(0,0,0,0.012) 2px,
+      rgba(255,255,255,0.000) 6px);
 
-    /* trame croisée */
-    repeating-linear-gradient(25deg,
-      rgba(214,196,170,0.14) 0px,
-      rgba(214,196,170,0.14) 1px,
-      rgba(214,196,170,0.00) 6px);
-
-
-  
-  opacity: 1;
-  mix-blend-mode: multiply;             /* donne matière sur blanc */
+  opacity: 1;              /* teste 0.08–0.14 */
+  mix-blend-mode: soft-light; /* plus visible que multiply sur blanc */
   transition: opacity 220ms ease;
 }
 

@@ -242,54 +242,23 @@ body {
 } 
 
 /* VOILE — visible quand tout est fermé, disparaît quand un projet est ouvert */
-.allproject{ position: relative; }
-
-/* contenu au-dessus du voile */
-.allproject > *:not(.voile){
-  position: relative;
-  z-index: 2;
-}
-
-/* voile derrière */
 .voile{
   position: fixed;
   inset: 0;
   width: 100vw;
   height: 100vh;
+
   pointer-events: none;
-  z-index: 1;
+  z-index: 999999;
 
-  background:
-  
-    radial-gradient(70% 60% at 60% 35%,
-      rgba(214,196,170,0.55),
-      rgba(214,196,170,0.00) 60%),
-
-    radial-gradient(65% 55% at 35% 70%,
-      rgba(214,196,170,0.35),
-      rgba(214,196,170,0.00) 65%),
-
-    /* trame (maille) */
-    repeating-linear-gradient(115deg,
-      rgba(214,196,170,0.22) 0px,
-      rgba(214,196,170,0.22) 2px,
-      rgba(214,196,170,0.00) 7px),
-
-    /* trame croisée */
-    repeating-linear-gradient(25deg,
-      rgba(214,196,170,0.14) 0px,
-      rgba(214,196,170,0.14) 1px,
-      rgba(214,196,170,0.00) 6px);
-
-
-  
-  opacity: 1;
-  mix-blend-mode: multiply;             /* donne matière sur blanc */
-  transition: opacity 220ms ease;
+  background: red !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+  opacity: 0.5;
+  ;
 }
 
-/* un projet ouvert => voile OFF */
-body.has-open .voile{ opacity: 0; }
+
 
 
 

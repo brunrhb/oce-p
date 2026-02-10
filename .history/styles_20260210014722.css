@@ -260,31 +260,10 @@ body {
   z-index: 1;
 
   background:
-  
-    radial-gradient(70% 60% at 60% 35%,
-      rgba(214,196,170,0.55),
-      rgba(214,196,170,0.00) 60%),
+   chocolate;
 
-    radial-gradient(65% 55% at 35% 70%,
-      rgba(214,196,170,0.35),
-      rgba(214,196,170,0.00) 65%),
-
-    /* trame (maille) */
-    repeating-linear-gradient(115deg,
-      rgba(214,196,170,0.22) 0px,
-      rgba(214,196,170,0.22) 2px,
-      rgba(214,196,170,0.00) 7px),
-
-    /* trame croisée */
-    repeating-linear-gradient(25deg,
-      rgba(214,196,170,0.14) 0px,
-      rgba(214,196,170,0.14) 1px,
-      rgba(214,196,170,0.00) 6px);
-
-
-  
-  opacity: 1;
-  mix-blend-mode: multiply;             /* donne matière sur blanc */
+  opacity: 0.80;              /* teste 0.08–0.14 */
+  mix-blend-mode: soft-light; /* plus visible que multiply sur blanc */
   transition: opacity 220ms ease;
 }
 
