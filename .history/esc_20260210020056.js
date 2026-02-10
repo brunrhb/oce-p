@@ -2,7 +2,7 @@
 // + micro-signe "↩" sur le titre ouvert
 
 document.addEventListener("DOMContentLoaded", () => {
-  const SIGN = "—";                 // change si tu veux "×" ou "⟲"
+  const SIGN = "↩";                 // change si tu veux "×" ou "⟲"
   const SIGN_CLASS = "micro-retour";
 
   function getOpenTrigger() {
