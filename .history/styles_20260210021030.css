@@ -307,8 +307,9 @@ body.has-open .voile{ opacity: 0; }
   margin: 0 auto;          /* centre le bloc lui-même */
 }
 
-
-
+.body.has-open{
+  font-size: clamp(20px, 2.618*( 0.1vw + 2vh), 40px);
+}
 
 .PROJET:hover {
   transform: scale(1.05);
@@ -317,10 +318,6 @@ body.has-open .voile{ opacity: 0; }
   font-weight: 1000; /* 600 is semi-bold, between normal (400) and bold (700) */
 }
 
-/* mode editorial dès qu’un projet est ouvert */
-body.has-open .PROJET{
-  font-size: clamp(30px, 2.618*(0.1vw + 2vh), 60px);
-}
 
 
 .micro-retour{
