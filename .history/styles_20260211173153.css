@@ -26,12 +26,9 @@
 /* EXTRACT — rythme texte */
 /* 1 propriété principale : respiration avant et après le bloc */
 
-.jump-bordertop-rest{
-  margin-top: ;
-  }
-
 .allproject{
-  gap: clamp(10px, 2.618vw + 1.309vh, 25px);
+ gap: clamp(10px, 2.618vw + 1.309vh, 25px);
+
   }
 
 .jump-extrait-body{
@@ -67,7 +64,7 @@ a.lien.jump-bloc-lien{ display:block; }
 
 /* #endregion */
 
-/* #region FONTS APLLIED */
+/* #region AUTRES */
 
 .credit {
   font-size: calc(1.3*((1vw + 0.5vh)/1.618));
@@ -176,7 +173,11 @@ body {
 
 }
 
-
+/*
+:root{
+  --spacer: clamp(24px, 4vh, 64px); /* marge de confort quand un projet est ouvert 
+}
+*/
 
 .allproject{
   display: flex;
@@ -184,10 +185,24 @@ body {
   min-height: 100vh;
 
   /* État "tout fermé" → centré au milieu */
-
+  justify-content: center;
+  align-items: center;
 }
 
+/* Dès qu’au moins UNE section n’a plus .is-hidden */
+.allproject:has(section:not(.is-hidden)){
+  /* on repasse à un flux normal en haut + on étire horizontalement 
+  justify-content: flex-start;
+  align-items: stretch;*/
 
+  /* espace en haut pour éviter l’effet "collé" du premier titre */
+  padding-top: var(--spacer);
+}
+
+/* Optionnel : petite marge supplémentaire sous le premier titre */
+.allproject:has(section:not(.is-hidden)) .initialspace{
+  margin-top: var(--spacer);
+}
 
 
 /* #endregion */
@@ -195,12 +210,12 @@ body {
 /* #region UTILITAIRES */
 
 .marges-lateral{
-  padding-left: 0; 
+  padding-left:  clamp(800px, 6vw, 120px);
   padding-right: clamp(12px, 3vw, 120px);
 }
 @media (min-width: 1400px){
   .marges-lateral{
-    padding-left: 0; 
+    padding-left:  clamp(24px, 20vw, 600px);
     padding-right: clamp(24px, 20vw, 600px);
   }
 }
@@ -221,7 +236,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   padding-top: calc(3vw + 3vh);
-
+  padding-left: 5rem;
   padding-right: 5rem;
   row-gap: calc(1.5vw + 1.5vh);
 } 
@@ -264,13 +279,13 @@ body.has-open .voile{ opacity: 0; }
   text-align: left;      /* centre les lignes */
   text-wrap: balance;      /* équilibre les retours à la ligne (super utile pour titres) */
   line-height: 1.1;        /* un peu plus compact pour un look titre */
-   max-width: 90ch;         /* optionnel : évite les lignes trop longues */
-  /*  margin: 0 auto;          centre le bloc lui-même */
+  max-width: 90ch;         /* optionnel : évite les lignes trop longues */
+  margin: 0 auto;          /* centre le bloc lui-même */
 }
 
 .PROJET{
   width: min(90vw, 90ch);  /* largeur de colonne */
-           /* centre la colonne */
+  margin: 0 auto;          /* centre la colonne */
   text-align: left;        /* <-- ferrage à gauche */
   max-width: none;         /* on laisse width faire le job */
 }
