@@ -261,7 +261,31 @@ body {
 
   background:
   
-   color white;
+    radial-gradient(70% 60% at 60% 35%,
+      rgba(214,196,170,0.55),
+      rgba(214,196,170,0.00) 60%),
+
+    radial-gradient(65% 55% at 35% 70%,
+      rgba(214,196,170,0.35),
+      rgba(214,196,170,0.00) 65%),
+
+    /* trame (maille) */
+    repeating-linear-gradient(115deg,
+      rgba(214,196,170,0.22) 0px,
+      rgba(214,196,170,0.22) 2px,
+      rgba(214,196,170,0.00) 7px),
+
+    /* trame croisée */
+    repeating-linear-gradient(25deg,
+      rgba(214,196,170,0.14) 0px,
+      rgba(214,196,170,0.14) 1px,
+      rgba(214,196,170,0.00) 6px);
+
+
+  
+  opacity: 0.8;
+  mix-blend-mode: multiply;             /* donne matière sur blanc */
+  transition: opacity 220ms ease;
 }
 
 /* un projet ouvert => voile OFF */
@@ -276,25 +300,13 @@ body.has-open .voile{ opacity: 0; }
   padding: 0;
   transition: transform 0.3s ease;
 
-  text-align: left;      /* centre les lignes */
+  text-align: center;      /* centre les lignes */
   text-wrap: balance;      /* équilibre les retours à la ligne (super utile pour titres) */
   line-height: 1.1;        /* un peu plus compact pour un look titre */
   max-width: 90ch;         /* optionnel : évite les lignes trop longues */
   margin: 0 auto;          /* centre le bloc lui-même */
 }
 
-.PROJET{
-  width: min(90vw, 90ch);  /* largeur de colonne */
-  margin: 0 auto;          /* centre la colonne */
-  text-align: left;        /* <-- ferrage à gauche */
-  max-width: none;         /* on laisse width faire le job */
-}
-
-/* option : en état "open", on garde exactement la même logique */
-body.has-open .PROJET{
-  width: min(90vw, 90ch);
-  text-align: left;
-}
 
 
 
