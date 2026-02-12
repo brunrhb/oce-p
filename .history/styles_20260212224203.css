@@ -1,5 +1,4 @@
 
-html, body { margin: 0; overflow-x: hidden; }
 
 
 /* #region MAIN LAYOUT options */
@@ -204,8 +203,8 @@ a.lien.jump-bloc-lien{ display:block; }
   top: 0;
   left: 0;
   inset: 0;
-  width:auto ;
-  height: auto;
+  width:90vw ;
+  height: 90h;
 
   overflow-y: auto;
 
