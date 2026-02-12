@@ -18,13 +18,13 @@
 /* taille titre 1 petit */
 --s-titres-smal:clamp(15px, 2.618*( 0.1vw + 1.1vh), 40px) ; 
 /* taille titre 2 big */
---s-titres-big:clamp(30px, 2.618*(0.1vw + 2vh), 60px)  ; 
+--m-titres-big:  ; 
 
 
 /* taille info */
 --s-info: 20px; 
 /* marge info left */
---m-info-left:5vw ;
+--m-info-left: ;
 
 }
 
@@ -224,7 +224,7 @@ body.has-open .voile{ opacity: 0; }
 /* #region PROEJT STYLE  */
 
 .PROJET {
-  font-size: var(--s-titres-smal); /* _________________  */
+  font-size: clamp(15px, 2.618*( 0.1vw + 1.1vh), 40px); /* _________________  */
   font-family: DINdong;
 
   padding: 0;
@@ -238,7 +238,7 @@ body.has-open .voile{ opacity: 0; }
 }
 
 .PROJET{
-  width: var(--w-projet);  /* largeur de colonne __________________________________________*/
+  width: 70vw;  /* largeur de colonne __________________________________________*/
            /* centre la colonne */
   text-align: left;        /* <-- ferrage à gauche */
   max-width: none;         /* on laisse width faire le job */
@@ -261,7 +261,7 @@ body.has-open .PROJET{
 
 /* mode editorial dès qu’un projet est ouvert */
 body.has-open .PROJET{
-  font-size: var(--s-titres-big);/* _________________  */
+  font-size: clamp(30px, 2.618*(0.1vw + 2vh), 60px);/* _________________  */
 }
 
 

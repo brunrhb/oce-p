@@ -18,13 +18,13 @@
 /* taille titre 1 petit */
 --s-titres-smal:clamp(15px, 2.618*( 0.1vw + 1.1vh), 40px) ; 
 /* taille titre 2 big */
---s-titres-big:clamp(30px, 2.618*(0.1vw + 2vh), 60px)  ; 
+--m-titres-big:  ; 
 
 
 /* taille info */
 --s-info: 20px; 
 /* marge info left */
---m-info-left:5vw ;
+--m-info-left: ;
 
 }
 
@@ -261,7 +261,7 @@ body.has-open .PROJET{
 
 /* mode editorial dès qu’un projet est ouvert */
 body.has-open .PROJET{
-  font-size: var(--s-titres-big);/* _________________  */
+  font-size: clamp(30px, 2.618*(0.1vw + 2vh), 60px);/* _________________  */
 }
 
 

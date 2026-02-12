@@ -16,15 +16,14 @@
 --w-projet: 60vw  ; 
 
 /* taille titre 1 petit */
---s-titres-smal:clamp(15px, 2.618*( 0.1vw + 1.1vh), 40px) ; 
+--s-titres-smal: ; 
 /* taille titre 2 big */
---s-titres-big:clamp(30px, 2.618*(0.1vw + 2vh), 60px)  ; 
+--m-titres-big:  ; 
 
 
 /* taille info */
---s-info: 20px; 
-/* marge info left */
---m-info-left:5vw ;
+--s-info: ; 
+--m-info-left: ;
 
 }
 
@@ -172,7 +171,7 @@ a.lien.jump-bloc-lien{ display:block; }
 .info-titre{
   position: fixed;/* _________________  */
   font-family: Roboto;
-  font-size: var(--s-info); 
+  font-size: var(--s-titres-smal); 
   margin-top:  var(--m-top);  /* _________________  */
   margin-left:var(--m-info-left) ; /* _________________  */
   z-index: 9999;
@@ -198,7 +197,7 @@ a.lien.jump-bloc-lien{ display:block; }
 .allproject{
   display: flex;
   flex-direction: column;
-  margin-left: var(--m-left); /* ______________________ */
+  margin-left: 10vw; /* ______________________ */
 
 }
 
@@ -224,7 +223,7 @@ body.has-open .voile{ opacity: 0; }
 /* #region PROEJT STYLE  */
 
 .PROJET {
-  font-size: var(--s-titres-smal); /* _________________  */
+  font-size: clamp(15px, 2.618*( 0.1vw + 1.1vh), 40px); /* _________________  */
   font-family: DINdong;
 
   padding: 0;
@@ -238,7 +237,7 @@ body.has-open .voile{ opacity: 0; }
 }
 
 .PROJET{
-  width: var(--w-projet);  /* largeur de colonne __________________________________________*/
+  width: 70vw;  /* largeur de colonne __________________________________________*/
            /* centre la colonne */
   text-align: left;        /* <-- ferrage à gauche */
   max-width: none;         /* on laisse width faire le job */
@@ -261,7 +260,7 @@ body.has-open .PROJET{
 
 /* mode editorial dès qu’un projet est ouvert */
 body.has-open .PROJET{
-  font-size: var(--s-titres-big);/* _________________  */
+  font-size: clamp(30px, 2.618*(0.1vw + 2vh), 60px);/* _________________  */
 }
 
 

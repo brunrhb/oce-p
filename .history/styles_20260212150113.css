@@ -170,7 +170,7 @@ a.lien.jump-bloc-lien{ display:block; }
 /* #endregion */
 
 .info-titre{
-  position: fixed;/* _________________  */
+  position: absolute;/* _________________  */
   font-family: Roboto;
   font-size: var(--s-info); 
   margin-top:  var(--m-top);  /* _________________  */
