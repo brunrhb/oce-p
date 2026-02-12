@@ -7,7 +7,7 @@
 /* marge left */
 --m-left:20vw ;
 /* marge right */
---m-right:20vw ;
+--m-right:10vw ;
 
 /* marges entres projets titres petit */
 --m-projects:clamp(10px, 2.618vw + 1.309vh, 10px);
@@ -183,14 +183,14 @@ a.lien.jump-bloc-lien{ display:block; }
 .info-boxe{
   position: fixed;
   background: rgb(77, 4, 4);
-  z-index: 0;
+  z-index: 999;
 
   opacity: 0.5;
 
   margin-left: var(--m-left);
   margin-right: var(--m-right);
 
-  width:var(--w-projet) ;
+  width:auto ;
   height: 100vh;
 }
 
@@ -262,7 +262,7 @@ body.has-open .voile{ opacity: 0; }
 
 /* option : en état "open", on garde exactement la même logique */
 body.has-open .PROJET{
-  width: var(--w-projet);
+  width: min(90vw, 90ch);
   text-align: left;
 }
 
