@@ -218,13 +218,11 @@ a.lien.jump-bloc-lien{ display:block; }
   position: sticky; 
   top: 0;           
   align-self: start;
-  overflow: hidden;
+  
 }  
 
-.placeholder-p0{
- width: 50px ;
- height:50px ;
- color: black;
+.text-block-p0{
+  ;
 }  
 
 .media-block-p0{

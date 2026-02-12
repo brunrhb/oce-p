@@ -3,9 +3,11 @@ const content = {};
 // #region INFO
 
 content["intro-text-1"] = `
-<strong>Océane Eliard</strong> (elle/iel/il) est poètesse et performeur·euse belgo-réunionnais·e. Son parcours est marqué par des allers-retours entre la Belgique et La Réunion. Ces déplacements répétés entre l'île et le continent ont nourri une réflexion sur les notions de lieu, d'appartenance et de relation, ainsi que sur les manières dont les corps, les espaces et les récits s'habitent et s'abritent mutuellement. 
-<br><br>
-Après une formation initiale en graphisme et en publicité, elle s'oriente vers les arts plastiques, plus particulièrement l'installation et la performance. En 2016, elle co-fonde le collectif éphémère Non-Lieux et développe des projets curatoriaux fondés sur la circulation et la réinterprétation des productions plastiques. Entre 2017 et 2019, elle performe dans des contextes alternatifs, notamment au sein du cabaret Bénédiction - Rituels exceptionnels.
+<strong>Océane Eliard</strong> (elle/iel/il) est poètesse et performeur·euse belgo-réunionnais·e.
+  <br><br>
+  Son parcours est marqué par des allers-retours entre la Belgique et La Réunion. Ces déplacements répétés entre l'île et le continent ont nourri une réflexion sur les notions de lieu, d'appartenance et de relation, ainsi que sur les manières dont les corps, les espaces et les récits s'habitent et s'abritent mutuellement.
+  <br><br>
+  Après une formation initiale en graphisme et en publicité, elle s'oriente vers les arts plastiques, plus particulièrement l'installation et la performance. En 2016, elle co-fonde le collectif éphémère Non-Lieux et développe des projets curatoriaux fondés sur la circulation et la réinterprétation des productions plastiques. Entre 2017 et 2019, elle performe dans des contextes alternatifs, notamment au sein du cabaret Bénédiction - Rituels exceptionnels.
   <br><br>
   En 2018, elle intègre l'École de Recherche Graphique (ERG) à Bruxelles. Son travail s'y déploie autour des glissements entre les mots habiter et abriter, qu'elle articule à des dispositifs performatifs, textuels et collectifs. Cette recherche se poursuit lors de son Master en Pratiques Situées, réalisé entre l'ERG et l'École Supérieure des Arts de La Réunion, poursuivis dans le cadre du Master à finalité approfondie (ULB-ERG). Elle y développe une réflexion sur les pratiques performatives décoloniales, le rapport aux institutions et le marronnage comme pratique d'empowerment, envisagée comme une stratégie de résistance collective.
   <br><br>
@@ -14,13 +16,6 @@ Après une formation initiale en graphisme et en publicité, elle s'oriente vers
   Depuis 2023, son travail se développe à travers des résidences, performances et expositions en Belgique et à La Réunion. En 2024, elle présente Pa.enser au Théâtre de la Balsamine, une pièce située qui interroge l'interdépendance entre panser et penser. En 2025, elle effectue une résidence de recherche à la Villa Empain (Fondation Boghossian), où elle crée notamment Nous, une installation textile, et Armor Amor, une sculpture-mémorial autour du hoodie comme objet politique et affectif. En 2026, elle poursuit le développement du projet Mycélium: dialogues du vivant, qui explore la mise en conversation des récits humains et non humains à travers la bibliomancie, la performance et une écologie relationnelle des formes.
   <br><br>
   Actuellement, elle développe une pratique d'artiste-chercheur·euse à travers la recherche-création Archiver la colère et l'amour. Ce projet interroge la colère et l'amour comme des forces politiques, relationnelles et poétiques, capables de produire des savoirs situés. En mobilisant la performance, la poésie et des protocoles collectifs, elle explore la possibilité d'une archive affective pensée comme un médium vivant et activable. Cette recherche s'inscrit dans une perspective décoloniale et postcoloniale, attentive aux récits minorés, aux langues en présence et aux mémoires fragmentées. Archiver la colère et l'amour prolonge une réflexion au long cours sur la matérialité du langage et ses puissances d'agir.
-`;
-
-content["intro-text-2"] = `
-oceane.eliard@gmail.com
-<br><br>
-@invente.e.= soi<br>
-@dire.lecture
 `;
 
 // #endregion

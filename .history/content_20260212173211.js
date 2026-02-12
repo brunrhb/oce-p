@@ -3,9 +3,9 @@ const content = {};
 // #region INFO
 
 content["intro-text-1"] = `
-<strong>Océane Eliard</strong> (elle/iel/il) est poètesse et performeur·euse belgo-réunionnais·e. Son parcours est marqué par des allers-retours entre la Belgique et La Réunion. Ces déplacements répétés entre l'île et le continent ont nourri une réflexion sur les notions de lieu, d'appartenance et de relation, ainsi que sur les manières dont les corps, les espaces et les récits s'habitent et s'abritent mutuellement. 
-<br><br>
-Après une formation initiale en graphisme et en publicité, elle s'oriente vers les arts plastiques, plus particulièrement l'installation et la performance. En 2016, elle co-fonde le collectif éphémère Non-Lieux et développe des projets curatoriaux fondés sur la circulation et la réinterprétation des productions plastiques. Entre 2017 et 2019, elle performe dans des contextes alternatifs, notamment au sein du cabaret Bénédiction - Rituels exceptionnels.
+<strong>Océane Eliard</strong> (elle/iel/il) est poètesse et performeur·euse belgo-réunionnais·e.
+  Son parcours est marqué par des allers-retours entre la Belgique et La Réunion. Ces déplacements répétés entre l'île et le continent ont nourri une réflexion sur les notions de lieu, d'appartenance et de relation, ainsi que sur les manières dont les corps, les espaces et les récits s'habitent et s'abritent mutuellement.
+  Après une formation initiale en graphisme et en publicité, elle s'oriente vers les arts plastiques, plus particulièrement l'installation et la performance. En 2016, elle co-fonde le collectif éphémère Non-Lieux et développe des projets curatoriaux fondés sur la circulation et la réinterprétation des productions plastiques. Entre 2017 et 2019, elle performe dans des contextes alternatifs, notamment au sein du cabaret Bénédiction - Rituels exceptionnels.
   <br><br>
   En 2018, elle intègre l'École de Recherche Graphique (ERG) à Bruxelles. Son travail s'y déploie autour des glissements entre les mots habiter et abriter, qu'elle articule à des dispositifs performatifs, textuels et collectifs. Cette recherche se poursuit lors de son Master en Pratiques Situées, réalisé entre l'ERG et l'École Supérieure des Arts de La Réunion, poursuivis dans le cadre du Master à finalité approfondie (ULB-ERG). Elle y développe une réflexion sur les pratiques performatives décoloniales, le rapport aux institutions et le marronnage comme pratique d'empowerment, envisagée comme une stratégie de résistance collective.
   <br><br>

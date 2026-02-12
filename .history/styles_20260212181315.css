@@ -192,7 +192,7 @@ a.lien.jump-bloc-lien{ display:block; }
   width:100vw ;
   height: 100vh;
 
-   overflow-y: auto;
+  overflow: hidden;
 
   /* pointer-events: none;*/
   opacity: 1;
@@ -207,29 +207,22 @@ a.lien.jump-bloc-lien{ display:block; }
   column-gap: 2vw;
 
   height: calc(100vh - var(--m-top));
- 
+  overflow-y: auto;
 } 
 .col-info-1{
   
 } 
 
 .col-info-2{
-  
-  position: sticky; 
-  top: 0;           
-  align-self: start;
-  overflow: hidden;
+  overflow: hidden ;
 }  
 
-.placeholder-p0{
- width: 50px ;
- height:50px ;
- color: black;
+.text-block-p0{
+  ;
 }  
 
 .media-block-p0{
- width:  ;
-
+  ;
 }  
 
 /* #endregion */

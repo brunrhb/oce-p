@@ -5,20 +5,20 @@
 /* margin top  */
 --m-top: 10vh ;
 /* marge left */
---m-left:15vw ;
+--m-left:20vw ;
 /* marge right */
---m-right:5vw ;
+--m-right:20vw ;
 
 /* marges entres projets titres petit */
 --m-projects:clamp(10px, 2.618vw + 1.309vh, 10px);
 
 /* largeur des sections projets */
---w-projet: auto  ; 
+--w-projet: 60vw  ; 
 
 /* taille titre 1 petit */
 --s-titres-smal:clamp(15px, 2.618*( 0.1vw + 1.1vh), 40px) ; 
 /* taille titre 2 big */
---s-titres-big:clamp(30px, 2.618*( 0.1vw + 2vh), 60px)  ; 
+--s-titres-big:clamp(30px, 2.618*(0.1vw + 2vh), 60px)  ; 
 
 
 /* taille info */
@@ -169,14 +169,12 @@ a.lien.jump-bloc-lien{ display:block; }
 }
 /* #endregion */
 
-/* #region INFO */
-
 .info-titre{
   font-family: Roboto;
   font-size: var(--s-info); 
 
   position: fixed;/* _________________  */
-  z-index: 999;
+  z-index: 9999;
   top:  var(--m-top);  /* _________________  */
 
   margin-left:var(--m-info-left) ; /* _________________  */
@@ -184,55 +182,18 @@ a.lien.jump-bloc-lien{ display:block; }
   }
 .info-boxe{
   position: fixed;
-  background: rgb(181, 132, 132);
-  z-index: 8;
+  background: rgb(77, 4, 4);
+  z-index: 0;
 
-  top: 0;
-  left: 0;
-  width:100vw ;
+  opacity: 0.5;
+
+  margin-left: var(--m-left);
+  margin-right: var(--m-right);
+
+  width:75vw ;
   height: 100vh;
-
-   overflow-y: auto;
-
-  /* pointer-events: none;*/
-  opacity: 1;
 }
 
-.grid-info{
-  margin-top: var(--m-top);
-  margin-left: var(--m-left);
-
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  column-gap: 2vw;
-
-  height: calc(100vh - var(--m-top));
- 
-} 
-.col-info-1{
-  
-} 
-
-.col-info-2{
-  
-  position: sticky; 
-  top: 0;           
-  align-self: start;
-  overflow: hidden;
-}  
-
-.placeholder-p0{
- width: 50px ;
- height:50px ;
- color: black;
-}  
-
-.media-block-p0{
- width:  ;
-
-}  
-
-/* #endregion */
 
 /* #region GLOBAL DIV */
 
@@ -254,7 +215,7 @@ a.lien.jump-bloc-lien{ display:block; }
   display: flex;
   flex-direction: column;
   margin-left: var(--m-left); /* ______________________ */
-  margin-right: var(--m-right);
+
 }
 
 .is-hidden { display: none; }
