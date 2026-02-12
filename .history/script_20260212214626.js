@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-const triggers = Array.from(document.querySelectorAll(".PROJET, .js-modal"));
+  const triggers = Array.from(document.querySelectorAll(".PROJET, .info-js"));
   let openTrigger = null;
 
   // état initial

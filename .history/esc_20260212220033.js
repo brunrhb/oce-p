@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
                  // change si tu veux "×" ou "⟲"
   const SIGN_CLASS = "micro-retour";
 
-function getOpenTrigger() {
-  return document.querySelector(".PROJET.is-open, .js-modal.is-open");
-}
+  function getOpenTrigger() {
+    return document.querySelector(".PROJET.is-open, .js-modal.is-open");
+  }
 
   function clearSigns() {
     document.querySelectorAll(`.${SIGN_CLASS}`).forEach((el) => el.remove());

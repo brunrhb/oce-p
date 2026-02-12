@@ -183,42 +183,23 @@ a.lien.jump-bloc-lien{ display:block; }
   top:  var(--m-top);  /* _________________  */
 
   margin-left:var(--m-info-left) ; /* _________________  */
+  
   }
-
-.info-titre:hover {
-  transform: scale(1.05);
-  transform: translateX(calc(0.5vw + 0.5vh)); 
-  cursor: pointer;
-  font-weight: 1000; /* 600 is semi-bold, between normal (400) and bold (700) */
-}
-
-
 .info-boxe{
   position: fixed;
-  background: rgb(253, 253, 253);
-  z-index: 998;
+  background: rgb(181, 132, 132);
+  z-index: 8;
 
   top: 0;
   left: 0;
   width:100vw ;
   height: 100vh;
 
-  overflow-y: auto;
+   overflow-y: auto;
 
-  pointer-events: auto;
+  /* pointer-events: none;*/
   opacity: 1;
 }
-
-/* La règle cruciale */
-.info-box.is-hidden {
-  display: none !important;
-}
-
-/* Pour que ton div INFOS ressemble à un lien */
-.js-modal {
-  cursor: pointer;
-}
-
 
 .grid-info{
   margin-top: var(--m-top);
@@ -243,16 +224,16 @@ a.lien.jump-bloc-lien{ display:block; }
   left: calc(var(--m-left) + (100vw - var(--m-left) - var(--m-right) - 2vw) / 2 + var(--m-col-info));
   width: calc((100vw - var(--m-left) - var(--m-right) - 2vw) / 2);
 
+  margin-bottom: 5vh;
+
   overflow: hidden;
 }  
 
 
 .placeholder-p0{
- width: 50vw ;
- height:20vw ;
+ width: 50px ;
+ height:50px ;
  color: rgba(20, 38, 172, 0.81);
-
- margin-bottom: 2vw;
 }  
 
 

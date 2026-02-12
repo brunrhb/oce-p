@@ -14,7 +14,7 @@ Après une formation initiale en graphisme et en publicité, elle s'oriente vers
   Depuis 2023, son travail se développe à travers des résidences, performances et expositions en Belgique et à La Réunion. En 2024, elle présente Pa.enser au Théâtre de la Balsamine, une pièce située qui interroge l'interdépendance entre panser et penser. En 2025, elle effectue une résidence de recherche à la Villa Empain (Fondation Boghossian), où elle crée notamment Nous, une installation textile, et Armor Amor, une sculpture-mémorial autour du hoodie comme objet politique et affectif. En 2026, elle poursuit le développement du projet Mycélium: dialogues du vivant, qui explore la mise en conversation des récits humains et non humains à travers la bibliomancie, la performance et une écologie relationnelle des formes.
   <br><br>
   Actuellement, elle développe une pratique d'artiste-chercheur·euse à travers la recherche-création Archiver la colère et l'amour. Ce projet interroge la colère et l'amour comme des forces politiques, relationnelles et poétiques, capables de produire des savoirs situés. En mobilisant la performance, la poésie et des protocoles collectifs, elle explore la possibilité d'une archive affective pensée comme un médium vivant et activable. Cette recherche s'inscrit dans une perspective décoloniale et postcoloniale, attentive aux récits minorés, aux langues en présence et aux mémoires fragmentées. Archiver la colère et l'amour prolonge une réflexion au long cours sur la matérialité du langage et ses puissances d'agir.
-  <br><br><br>
+  <br><br><br><br>
   `;
 
 content["intro-text-2"] = `

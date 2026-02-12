@@ -2,12 +2,12 @@
 // + micro-signe "↩" sur le titre ouvert
 
 document.addEventListener("DOMContentLoaded", () => {
-                 // change si tu veux "×" ou "⟲"
+  const SIGN = "—";                 // change si tu veux "×" ou "⟲"
   const SIGN_CLASS = "micro-retour";
 
-function getOpenTrigger() {
-  return document.querySelector(".PROJET.is-open, .js-modal.is-open");
-}
+  function getOpenTrigger() {
+    return document.querySelector(".PROJET.is-open, .js-modal.is-open");
+  }
 
   function clearSigns() {
     document.querySelectorAll(`.${SIGN_CLASS}`).forEach((el) => el.remove());
@@ -57,7 +57,7 @@ function getOpenTrigger() {
     if (!getOpenTrigger()) return;
 
     if (e.target.closest("a")) return;
-    if (e.target.closest(".PROJET") || e.target.closest(".js-modal")) {
+    if (e.target.closest(".PROJET")) {
       // le toggle du titre va gérer open/close → on resync après
       setTimeout(syncSignWithState, 0);
       return;
