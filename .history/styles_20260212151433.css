@@ -175,8 +175,8 @@ a.lien.jump-bloc-lien{ display:block; }
 
   position: fixed;/* _________________  */
   z-index: 9999;
-  top:  var(--m-top);  /* _________________  */
-
+  margin-top:  var(--m-top);  /* _________________  */
+  
   margin-left:var(--m-info-left) ; /* _________________  */
   
   }

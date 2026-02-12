@@ -171,14 +171,12 @@ a.lien.jump-bloc-lien{ display:block; }
 
 .info-titre{
   font-family: Roboto;
-  font-size: var(--s-info); 
-
   position: fixed;/* _________________  */
-  z-index: 9999;
-  top:  var(--m-top);  /* _________________  */
-
-  margin-left:var(--m-info-left) ; /* _________________  */
   
+  font-size: var(--s-info); 
+  margin-top:  var(--m-top);  /* _________________  */
+  margin-left:var(--m-info-left) ; /* _________________  */
+  z-index: 9999;
   }
 
 
