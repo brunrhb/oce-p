@@ -19,7 +19,7 @@ html, body { margin: 0; overflow-x: hidden; }
 --m-col-info : 6vw;
 
 /* marges entres projets titres petit */
---m-projects-smal:clamp(10px, 0.75vw + 0.75vh, 30px);
+--m-projects-smal:clamp(10px, 2.618vw + 1.309vh, 10px);
 
 /* marges entres projets titres grands */
 --m-projects-big:clamp(10px, 1vw + 1vh, 50px);
@@ -174,7 +174,7 @@ html, body { margin: 0; overflow-x: hidden; }
 /* #region JUMPS + GAPS */
 
 .jump-bordertop-rest{
-  margin-top: var(--m-toptop) ; /* _________________  */
+  margin-top: var(--m-top) ; /* _________________  */
   }
 
 .allproject{
