@@ -325,19 +325,14 @@ a.lien.jump-bloc-lien{ display:block; }
 }  
 
 .info-contact {
-  
-  position: absolute;
-  left: 50px;
-  right: 0;
-  bottom: 0px;     /* ou top:12px */
-  z-index: 5;
-  margin: 0;
+  margin-top: -50px;
+  z-index: 9999;
 }
 
 .holder-p0{
-  width:50vw ;
-  height:40vw ;
-  color: ;
+  width: 60vw ;
+  height:30vw ;
+  color: rgba(20, 38, 172, 0.81);
   margin-top: 3vw;
   margin-bottom: 2vw;
   position: relative;
