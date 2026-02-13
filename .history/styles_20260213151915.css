@@ -41,10 +41,11 @@ html, body { margin: 0; overflow-x: hidden; }
 --s-info-body:calc(var(--s-info-big)/1.618) ;
 
 /* middle contact infos */
---s-info-contact:calc(var(--s-info-big)/1.333) ;
+--s-info-contact: ;
+
 
 /* bottom credit infos */
---s-info-credit:calc(var(--s-info-contact)/1.333);
+--s-info-credit: ;
 
 /* marge info left */
 --m-info-left:5vw ;
@@ -129,22 +130,6 @@ html, body { margin: 0; overflow-x: hidden; }
 
   text-align: right; 
 
-}
-
-
-.info-body {
-  font-family: Roboto;
-  font-size: var(--s-info-body);
-}
-
-.info-contact {
-  font-family: DINdong;
-  font-size: var(--s-info-contact);
-}
-
-.info-credit {
-  font-family: DINdong;
-  font-size: var(--s-info-credit);
 }
 
 .lien {

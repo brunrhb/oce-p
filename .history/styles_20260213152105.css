@@ -131,22 +131,6 @@ html, body { margin: 0; overflow-x: hidden; }
 
 }
 
-
-.info-body {
-  font-family: Roboto;
-  font-size: var(--s-info-body);
-}
-
-.info-contact {
-  font-family: DINdong;
-  font-size: var(--s-info-contact);
-}
-
-.info-credit {
-  font-family: DINdong;
-  font-size: var(--s-info-credit);
-}
-
 .lien {
   font-size: calc(1vw + 0.5vh) ;
   font-family: DINdong;
