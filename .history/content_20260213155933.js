@@ -25,9 +25,11 @@ oceane.eliard@gmail.com
 `;
 
 
-content["info-credit"] = `
-Typographie : <br>
-DINdong par Clara Sambot (Bye Bye Binary) 
+content["intro-credit"] = `
+oceane.eliard@gmail.com
+<br><br>
+@invente.e.= soi<br>
+@dire.lecture
 `;
 
 // #endregion

@@ -147,15 +147,12 @@ html, body { margin: 0; overflow-x: hidden; }
 
 .info-credit {
   font-family: DINdong;
-  font-size: min( 15px, var(--s-info-credit));
+  font-size: var(--s-info-credit);
   text-align: right;
-
-  opacity: 0.4;
 
   position: absolute;
   z-index:9999 ;
   bottom: 5px;
-  right: 5px;
 
   
 }
@@ -262,6 +259,7 @@ a.lien.jump-bloc-lien{ display:block; }
   width:auto ;
   height: auto;
 
+
   overflow-y: auto;
 
   pointer-events: auto;
@@ -301,7 +299,7 @@ a.lien.jump-bloc-lien{ display:block; }
   top: var(--m-top);         
   left: calc(var(--m-left) + (100vw - var(--m-left) - var(--m-right) - 2vw) / 2 + var(--m-col-info));
   width: calc((100vw - var(--m-left) - var(--m-right) - 2vw) / 2);
-  min-height: calc(100vh - var(--m-top));
+  min-height: 100%;
 
   overflow: hidden;
 }  
