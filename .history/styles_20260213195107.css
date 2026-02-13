@@ -5,7 +5,7 @@ html, body { margin: 0; overflow-x: hidden; }
 /* L'interaction magique : quand un projet est ouvert */
 body.has-open {
     /* On force le curseur sur tout le body */
-    cursor: url('media/close.svg') 5 5, auto !important;
+    cursor: url('media/close.svg') 16 16, auto !important;
 }
 
 /* On redonne le curseur normal sur les éléments interactifs à l'intérieur du projet */

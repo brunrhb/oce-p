@@ -5,7 +5,7 @@ html, body { margin: 0; overflow-x: hidden; }
 /* L'interaction magique : quand un projet est ouvert */
 body.has-open {
     /* On force le curseur sur tout le body */
-    cursor: url('media/close.svg') 5 5, auto !important;
+    cursor: url('media/close.svg') 16 16, auto !important;
 }
 
 /* On redonne le curseur normal sur les éléments interactifs à l'intérieur du projet */
@@ -171,6 +171,7 @@ body.has-open .PROJET {
   z-index:9999 ;
   bottom: 5px;
   right: 5px;
+
   
 }
 
@@ -199,10 +200,6 @@ body.has-open .PROJET {
 
 .jump-bordertop-rest{
   margin-top: var(--m-toptop) ; /* _________________  */
-  }
-
-.jump-rest-borderbottom{
-  margin-bottom: var(--m-top) ; /* _________________  */
   }
 
 .allproject{
@@ -332,35 +329,6 @@ a.lien.jump-bloc-lien{ display:block; }
 
  margin-bottom: 2vw;
 }  
-
-
-/* le parent doit être "référence" */
-.fading{
-  position: relative;
-}
-
-/* ton calque dégradé */
-.fading::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  pointer-events:none;
-  z-index:2;
-
-  /* fondu vers le blanc en bas */
-  background: linear-gradient(to bottom,
-    rgba(255,255,255,0) 0%,
-    rgba(255,255,255,1) 100%
-  );
-}
-
-/* l'image en dessous */
-.fading img{
-  position: relative;
-  z-index:1;
-}
-
-
 
 
 /* #endregion */
