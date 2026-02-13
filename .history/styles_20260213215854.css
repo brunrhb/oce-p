@@ -259,7 +259,7 @@ a.lien.jump-bloc-lien{ display:block; }
   }
 
 .info-titre.is-open{
-  font-size: var(--s-info-smal); ;/* _________________  */
+  font-size: var(--s-info-big);/* _________________  */
 }
 
 .info-titre:hover {
@@ -318,7 +318,7 @@ a.lien.jump-bloc-lien{ display:block; }
   align-self: start;
 
   top: var(--m-top);         
-  left: calc(var(--m-left) + (100vw - var(--m-left) - var(--m-right) - 2vw) / 2 + var(--m-col-info));
+  left: calc(var(--m-left) + (100vw - var(--m-left) - var(--m-right) - 2vw) / 2 + var(--m-col-info)-10vw);
   width: calc((100vw - var(--m-left) - var(--m-right) - 2vw) / 2);
   min-height: calc(100vh - var(--m-top));
 
@@ -406,19 +406,6 @@ a.lien.jump-bloc-lien{ display:block; }
   will-change: transform;
 }
 
-.col-info-2{
-  --info-parallax-y: 0px;
-}
-
-/* override uniquement du transform existant */
-.col-info-2 .holder-p0 img{
-  transform:
-    translate(
-      var(--img-shift-x, 0px),
-      calc(var(--img-shift-y, 0px) + var(--info-parallax-y, 0px))
-    )
-    scale(var(--img-scale, 1));
-}
 
 /* #endregion */
 

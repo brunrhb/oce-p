@@ -249,7 +249,7 @@ a.lien.jump-bloc-lien{ display:block; }
 
 .info-titre{
   font-family: Roboto;
-  font-size: var(--s-info-smal); 
+  font-size: min(10px, var(--s-info-smal)); 
 
   position: fixed;/* _________________  */
   z-index: 999;
@@ -259,7 +259,7 @@ a.lien.jump-bloc-lien{ display:block; }
   }
 
 .info-titre.is-open{
-  font-size: var(--s-info-smal); ;/* _________________  */
+  font-size: var(--s-info-big);/* _________________  */
 }
 
 .info-titre:hover {
@@ -406,19 +406,6 @@ a.lien.jump-bloc-lien{ display:block; }
   will-change: transform;
 }
 
-.col-info-2{
-  --info-parallax-y: 0px;
-}
-
-/* override uniquement du transform existant */
-.col-info-2 .holder-p0 img{
-  transform:
-    translate(
-      var(--img-shift-x, 0px),
-      calc(var(--img-shift-y, 0px) + var(--info-parallax-y, 0px))
-    )
-    scale(var(--img-scale, 1));
-}
 
 /* #endregion */
 

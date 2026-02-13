@@ -371,54 +371,40 @@ a.lien.jump-bloc-lien{ display:block; }
   position: relative;
   z-index:1;
 }
-
-/* 1) tu règles les variables ICI (au choix : col-info-2 ou placeholder-p0) */
 .col-info-2{
-  --img-scale: 1.3;
+  --img-scale: 11;
   --img-shift-x: -2vw;
   --img-shift-y: 0px;
-
-  /* si tu veux recadrer type "background-position" */
   --img-pos-x: 50%;
   --img-pos-y: 50%;
+
+  --info-parallax-y: 0px;
+  --info-parallax-strength: 0.35; /* réglage */
 }
 
-/* 2) le cadre découpe */
-.col-info-2 .holder-p0{
+.col-info-2 .placeholder-p0{
   position: relative;
   overflow: hidden;
 }
 
-/* 3) l’image suit les variables */
-.col-info-2 .holder-p0 img{
+.col-info-2 .placeholder-p0 img{
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-
   object-position: var(--img-pos-x) var(--img-pos-y);
 
   transform:
-    translate(var(--img-shift-x), var(--img-shift-y))
+    translate(
+      var(--img-shift-x),
+      calc(var(--img-shift-y) + var(--info-parallax-y))
+    )
     scale(var(--img-scale));
 
   will-change: transform;
 }
 
-.col-info-2{
-  --info-parallax-y: 0px;
-}
-
-/* override uniquement du transform existant */
-.col-info-2 .holder-p0 img{
-  transform:
-    translate(
-      var(--img-shift-x, 0px),
-      calc(var(--img-shift-y, 0px) + var(--info-parallax-y, 0px))
-    )
-    scale(var(--img-scale, 1));
-}
 
 /* #endregion */
 
