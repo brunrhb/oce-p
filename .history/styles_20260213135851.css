@@ -16,26 +16,25 @@ html, body { margin: 0; overflow-x: hidden; }
 --m-col-info : 6vw;
 
 /* marges entres projets titres petit */
---m-projects-smal:clamp(10px, 2.618vw + 1.309vh, 10px);
-
-/* marges entres projets titres grands */
---m-projects-big:clamp(10px, 1vw + 1vh, 50px);
+--m-projects:clamp(10px, 2.618vw + 1.309vh, 10px);
 
 /* largeur des sections projets */
 --w-projet: auto  ; 
 
 /* taille titre 1 petit */
---s-titres-smal:calc(var(--s-info-smal)/1.333) ; 
+--s-titres-smal:clamp(15px, 2.618*( 0.1vw + 1.1vh), 40px) ; 
 /* taille titre 2 big */
---s-titres-big:clamp(30px, 1vw + 5vh , 100px)  ; 
-
+--s-titres-big:clamp(30px, 1vw + 3vh , 100px)  ; 
 
 
 /* taille info */
---s-info-smal: calc(var(--s-titres-big)/1.618); 
+--s-info: 20px; 
 
 /* taille info */
---s-info-big: calc(var(--s-info-smal)*1.333); 
+--s-info-smal: 20px; 
+
+/* taille info */
+--s-info-big: 20px; 
 
 /* marge info left */
 --m-info-left:5vw ;
@@ -150,13 +149,8 @@ html, body { margin: 0; overflow-x: hidden; }
   }
 
 .allproject{
-  gap: var(--m-projects-smal);/* _________________  */
+  gap: var(--m-projects);/* _________________  */
   }
-
-
-  body.has-open .allproject {
-  gap: var(--m-projects-big); /* _________________  */
-}
 
 .jump-extrait-body{
   margin-bottom: clamp(16px, 1vw + 0.8vh, 56px);
@@ -192,7 +186,7 @@ a.lien.jump-bloc-lien{ display:block; }
 
 .info-titre{
   font-family: Roboto;
-  font-size: var(--s-info-smal); 
+  font-size: var(--s-info); 
 
   position: fixed;/* _________________  */
   z-index: 999;
@@ -200,10 +194,6 @@ a.lien.jump-bloc-lien{ display:block; }
 
   margin-left:var(--m-info-left) ; /* _________________  */
   }
-
-.info-titre.is-open{
-  font-size: var(--s-info-big);/* _________________  */
-}
 
 .info-titre:hover {
   transform: scale(1.05);
@@ -352,7 +342,9 @@ body.has-open .PROJET{
   font-size: var(--s-titres-big);/* _________________  */
 }
 
-
+body.has-open .info-titre{
+  font-size: var(--s-info-big);/* _________________  */
+}
 
 
 .micro-retour{

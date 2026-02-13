@@ -36,7 +36,7 @@ content["projet2"] = `
 P󱀐NSER`;
 
 content["projet3"] = ` 
-DES NORMES AUX MORNES 
+DES NORMES AUX MORNES : MARRONNER EN SOI.
 `;
 
 content["projet4"] = `

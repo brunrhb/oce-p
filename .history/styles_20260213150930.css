@@ -25,17 +25,19 @@ html, body { margin: 0; overflow-x: hidden; }
 --w-projet: auto  ; 
 
 /* taille titre 1 petit */
---s-titres-smal:calc(var(--s-info-smal)/1.333) ; 
+--s-titres-smal:clamp(15px, 2.618*( 0.1vw + 1.1vh), 40px) ; 
 /* taille titre 2 big */
 --s-titres-big:clamp(30px, 1vw + 5vh , 100px)  ; 
 
 
+/* taille info */
+--s-info: calc(var(--s-titres-big)/1.618); 
 
 /* taille info */
 --s-info-smal: calc(var(--s-titres-big)/1.618); 
 
 /* taille info */
---s-info-big: calc(var(--s-info-smal)*1.333); 
+--s-info-big: 20px; 
 
 /* marge info left */
 --m-info-left:5vw ;
