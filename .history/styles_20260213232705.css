@@ -518,14 +518,10 @@ body.has-open .PROJET{
   font-weight: 1000; /* 600 is semi-bold, between normal (400) and bold (700) */
 }
 
-:root{
---pt: calc(0.5vw + 0.5vh) ;
---ptt: clac(var(--pt)*(-1)) ;
-}
 
 .PROJET.is-open:hover{
  transform: scale(0.95);
- transform: translateX var(--ptt); 
+ transform: translateX(calc(-0.5vw  -0.5vh)); 
 }
 
 /* mode editorial dès qu’un projet est ouvert */
