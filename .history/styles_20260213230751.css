@@ -159,12 +159,6 @@ body.has-open .PROJET {
   font-family: DINdong;
   font-size: min(30px, var(--s-info-contact));
   opacity: 0.6;
-   opacity: clamp(
-    0.6,
-    calc(1 - (800px - 100vh) * 1.1),
-    1
-  );
-  
 }
 
 .info-credit {
@@ -339,17 +333,7 @@ a.lien.jump-bloc-lien{ display:block; }
   position: absolute;
   left: clamp(60px, 10vw ,100px);
   right: 0;
-   bottom: clamp(
-    0px,
-    calc((800px - 100vh) * 1.1),
-    300px
-  );
-
-  opacity: clamp(
-    0.85,
-    calc(1 - (800px - 100vh) * 1.1),
-    1
-  );
+  bottom: 100px;
    /* ou top:12px */
   z-index: 5;
   margin: 0;
@@ -357,7 +341,7 @@ a.lien.jump-bloc-lien{ display:block; }
 
 .holder-p0{
   width:50vw ;
-  height:50vw ;
+  height:40vw ;
   color: ;
   margin-top: 3vw;
   margin-bottom: 2vw;

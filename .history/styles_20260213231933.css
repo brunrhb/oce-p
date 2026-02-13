@@ -159,11 +159,6 @@ body.has-open .PROJET {
   font-family: DINdong;
   font-size: min(30px, var(--s-info-contact));
   opacity: 0.6;
-   opacity: clamp(
-    0.6,
-    calc(1 - (800px - 100vh) * 1.1),
-    1
-  );
   
 }
 
