@@ -31,7 +31,7 @@ body.has-open .PROJET {
 --m-right:5vw ;
 
 /* col spacer of info col dans info box*/
---m-col-info : -1vw;
+--m-col-info : 6vw;
 
 /* marges entres projets titres petit */
 --m-projects-smal:clamp(10px, 0.75vw + 0.75vh, 30px);
@@ -170,8 +170,8 @@ body.has-open .PROJET {
 
   position: absolute;
   z-index:9999 ;
-  bottom: 10px;
-  right: 50px;
+  bottom: 5px;
+  right: 5px;
   
 }
 
@@ -310,7 +310,6 @@ a.lien.jump-bloc-lien{ display:block; }
  
 } 
 .col-info-1{
-  z-index: 600;
   
 } 
 
@@ -320,12 +319,10 @@ a.lien.jump-bloc-lien{ display:block; }
 
   top: var(--m-top);         
   left: calc(var(--m-left) + (100vw - var(--m-left) - var(--m-right) - 2vw) / 2 + var(--m-col-info));
-  width: calc((100vw - var(--m-left) - var(--m-right) - 2vw) / 2 -var(--m-col-info));
+  width: calc((100vw - var(--m-left) - var(--m-right) - 2vw) / 2);
   min-height: calc(100vh - var(--m-top));
 
   overflow: hidden;
-  z-index: 500;
-  
 }  
 
 .info-contact {
@@ -345,7 +342,6 @@ a.lien.jump-bloc-lien{ display:block; }
   margin-top: 3vw;
   margin-bottom: 2vw;
   position: relative;
-  background: transparent;
 
 }  
 
@@ -426,6 +422,33 @@ a.lien.jump-bloc-lien{ display:block; }
 
 
 
+/* --- INFO : col2 qui "mord" sur col1 (AJOUT) --- */
+.col-info-2{
+  --bite: 3vw;           /* quantité de recouvrement vers col1 */
+  z-index: 1000;         /* au-dessus du fond blanc de .info-boxe */
+}
+
+/* on laisse l'image dépasser vers la gauche */
+.col-info-2 .holder-p0{
+  overflow: visible;     /* (override) autorise le débord */
+  width: calc(100% + var(--bite));
+  margin-left: calc(-1 * var(--bite));
+}
+
+/* fondu blanc sur la zone de recouvrement pour que ça se "mange" proprement */
+.col-info-2 .holder-p0::before{
+  content:"";
+  position:absolute;
+  top: 0; bottom: 0;
+  left: 0;
+  width: var(--bite);
+  pointer-events: none;
+  z-index: 10;
+  background: linear-gradient(to left,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,1) 100%
+  );
+}
 
 
 

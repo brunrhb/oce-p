@@ -31,7 +31,7 @@ body.has-open .PROJET {
 --m-right:5vw ;
 
 /* col spacer of info col dans info box*/
---m-col-info : -1vw;
+--m-col-info : -2vw;
 
 /* marges entres projets titres petit */
 --m-projects-smal:clamp(10px, 0.75vw + 0.75vh, 30px);
