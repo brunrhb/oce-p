@@ -37,8 +37,9 @@ oceane.eliard@gmail.com
 
 content["info-credit"] = `
 Typographie : DINdong <br>
--- Clara Sambot <br>
--- Bye Bye Binary
+-- Bye Bye Binary <br>
+-- Clara Sambot
+
 `;
 
 // #endregion
