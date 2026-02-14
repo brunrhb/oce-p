@@ -174,11 +174,10 @@ body.has-open .PROJET {
 
   opacity: 0.4;
 
-position: fixed;
-  /* Aligné sur la ligne de force du haut */
-  bottom: var(--m-top); 
-  right: var(--m-left);
-  z-index: 1000;
+  position: absolute;
+  z-index:9999 ;
+  bottom: clamp(50vh, 50vh , 20vh);
+  right: clamp(20vh, 20vh , 20vh);
   
 }
 

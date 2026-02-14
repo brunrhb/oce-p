@@ -27,9 +27,9 @@ oceane.eliard@gmail.com
 
 
 content["contact-text"] = `
+@invente.e.= soi<br>
 @dire.lecture<br>
-@invente.e.=soi<br>
-<br>
+<br><br>
 oceane.eliard@gmail.com
 
 `;

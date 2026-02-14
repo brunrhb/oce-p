@@ -174,11 +174,10 @@ body.has-open .PROJET {
 
   opacity: 0.4;
 
-position: fixed;
-  /* Aligné sur la ligne de force du haut */
-  bottom: var(--m-top); 
-  right: var(--m-left);
-  z-index: 1000;
+  position: absolute;
+  z-index:9999 ;
+  bottom: 10px;
+  right: 50px;
   
 }
 
@@ -270,10 +269,10 @@ a.lien.jump-bloc-lien{ display:block; }
 
 .contact-email {
   margin-top: 8px; /* Petit saut avant l'email */
-  opacity: 0.6;
+  opacity: 0.8;
 
   font-family: var(--ff-body);
-  font-size: calc(var(--s-titres-smal) /1.33);
+  font-size: calc(var(--fs-credit) * 0.8);
   letter-spacing: -0.01em;
 
   text-transform: uppercase;
@@ -281,10 +280,10 @@ a.lien.jump-bloc-lien{ display:block; }
 }
 
 .insta-link {
-  opacity: 0.3;
+  opacity: 0.5;
   
   font-family: var(--ff-title); 
-    font-size: calc(var(--s-titres-smal) /1.33);
+  font-size: var(--fs-credit);
   
 
   color: rgb(2, 2, 64);

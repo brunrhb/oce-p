@@ -174,11 +174,10 @@ body.has-open .PROJET {
 
   opacity: 0.4;
 
-position: fixed;
-  /* Aligné sur la ligne de force du haut */
-  bottom: var(--m-top); 
-  right: var(--m-left);
-  z-index: 1000;
+  position: absolute;
+  z-index:9999 ;
+  bottom: 10px;
+  right: 50px;
   
 }
 
@@ -261,36 +260,40 @@ a.lien.jump-bloc-lien{ display:block; }
   right: var(--m-left);
 
   text-align: right;
+  }
 
+  .home-contact {
+  position: fixed;
+  bottom: 20px;
+  right: 5vw;
+  z-index: 1000;
+  
+  /* Mise en forme du bloc */
   display: flex;
   flex-direction: column; /* Empile les liens verticalement */
   align-items: flex-end;   /* Aligne tout à droite */
-  }
+  gap: 4px;                /* Espace entre les lignes */
+}
 
+/* Style des liens et du texte */
+.home-contact a, 
+.home-contact span {
+  font-family: var(--ff-ui); /* Ou DINdong selon ton choix */
+  font-size: 14px;           /* Taille plus discrète */
+  color: black;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.home-contact a:hover {
+  opacity: 0.5;
+  text-decoration: underline;
+}
 
 .contact-email {
   margin-top: 8px; /* Petit saut avant l'email */
-  opacity: 0.6;
-
-  font-family: var(--ff-body);
-  font-size: calc(var(--s-titres-smal) /1.33);
-  letter-spacing: -0.01em;
-
-  text-transform: uppercase;
-
+  opacity: 0.7;
 }
-
-.insta-link {
-  opacity: 0.3;
-  
-  font-family: var(--ff-title); 
-    font-size: calc(var(--s-titres-smal) /1.33);
-  
-
-  color: rgb(2, 2, 64);
-
-}
-
 
 /* #endregion */
 

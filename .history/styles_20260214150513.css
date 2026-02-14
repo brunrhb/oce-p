@@ -176,8 +176,8 @@ body.has-open .PROJET {
 
 position: fixed;
   /* Aligné sur la ligne de force du haut */
-  bottom: var(--m-top); 
-  right: var(--m-left);
+  top: var(--m-top); 
+  left: var(--m-left);
   z-index: 1000;
   
 }

@@ -174,11 +174,10 @@ body.has-open .PROJET {
 
   opacity: 0.4;
 
-position: fixed;
-  /* Aligné sur la ligne de force du haut */
-  bottom: var(--m-top); 
-  right: var(--m-left);
-  z-index: 1000;
+  position: absolute;
+  z-index:9999 ;
+  bottom: 10px;
+  right: 50px;
   
 }
 
@@ -252,49 +251,18 @@ a.lien.jump-bloc-lien{ display:block; }
 }
 /* #endregion */
 
-/* #region CONTACT */
+/* #region INFO */
 
 .home-contact{
   position:fixed;
 
-  bottom: var(--m-toptop);
-  right: var(--m-left);
+  bottom: 0;
+  right: 0;
 
   text-align: right;
-
-  display: flex;
-  flex-direction: column; /* Empile les liens verticalement */
-  align-items: flex-end;   /* Aligne tout à droite */
   }
 
 
-.contact-email {
-  margin-top: 8px; /* Petit saut avant l'email */
-  opacity: 0.6;
-
-  font-family: var(--ff-body);
-  font-size: calc(var(--s-titres-smal) /1.33);
-  letter-spacing: -0.01em;
-
-  text-transform: uppercase;
-
-}
-
-.insta-link {
-  opacity: 0.3;
-  
-  font-family: var(--ff-title); 
-    font-size: calc(var(--s-titres-smal) /1.33);
-  
-
-  color: rgb(2, 2, 64);
-
-}
-
-
-/* #endregion */
-
-/* #region INFO */
 
 .info-titre{
   font-family: Roboto;
@@ -483,6 +451,11 @@ a.lien.jump-bloc-lien{ display:block; }
     )
     scale(var(--img-scale, 1));
 }
+
+
+
+
+
 
 
 

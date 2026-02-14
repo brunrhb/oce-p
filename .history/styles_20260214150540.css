@@ -170,14 +170,14 @@ body.has-open .PROJET {
 .info-credit {
   font-family: DINdong;
   font-size: min( 15px, var(--s-info-credit));
-  text-align: right;
+  text-align: left;
 
   opacity: 0.4;
 
 position: fixed;
   /* Aligné sur la ligne de force du haut */
-  bottom: var(--m-top); 
-  right: var(--m-left);
+  top: var(--m-top); 
+  left: var(--m-left);
   z-index: 1000;
   
 }
