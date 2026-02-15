@@ -110,12 +110,10 @@
   }
 
   /* Media blocks */
-  .mproj-media{ display:flex; flex-direction:column; gap: 10px; width:100%; }
-  .mproj-media > *{ width:100%; }
-  .mproj-yt{ width:100%; }
+  .mproj-media{ display:flex; flex-direction:column; gap: 10px; }
 
   /* Ratio wrappers */
-  .mproj-ratio{ position:relative; overflow:hidden; background:white; width:100%; }
+  .mproj-ratio{ position:relative; overflow:hidden; background:white; }
   .mproj-ratio > *{ position:absolute; inset:0; width:100%; height:100%; }
   .mproj-ratio img, .mproj-ratio video{ width:100%; height:100%; object-fit:cover; display:block; }
 
@@ -134,7 +132,6 @@
   }
   .mproj-slide{
     flex: 0 0 100%;
-    width:100%;
     scroll-snap-align: start;
   }
 
